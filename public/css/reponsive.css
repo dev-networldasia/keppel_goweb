@@ -13,3 +13,1148 @@
 @media only screen and (min-width: 769px) and (max-width: 991px){}
 @media only screen and (min-width: 992px) and (max-width: 1199px){}
 @media only screen and (min-width: 1200px) and (max-width: 1399px){}
+
+/* customs */
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .top-wrapper__center {
+        display: none;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .header-top {
+        display: none;
+    }
+
+    .mainbar__left {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-menu-mobile {
+        display: flex;
+    }
+
+    .header-right .search {
+        display: none;
+    }
+
+    .header-right .swap-lag .english {
+        display: none;
+    }
+
+    .lag img {
+        margin-right: 0;
+        width: 2.5em;
+    }
+
+    .sub-menu-lag {
+        transform: translateY(80%) translateX(-60%);
+    }
+
+    .search-dropdown {
+        display: none;
+    }
+
+    .top-content-courses {
+        background: var(--color-darker);
+    }
+
+    .nav-elements {
+        flex-direction: column;
+    }
+
+    .mainmenu-nav .panel li a {
+        display: flex;
+    }
+
+    .img-inner-blog {
+        width: 100%;
+    }
+
+    .popup-mobile-menu li {
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .popup-mobile-menu li .mobile {
+        border-bottom: 1px solid var(--gray-hover-bg);
+        color: var(--color-body);
+    }
+
+    .popup-mobile-menu .mainmenu-nav .panel2 li a {
+        font-size: 1em;
+    }
+
+    .brancherx-home-your-business {
+        height: auto;
+        background: linear-gradient(0deg, #004581 90.52%, rgba(0, 69, 129, 0) 100%), url(../img/home-your-business-bg.svg);
+    }
+
+    .inner-business .description-content {
+        font-size: 1.4em;
+    }
+
+    /* Home Section Your Business */
+    .img-business {
+        width: 100%;
+    }
+
+    .inner-business {
+        width: 100%;
+    }
+
+    .inner-business {
+        padding: 3em;
+    }
+
+    .home-your-business-up {
+        flex-direction: column-reverse;
+    }
+
+    .inner-business .title span {
+        font-size: 2em;
+    }
+
+    .inner-business .title h2 {
+        font-size: 2.5em;
+    }
+
+    .down-box-under {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .down-box-under .icon-area {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .home-your-business-up img {
+        padding-right: 0;
+    }
+
+    /* Our - Service */
+    .our-service .container {
+        width: 100% !important;
+    }
+
+    .our-service {
+        height: auto;
+    }
+
+    .our-serivce__down {
+        gap: 1em;
+    }
+
+    .flip-card {
+        width: 47%;
+        padding: 2em 0.5em;
+    }
+
+    .our-serivce__up {
+        flex-direction: column;
+        padding: 0 3em;
+        text-align: center;
+    }
+
+    .our-serivce__up .bg-title {
+        margin-right: 0;
+    }
+
+    .our-service__disc {
+        border-left: none;
+        padding: 0;
+        margin: 1em auto;
+    }
+
+    .tab {
+        gap: 1em;
+        padding: 0;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    /* Case Studies */
+    .case-studies__up {
+        flex-direction: column;
+        padding: 0 2em;
+        text-align: center;
+    }
+
+    .case-studies .bg-title {
+        margin-right: 0;
+    }
+
+    .swiper-button-prev1 {
+        left: 0;
+    }
+
+    .swiper-button-next1 {
+        right: 0;
+    }
+
+    .case-studies__down {
+        margin-top: 2em;
+    }
+
+    .case-studies .tag-area {
+        flex-direction: column;
+        top: 8px;
+        left: 15px;
+    }
+
+    .case-studies .tag-area h4 {
+        width: fit-content;
+    }
+
+    /* News - Career */
+    .info-career__disc a h2 {
+        font-size: 2em;
+    }
+
+    .info-career__disc p {
+        font-size: 1.4em;
+    }
+
+    .news-career__down .swiper-slide {
+        height: auto;
+    }
+
+    /* FORM - MASTER */
+    .form-master {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        padding: 2em 5em;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .talk-form {
+        padding-right: 0;
+    }
+
+    .talk-to-us {
+        font-size: 3.2em;
+        padding: 0;
+    }
+
+    .talk-form h2 {
+        font-size: 2.5em;
+    }
+
+    .bg-title {
+        padding: 1.5em 3em;
+    }
+
+    /* footer */
+    .social .tele i {
+        font-size: 3.5em;
+    }
+
+    .social .tele a {
+        font-size: 1.5em;
+    }
+
+    .social {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .icon-social a {
+        margin-right: 0;
+    }
+
+    .icon-social {
+        gap: 2em;
+    }
+
+    .mainbar__left {
+        width: 50% !important;
+    }
+
+    .header-bot.sticky {
+        opacity: 1;
+        background: var(--white2);
+    }
+
+    .contact-btn {
+        bottom: 80px;
+    }
+
+    /* Box Support */
+    /* .box-support{
+        bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    } */
+    .box-support .icon-support {
+        margin: 1em 1em 1em 1em;
+    }
+
+    .box-support img {
+        width: 35px;
+    }
+
+    .fp-scrollable.fp-responsive .fp-is-overflow.fp-section:not(.fp-auto-height):not([data-percentage]),
+    .fp-scrollable .fp-section:not(.fp-auto-height):not([data-percentage]),
+    .fp-scrollable .fp-slide:not(.fp-auto-height):not([data-percentage]) {
+        min-height: auto;
+    }
+
+    .fp-is-overflow .fp-overflow.fp-auto-height-responsive,
+    .fp-is-overflow .fp-overflow.fp-auto-height,
+    .fp-is-overflow>.fp-overflow {
+        max-height: fit-content;
+    }
+
+    footer {
+        font-size: 0.95rem;
+    }
+
+    /* Your Business */
+    /* .img-business,
+    .talk-to-us
+    {
+        opacity: 0;
+        width: 100%;
+        flex: 0 0 auto;
+        transform: translateX(calc(-100% - 3rem));
+        transition: all 0.65s;
+    }
+    .inner-business,
+    .talk-form
+    {
+        opacity: 0;
+        width: 100%;
+        padding: 2.5em;
+        transform: translateX(calc(100% + 8rem));
+        transition: all 0.65s ;
+    }
+    .icon-area,
+    .content-area{
+        opacity: 0;
+        transform: translateY(calc(100% + 1rem));
+        transition: all 0.45s ease-out;
+    }
+    .about-us__title,
+    .about-us__counter,
+    .trust-us__title,
+    .our-serivce__down,
+    .case-studies__down,
+    .news-career__down
+    {
+        opacity: 0;
+        transform: translateY(calc(100% + 1rem));
+        transition: all 0.65s ease-out;
+    } */
+    /* Page - Contact US */
+    .form-master {
+        height: auto;
+        padding-top: 5em !important;
+    }
+
+    .inner-business,
+    .talk-form {
+        width: auto;
+        /* padding: 0; */
+    }
+
+    .talk-to-us {
+        width: auto;
+    }
+
+    .fp-overflow {
+        max-height: fit-content;
+    }
+
+    .title-about-us h2 {
+        font-size: 4em;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .talk-form .form input {
+        padding: 1em 0 1em 1.5em;
+    }
+
+    .form-control {
+        padding: 1em 0 1em 1.5em;
+    }
+
+    /* banner e-com */
+    .banner .title-about-us h1 {
+        font-size: 3em;
+    }
+
+    /* IMC */
+    .imc-box {
+        width: 100%;
+        margin: 3em 5em 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .top-wrapper__center {
+        display: none;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .mainbar__left {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-menu-mobile {
+        display: flex;
+    }
+
+    .header-right .search {
+        display: none;
+    }
+
+    .sub-menu-lag {
+        transform: translateY(80%) translateX(-20%);
+    }
+
+    .search-dropdown {
+        display: none;
+    }
+
+    .top-content-courses {
+        background: var(--color-darker);
+    }
+
+    .nav-elements {
+        flex-direction: column;
+    }
+
+    .mainmenu-nav .panel li a {
+        display: flex;
+    }
+
+    .img-inner-blog {
+        width: 100%;
+    }
+
+    .popup-mobile-menu li {
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .popup-mobile-menu li .mobile {
+        border-bottom: 1px solid var(--gray-hover-bg);
+        color: var(--color-body);
+    }
+
+    .popup-mobile-menu .mainmenu-nav .panel2 li a {
+        font-size: 1em;
+    }
+
+    .brancherx-home-your-business {
+        height: auto;
+    }
+
+    .inner-business .description-content {
+        font-size: 1.4em;
+    }
+
+    /* Home Section Your Business */
+    .img-business {
+        width: 100%;
+    }
+
+    .inner-business {
+        width: 100%;
+    }
+
+    .inner-business {
+        padding: 3em;
+    }
+
+    .home-your-business-up {
+        flex-direction: column-reverse;
+    }
+
+    .inner-business .title span {
+        font-size: 2em;
+    }
+
+    .inner-business .title h2 {
+        font-size: 2.5em;
+    }
+
+    .down-box-under {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .down-box-under .icon-area {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .home-your-business-up img {
+        padding-right: 0;
+    }
+
+    /* Our - Service */
+    .our-service {
+        height: auto;
+    }
+
+    .our-serivce__down {
+        gap: 1em;
+    }
+
+    .flip-card {
+        width: 48%;
+        padding: 2em 1em;
+    }
+
+    .our-serivce__up {
+        flex-direction: column;
+        padding: 0 3em;
+        text-align: center;
+    }
+
+    .our-serivce__up .bg-title {
+        margin-right: 0;
+    }
+
+    .our-service__disc {
+        border-left: none;
+        padding: 0;
+        margin: 1em auto;
+    }
+
+    /* Case Studies */
+    .case-studies__up {
+        flex-direction: column;
+        padding: 0 2em;
+        text-align: center;
+    }
+
+    .case-studies .bg-title {
+        margin-right: 0;
+        width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* News - Career */
+    .info-career__disc a h2 {
+        font-size: 2.2em;
+    }
+
+    .info-career__disc p {
+        font-size: 1.6em;
+    }
+
+    .info-career img {
+        max-height: 30em;
+    }
+
+    .tabcontent {
+        padding: 0.6em 2.2em;
+    }
+
+    .news-career__down .swiper-slide {
+        height: auto;
+    }
+
+    .info-career {
+        height: auto;
+    }
+
+    /* FORM - MASTER */
+    .form-master {
+        flex-direction: column;
+        margin: 0em auto;
+        width: 100%;
+        text-align: center;
+        padding: 2em 5em;
+    }
+
+    .talk-form {
+        padding-right: 0;
+    }
+
+    .talk-to-us {
+        font-size: 3.2em;
+        padding: 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .mainbar__left {
+        width: 40% !important;
+    }
+
+    .header-bot.sticky {
+        opacity: 1;
+        background: var(--white2);
+    }
+
+    Box Support .box-support {
+        bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .box-support .icon-support {
+        margin: 1em 1em 1em 1em;
+    }
+
+    .fp-scrollable.fp-responsive .fp-is-overflow.fp-section:not(.fp-auto-height):not([data-percentage]),
+    .fp-scrollable .fp-section:not(.fp-auto-height):not([data-percentage]),
+    .fp-scrollable .fp-slide:not(.fp-auto-height):not([data-percentage]) {
+        min-height: auto;
+    }
+
+    .fp-is-overflow .fp-overflow.fp-auto-height-responsive,
+    .fp-is-overflow .fp-overflow.fp-auto-height,
+    .fp-is-overflow>.fp-overflow {
+        max-height: fit-content;
+    }
+
+    /* Your Business */
+    /* .img-business,
+    .talk-to-us
+    {
+        opacity: 0;
+        width: 100%;
+        flex: 0 0 auto;
+        transform: translateX(calc(-100% - 3rem));
+        transition: all 0.65s;
+    }
+    .inner-business,
+    .talk-form
+    {
+        opacity: 0;
+        width: 100%;
+        padding: 2.5em;
+        transform: translateX(calc(100% + 8rem));
+        transition: all 0.65s ;
+    }
+    .icon-area,
+    .content-area{
+        opacity: 0;
+        transform: translateY(calc(100% + 1rem));
+        transition: all 0.45s ease-out;
+    }
+    .about-us__title,
+    .about-us__counter,
+    .trust-us__title,
+    .our-serivce__down,
+    .case-studies__down,
+    .news-career__down
+    {
+        opacity: 0;
+        transform: translateY(calc(100% + 1rem));
+        transition: all 0.65s ease-out;
+    } */
+    /* Page - Contact US */
+    .form-master {
+        height: auto;
+        padding-top: 5em !important;
+    }
+
+    .inner-business,
+    .talk-form {
+        width: auto;
+    }
+
+    .talk-to-us {
+        width: auto;
+    }
+
+    .fp-overflow {
+        max-height: fit-content;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .talk-form .form input {
+        padding: 1em 0 1em 1.5em;
+    }
+
+    .form-control {
+        padding: 1em 0 1em 1.5em;
+    }
+
+    /* banner e-com */
+    .banner .title-about-us h1 {
+        font-size: 5.5em;
+    }
+
+    /* IMC */
+    .imc-box {
+        width: 48%;
+        margin-top: 3em;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+
+    .top-wrapper__center {
+        display: none;
+    }
+
+    .mainmenu-nav .mainmenu {
+        gap: 1.2em;
+    }
+
+    .img-inner-blog {
+        padding: 0;
+        padding-top: 2em;
+    }
+
+    .menu-child-item>a {
+        font-size: 1.4em;
+    }
+
+    .header-right .search {
+        display: none;
+    }
+
+    .inner-business .description-content {
+        font-size: 1.6em;
+    }
+
+    .img-business {
+        width: 100%;
+    }
+
+    .inner-business {
+        width: 100%;
+    }
+
+    .inner-business {
+        padding: 3em;
+    }
+
+    .home-your-business-up {
+        flex-direction: column-reverse;
+    }
+
+    .inner-business .title span {
+        font-size: 2em;
+    }
+
+    .inner-business .title h2 {
+        font-size: 2.5em;
+    }
+
+    .down-box-under {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .down-box-under .icon-area {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .home-your-business-up img {
+        padding-right: 0;
+    }
+
+    /* Search - dropdown */
+    .list-course .card-slide.wiper-mid {
+        padding: 0.3em;
+    }
+
+    .list-course .card-rating .rating i {
+        font-size: 0.7em;
+    }
+
+    .list-course .course-review {
+        font-size: 0.7em;
+    }
+
+    /* Home Section Your Business */
+    .brancherx-home-your-business {
+        height: auto;
+    }
+
+    .inner-business {
+        padding: 4em;
+    }
+
+    .inner-business .title span {
+        font-size: 2em;
+    }
+
+    .down-box-under {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .down-box-under .icon-area {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    /* Our - Service */
+    .our-serivce__down {
+        gap: 4em;
+    }
+
+    .flip-card {
+        width: 25%;
+    }
+
+    /* News - Career */
+    .info-career__disc a h2 {
+        font-size: 2.2em;
+    }
+
+    .info-career__disc p {
+        font-size: 1.6em;
+    }
+
+    .mainbar__left {
+        width: 20% !important;
+    }
+
+    .main-navigation {
+        width: 66.66666667% !important;
+    }
+
+    .mainmenu-nav::after {
+        bottom: -0.3em;
+    }
+
+    .fp-scrollable.fp-responsive .fp-is-overflow.fp-section:not(.fp-auto-height):not([data-percentage]),
+    .fp-scrollable .fp-section:not(.fp-auto-height):not([data-percentage]),
+    .fp-scrollable .fp-slide:not(.fp-auto-height):not([data-percentage]) {
+        min-height: auto;
+    }
+
+    /* FORM MASTER */
+    .form-master {
+        height: 100%;
+        padding: 3em 0;
+    }
+
+    .talk-form .form input {
+        padding: 1em 0 1em 2.5em;
+    }
+
+    .form-control {
+        padding: 1em 0 1em 1.5em;
+    }
+
+    .btn-form {
+        padding: 0.8em 8em;
+    }
+
+    .talk-form h2 {
+        font-size: 3.2em;
+    }
+
+    /* Your Business */
+    /* .img-business,
+    .talk-to-us
+    {
+        opacity: 0;
+        width: auto;
+        flex: 0 0 auto;
+        transform: translateX(calc(-100% - 3rem));
+        transition: all 0.65s;
+        text-align: center;
+    }
+    .inner-business,
+    .talk-form
+    {
+        opacity: 0;
+        width: 58%;
+        padding: 2.5em;
+        transform: translateX(calc(100% + 8rem));
+        transition: all 0.65s ;
+    }
+    .icon-area,
+    .content-area{
+        opacity: 0;
+        transform: translateY(calc(100% + 1rem));
+        transition: all 0.45s ease-out;
+    }
+    .about-us__title,
+    .about-us__counter,
+    .trust-us__title,
+    .our-serivce__down,
+    .case-studies__down,
+    .news-career__down
+    {
+        opacity: 0;
+        transform: translateY(calc(100% + 1rem));
+        transition: all 0.65s ease-out;
+    } */
+    /* Page - Contact US */
+    .form-master {
+        height: auto;
+        padding-top: 5em !important;
+    }
+
+    .inner-business,
+    .talk-form {
+        width: auto;
+        padding-right: 0;
+    }
+
+    .fp-overflow {
+        max-height: fit-content;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    /* banner e-com */
+    .banner .title-about-us h1 {
+        font-size: 7.5em;
+    }
+
+    /* IMC */
+    .imc-box {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 55%;
+    }
+
+    .container {
+        max-width: 879px !important;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .top-wrapper__center {
+        display: none;
+    }
+
+    .mainmenu-nav .mainmenu {
+        gap: 1.5em;
+    }
+
+    .img-inner-blog {
+        padding: 0;
+        padding-top: 2em;
+    }
+
+    .menu-child-item>a {
+        font-size: 1.4em;
+    }
+
+    /* Your Business */
+    .inner-business .title h2 {
+        font-size: 3em;
+    }
+
+    .inner-business .title span {
+        font-size: 2em;
+    }
+
+    .inner-business .description-content {
+        font-size: 1.6em;
+    }
+
+    .home-your-business-down {
+        padding: 2em;
+    }
+
+    /* Search - dropdown */
+    .list-course .card-slide.wiper-mid {
+        padding: 0.5em;
+    }
+
+    .list-course .card-rating .rating i {
+        font-size: 0.8em;
+    }
+
+    .list-course .course-review {
+        font-size: 0.8em;
+    }
+
+    /* Home Section Your Business */
+    .inner-business {
+        padding: 5em;
+    }
+
+    /* Our - Service */
+    .flip-card {
+        width: 27%;
+    }
+
+    .header-bot.sticky {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: transparent;
+    }
+
+    .header-bot.sticky:hover {
+        opacity: 1;
+        background: var(--white2);
+        /* transition: 1s all; */
+        animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .container {
+        max-width: 1100px !important;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .inner-business .description-content {
+        font-size: 1.8em;
+    }
+
+    .header-bot.sticky {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: transparent;
+    }
+
+    .header-bot.sticky:hover {
+        opacity: 1;
+        background: var(--white2);
+        /* transition: 1s all; */
+        animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .container {
+        max-width: 1100px !important;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .mainbar__left {
+        width: 25% !important;
+    }
+
+    .fp-overflow {
+        max-height: fit-content;
+    }
+
+    .inner-business .description-content {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1200px !important;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .inner-business .description-content {
+        font-size: 2em;
+    }
+
+    .flip-card {
+        width: 25%;
+    }
+
+    .about-us__counter {
+        justify-content: space-between;
+    }
+
+    .content-counter .counter {
+        font-size: 7.6em;
+    }
+
+    .counter_disc {
+        font-size: 2.4em;
+    }
+
+    .form-master {
+        padding: 5em 0;
+    }
+
+    footer {
+        padding-top: 10em;
+    }
+}

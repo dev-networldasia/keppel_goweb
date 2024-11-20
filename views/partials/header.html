@@ -1,3 +1,217 @@
-{{ define "header"}}
-    <div>Header</div>
+{{define "header"}}
+<header>
+    <!-- Header - Top -->
+    <div class="header-top">
+        <div class="container top-wrapper">
+            <div class="wrapper-social">
+                <div class="wrapper-social__item">
+                    <a href="#">
+                        <i class="ri-instagram-line"></i>
+                        <span>100k Followers</span>
+                    </a>
+                </div>
+                <div class="wrapper-social__item">
+                    <a href="#">
+                        <i class="ri-facebook-box-fill"></i>
+                        <span>500k Followers</span>
+                    </a>
+                </div>
+                <div class="wrapper-social__item">
+                    <a href="#">
+                        <i class="ri-phone-line"></i>
+                        <span>+84-235-2845-2648</span>
+                    </a>
+                </div>
+            </div>
+            <div class="top-wrapper__center">
+                <span class="hot">Hot</span>
+                <span class="news-text">
+                    <img src="../../img/hand-emojji.svg">
+                    Intro price. Get BrancherX for Big Sale -50% off
+                </span>
+            </div>
+            <div class="top-wrapper__right">
+                <div class="icon">
+                    <a href="#"><i class=" ri-facebook-fill"></i></a>
+                    <a href="#"><i class=" ri-twitter-fill"></i></a>
+                    <a href="#"><i class=" ri-linkedin-fill"></i></a>
+                    <a href="#"><i class=" ri-instagram-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bot" id="navbar">
+        <div class="container mainbar">
+            <div class="btn-menu-mobile">
+                <img src="{{site}}/static/img/menu/list-icon.png" alt="list icon">
+            </div>
+            <div class="mainbar__left">
+                <div class="header__info">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="{{site}}/static/img/menu/logo-hanoi-centre.png" alt="hanoi centre">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__info">
+                    <div class="category-menu__wrapper">
+                        <div class="category__activation">
+                            <div class="category-icon">
+                                <i class=" ri-function-line"></i>
+                            </div>
+                            <span>Category</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-navigation">
+                <nav class="mainmenu-nav">
+                    <ul class="mainmenu">
+                        <li class="menu-child-item">
+                            <a href="#">
+                                HOMEPAGE
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="menu-child-item">
+                            <a href="#">
+                                PROJECT USP
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="menu-child-item">
+                            <a href="#">
+                                GALLERY
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="menu-child-item">
+                            <a href="#">
+                                NEWS
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="menu-child-item">
+                            <a href="#">
+                                CONTACT US
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="search">
+                    <img src="{{site}}/static/img/menu/search-icon.png" alt="">
+                </div>
+                <div class="lag">
+                    <div class="swap-lag">
+                        <img src="{{site}}/static/img/menu/world.png" alt="world">
+                        <span class="english">ENG</span>
+                        <img class="arrow-icon" src="{{site}}/static/img/menu/arrow-icon.png" alt="arrow">
+                    </div>
+                    <ul class="sub-menu-lag">
+                        <li class="lag">
+                            <img src="{{site}}/static/img/menu/flag-vietnam.png" alt="">
+                            <div class="swap-lag">
+                                <span>VIỆT NAM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="popup-mobile-menu">
+    <div class="inner-wrapper">
+        <div class="inner-top">
+            <div class="content-mobile">
+                <div class="logo">
+                    <img src="/img/logo-branch/large-logo.png" alt="">
+                </div>
+                <div class="close-btn">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <p>We use the power of idea, creativity, media and data, to drive growth and to drive change, helping brands
+                engage with their audiences and businesses grow sustainably.</p>
+            <div class="search-mobile">
+                <form class="form-letter" action="#">
+                    <input type="email" placeholder="Enter Keywords">
+                    <div class="slider-btn">
+                        <a href="#" class="warp-course">
+                            <span>Search</span>
+                            <span class="wrap-icon">
+                                <i class="ri-arrow-right-line"></i>
+                            </span>
+                            <span class="wrap-icon">
+                                <i class="ri-arrow-right-line"></i>
+                            </span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <ul class="contact">
+                <li>
+                    <i class=" ri-mail-line"></i>
+                    <span>hello@brancherx.com</span>
+                </li>
+                <li>
+                    <i class="ri-phone-line"></i>
+                    <span>(+84) 287 303 0568</span>
+                </li>
+            </ul>
+        </div>
+        <div class="mainmenu-nav">
+            <li class="accordion">
+                <a href="/" class="mobile mobile-menu1">
+                    <span>Home</span>
+                    <!-- <div class="close-btn"></div> -->
+                </a>
+            <li class="accordion">
+                <a href="/about-us" class="mobile mobile-menu1">
+                    <span>About Us</span>
+                    <!-- <div class="close-btn"></div> -->
+                </a>
+            </li>
+            <li class="accordion">
+                <div class="mobile mobile-menu1">
+                    <a href="/what-we-do/" class="title-menu"><span>What We Do</span></a>
+                    <div class="close-btn"></div>
+                </div>
+                <ul class="panel child-menu">
+                    <li><a href="/media/">Media</a></li>
+                    <li><a href="/creative/">Creative</a></li>
+                    <li><a href="/social/">Social</a></li>
+                    <li><a href="/kol-management/">KOL-Management</a></li>
+                    <li><a href="/public-relation/">Public Relation</a></li>
+                    <li><a href="/ecommerce/">ECommerce</a></li>
+                </ul>
+            </li>
+            <li class="accordion">
+                <a href="case-studies" class="mobile mobile-menu1">
+                    <span>Case Studies</span>
+                    <!-- <div class="close-btn"></div> -->
+                </a>
+            </li>
+            <li class="accordion">
+                <a href="/news-career" class="mobile mobile-menu1">
+                    <span>News & Careers</span>
+                    <!-- <div class="close-btn"></div> -->
+                </a>
+            </li>
+            <li class="accordion">
+                <a href="/contact-us" class="mobile mobile-menu1">
+                    <span>Contact Us</span>
+                    <!-- <div class="close-btn"></div> -->
+                </a>
+            </li>
+        </div>
+        <div class="mobile-menu-btn"></div>
+    </div>
+    <div class="overlay"></div>
+</div>
 {{end}}

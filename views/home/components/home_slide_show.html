@@ -1,3 +1,51 @@
 {{ define "home_slide_show"}}
-    <p>Slide show</p>
+<section class="home-page">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="{{site}}/static/img/home-page/bg-home.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{site}}/static/img/home-page/bg-home-2.png" alt="">
+            </div>
+        </div>
+        <div class="container-swiper-pagination">
+            <!-- Default bullet pagination -->
+            <div class="swiper-pagination swiper-pagination-bullets"></div>
+            <!-- Custom pagination -->
+            <div class="swiper-custom-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination-bullets',
+            clickable: true, // Makes bullets clickable
+        },
+        on: {
+            init: function () {
+                // Update custom pagination on initialization
+                updateCustomPagination(this);
+            },
+            slideChange: function () {
+                // Update custom pagination on slide change
+                updateCustomPagination(this);
+            },
+        },
+    });
+
+    // Function to update custom pagination
+    function updateCustomPagination(swiper) {
+        const current = swiper.realIndex + 1; // Get the current slide index (1-based)
+        const total = swiper.slides.length - swiper.loopedSlides * 2 || swiper.slides.length; // Get total slides
+        document.querySelector('.swiper-custom-pagination').innerHTML = `${current} / ${total}`;
+    }
+</script>
 {{end}}
