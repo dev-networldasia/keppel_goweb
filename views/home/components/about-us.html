@@ -1,0 +1,115 @@
+{{ define "about_us"}}
+<section class="about-us">
+    <!-- <div class="container"> -->
+        <div class="about-us__text">
+            <h2>About us</h2>
+            <p>Situated at 175 Nguyen Thai Hoc, Ba Dinh, Hanoi, near many famous landmarks, diplomatic centers and bustling business areas.</p>
+        </div>
+        <div class="container-shape">
+            <div class="group-shape group-shape-1">
+                <div class="triangle">
+                    <span>Hanoi<br>Centre</span>
+                </div>
+                <div class="triangle-before"></div>
+            </div>
+            <div class="group-shape group-shape-2">
+                <div class="triangle">
+                    <span>Our<br>Shoppers</span>
+                </div>
+                <div class="triangle-before"></div>
+            </div>
+    
+            <div class="group-shape group-shape-3">
+                <div class="triangle">
+                    <span>Complex<br>Factsheet</span>
+                </div>
+                <div class="triangle-before"></div>
+            </div>
+        </div>
+        <div class="container-mini-shape">
+            <div class="triangle-right shape-1"></div>
+            <div class="triangle-right shape-2"></div>
+            <div class="triangle-right shape-3"></div>
+        </div>
+    <!-- </div> -->
+    <!-- Swiper navigation and pagination -->
+    <div class="swiper-pagination-au"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</section>
+<script>
+    let swiperInstance = null;
+
+function initializeSwiper() {
+    if (!swiperInstance) {
+        const containerShape = document.querySelector('.container-shape');
+        containerShape.classList.add('swiper-container');
+
+        // Move only .group-shape elements into Swiper wrapper
+        const groupShapes = Array.from(containerShape.querySelectorAll('.group-shape'));
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('swiper-wrapper');
+
+        groupShapes.forEach(groupShape => {
+            const slide = document.createElement('div');
+            slide.classList.add('swiper-slide');
+            slide.appendChild(groupShape);
+            wrapper.appendChild(slide);
+        });
+
+        // Append the wrapper to the container and keep non-group-shape children
+        containerShape.appendChild(wrapper);
+
+        // Initialize Swiper
+        swiperInstance = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination-au',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+        });
+    }
+}
+
+function destroySwiper() {
+    if (swiperInstance) {
+        swiperInstance.destroy(true, true);
+        swiperInstance = null;
+
+        // Restore original layout
+        const containerShape = document.querySelector('.container-shape');
+        containerShape.classList.remove('swiper-container');
+        const wrapper = containerShape.querySelector('.swiper-wrapper');
+
+        // Move slides back to the container as group-shape elements
+        const slides = Array.from(wrapper.querySelectorAll('.swiper-slide'));
+        slides.forEach(slide => {
+            const groupShape = slide.firstChild;
+            containerShape.appendChild(groupShape);
+        });
+
+        // Remove the wrapper
+        wrapper.remove();
+    }
+}
+
+// Detect screen size and toggle Swiper
+function handleResize() {
+    if (window.innerWidth <= 575) {
+        initializeSwiper();
+    } else {
+        destroySwiper();
+    }
+}
+
+// Initialize on page load and listen for resize events
+window.addEventListener('load', handleResize);
+window.addEventListener('resize', handleResize);
+</script>
+{{end}}

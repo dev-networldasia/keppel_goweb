@@ -1,19 +1,40 @@
 {{ define "home_slide_show"}}
 <section class="home-page">
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="{{site}}/static/img/home-page/bg-home.png" alt="">
+    <div class="four-corner-border">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{site}}/static/img/home-page/bg-home.png" alt="">
+                    <div class="contact-us-btn btn">
+                        CONTACT US
+                    </div>
+                    <div class="text-centre">
+                        <img src="{{site}}/static/img/home-page/centre-text.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide-2">
+                    <img src="{{site}}/static/img/home-page/bg-home-2.png" alt="">
+                    <div class="content-homepage">
+                        <h2>Welcome to Hanoi Centre</h2>
+                        <p>Hanoi Centre shopping mall is located at 175 Nguyen Thai Hoc, Ba Dinh District, Hanoi, a prime area in the heart of the city. The project's prime location not only places it close to Ba Dinh Square but also near famous tourist spots like the Temple of Literature (Văn Miếu Quốc Tử Giám) and West Lake (Hồ Tây).
+                            <br><br>
+                            As part of the Tien Bo complex project, which includes a shopping mall, a premium hotel, Grade-A office building, and serviced apartments. This combination not only creates a vibrant space but also attracts various customer groups such as office workers, tourists, business travelers, and shoppers. With a large floor area and 5 shopping floors, Hanoi Centre offers a diverse range of goods and services, promising to become an attractive and comprehensive destination for customers.
+                            <br><br>
+                            Awarded <b>"Best Retail Interior Design" by PropertyGuru in 2024</b>, Hanoi Centre is poised to be a highlight of the capital's vibrant retail landscape by connecting modern design with the unique heritage of Hanoi.
+                        </p>
+                        <div class="btn">
+                            <span>More about us</span>
+                            <img src="{{site}}/static/img/home-page/button-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="{{site}}/static/img/home-page/bg-home-2.png" alt="">
+            <div class="container-swiper-pagination">
+                <!-- Default bullet pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets"></div>
+                <!-- Custom pagination -->
+                <div class="swiper-custom-pagination"></div>
             </div>
-        </div>
-        <div class="container-swiper-pagination">
-            <!-- Default bullet pagination -->
-            <div class="swiper-pagination swiper-pagination-bullets"></div>
-            <!-- Custom pagination -->
-            <div class="swiper-custom-pagination"></div>
         </div>
     </div>
 </section>
@@ -25,6 +46,9 @@
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
+        // autoplay: {
+        //     delay: 5000,
+        // },
         pagination: {
             el: '.swiper-pagination-bullets',
             clickable: true, // Makes bullets clickable
