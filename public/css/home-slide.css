@@ -203,7 +203,6 @@
         font-size: 0.9em;
     }
 }
-@media (max-width: 768px){}
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .content-homepage{
         font-size: 0.65em;
@@ -221,5 +220,10 @@
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .content-homepage{
         font-size: 0.7em;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .content-homepage{
+        font-size: 0.8em;
     }
 }
