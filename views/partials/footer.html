@@ -1,3 +1,52 @@
 {{ define "footer"}}
-    <div>Footer</div>
+    <footer class="footer">
+        <div class="footer__top container">
+            <div class="footer__left">
+                <div class="logo-top">
+                    <img src="{{site}}/static/img/menu/logo-hanoi-centre.png" alt="hanoi centre">
+                </div>
+                <div class="logo-bottom">
+                    <div class="logo-bottom__item facebook">
+                        <img src="{{site}}/static/img/footer/facebook-logo.svg" alt="facebook">
+                    </div>
+                    <div class="logo-bottom__item instagram">
+                        <img src="{{site}}/static/img/footer/instagram-logo.svg" alt="instagram">
+                    </div>
+                    <div class="logo-bottom__item tiktok">
+                        <img src="{{site}}/static/img/footer/tiktok-logo.svg" alt="tiktok">
+                    </div>
+                    <div class="logo-bottom__item youtube">
+                        <img src="{{site}}/static/img/footer/youtube-logo.svg" alt="youtube">
+                    </div>
+                    <div class="logo-bottom__item threads">
+                        <img src="{{site}}/static/img/footer/threads-logo.svg" alt="threads">
+                    </div>
+                </div>
+           </div> 
+           <div class="footer__right">
+                <div class="contact-us__disc">
+                    <h2>Contact us</h2>
+                    <div class="contact-us__item phone">
+                        <img src="{{site}}/static/img/footer/phone-logo.svg" alt="phone">
+                        <span>0923 000 100</span>
+                    </div>
+                    <div class="contact-us__item mail">
+                        <img src="{{site}}/static/img/footer/mail-logo.svg" alt="mail">
+                        <span>leasing.hanoicentre@keppel.com</span>
+                    </div>
+                    <div class="contact-us__item address">
+                        <img src="{{site}}/static/img/footer/address-logo.svg" alt="address">
+                        <span>175 Nguyen Thai Hoc street, Ba Dinh district, Hanoi.</span>
+                    </div>
+                </div>
+                <div class="keppel">
+                    <span>Managed by</span>
+                    <img class="logo-keppel" src="{{site}}/static/img/footer/keppel-logo.svg" alt="logo keppel">
+                </div>
+           </div>
+        </div>
+        <div class="copy-right">
+            <span>Copyright©keppel 2024.All rights reserved</span>
+        </div>
+    </footer>
 {{end}}

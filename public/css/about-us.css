@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 5em 0;
+    padding: 2em 0 5em;
     overflow: hidden;
 }
 .container-shape{
@@ -70,7 +70,7 @@
 .triangle-before{
     position: absolute;
     width: 60em;
-    height: 60em;
+    aspect-ratio: 1;
     background: #DB0C53;
     clip-path: polygon(0% 0%, 80% 25%, 50% 100%);
     z-index: 1;
@@ -131,7 +131,7 @@
 }
 .group-shape-2 .triangle-before{
     width: 67.5em;
-    height: 43.7em;
+    aspect-ratio: 675 / 437;
     position: absolute;
     background: var(--secondary);
     clip-path: polygon(0% 47%, 67% 0%, 100% 100%);
@@ -201,15 +201,22 @@
 }
 
 @media (max-width: 575px){
+    .about-us{
+        padding: 10em 0 5em;
+    }
     .container-shape {
         display: block;
         overflow: hidden;
     }
 
-    .swiper-pagination-au,
     .swiper-button-prev,
     .swiper-button-next  {
         display: block;
+    }
+    .swiper-pagination-au {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .group-shape {
@@ -220,6 +227,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         transform: none;
         left: auto;
         right: auto;
@@ -228,6 +236,117 @@
     }
     .about-us__text {
         position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        font-size: 0.68em;
+    }
+    .about-us__text p{
+        width: 90%;
+    }
+
+    .about-us .swiper-wrapper {
+        padding: 2em 0;
+    }
+    .group-shape-1,
+    .group-shape-3{
+        left: 15%;
+    }
+    .group-shape-2{
+        top: 6em;
+    }
+    .group-shape-1 .triangle,
+    .group-shape-3 .triangle{
+        width: 45em;
+    }
+    .group-shape-1 .triangle-before,
+    .group-shape-3 .triangle-before{
+        width: 45em;
+    }
+    .group-shape-2 .triangle{
+        width: 47.5em;
+    }
+    .group-shape-2 .triangle-before{
+        width: 47.5em;
+    }
+    .triangle-before{
+        left: -2em;
+    }
+    .group-shape-3 .triangle-before{
+        left: 5em;
+    }
+    .triangle span{
+        font-size: 5em;
+    }
+    .triangle-right.shape-3{
+        transform: rotate(-55deg);
+        left: 13%;
+        bottom: 5%;
+    }
+    .triangle-right.shape-2 {
+        top: -4%;
+    }
+    .triangle-right.shape-1 {
+        right: 7%;
+        top: 28%;
+        transform: rotate(200deg);
+    }
+    .triangle-right{
+        font-size: 0.85em;
+    }
+    .about-us .swiper-button-prev,.about-us .swiper-button-next{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45%;
+        top: auto;
+    }
+    .about-us .swiper-button-prev{
+        left: 33%;
+    }
+    .about-us .swiper-button-next{
+        right: 33%;
+    }
+    .about-us .swiper-horizontal>.swiper-pagination-bullets, 
+    .about-us .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .about-us .swiper-pagination-custom, .swiper-pagination-fraction{
+        position: relative;
+        top: 1em;
+    }
+    .about-us .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+    .about-us .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        font-size: 10px;
+        padding: 8px;
+        border: 2px solid;
+        font-weight: 800;
+        border-radius: 50%;
+        color: #292D32;
+    }
+    /* Custom bullet styles */
+    .about-us .swiper-pagination-bullet {
+        width: 9px;
+        height: 9px;
+        background: #D9D9D9; /* Default color */
+        opacity: 1; /* Ensure visibility */
+        margin: 0 5px;
+    }
+    
+    .about-us .swiper-pagination-bullet.active-color-1 {
+        width: 13px;
+        height: 13px;
+        background: var(--primary); /* Color for slide 1 */
+    }
+    
+    .about-us .swiper-pagination-bullet.active-color-2 {
+        width: 13px;
+        height: 13px;
+        background: var(--secondary); /* Color for slide 2 */
+    }
+    
+    .about-us .swiper-pagination-bullet.active-color-3 {
+        width: 13px;
+        height: 13px;
+        background: var(--third); /* Color for slide 3 */
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

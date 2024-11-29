@@ -100,7 +100,6 @@ header{
 }
 .lag img{
   width: 2em;
-  height: 2em;
   border-radius: 50%;
 }
 .lag .arrow-icon{
@@ -380,7 +379,6 @@ header{
   margin-top: 0;
   position: fixed;
   opacity: 0;
-  background-color: #ffffff;
 }
 .header-bot.fixed:hover{
   opacity: 1;

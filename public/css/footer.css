@@ -1,0 +1,164 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5em 0 10em;
+}
+.footer__top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    border-bottom: 1px solid #323232;
+    padding-bottom: 5em;
+}
+.footer__left {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-top img{
+    width: 38.4em;
+    aspect-ratio: 384 / 59;
+}
+.footer__right {
+    position: relative;
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-bottom {
+    display: flex;
+    align-items: center;
+}
+.contact-us__disc{
+    padding-top: 3em;
+}
+.contact-us__disc h2 {
+    font-family: SVN-Wylie Voigen;
+    font-size: 6.4em;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.contact-us__item {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+.contact-us__item img {
+    width: 3.7em;
+    aspect-ratio: 1;
+}
+.contact-us__item span{
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+.logo-bottom__item {
+    margin: 0 1.5em;
+}
+.logo-bottom__item:first-child {
+    margin-left: 0;
+}
+.logo-bottom__item:last-child {
+    margin-right: 0;
+}
+.logo-bottom__item.facebook img{
+    width: 2em;
+    aspect-ratio: 20 / 39;
+}
+.logo-bottom__item.instagram img{
+    width: 4.2em;
+    aspect-ratio: 42 / 41;
+}
+.logo-bottom__item.tiktok img{
+    width: 3.7em;
+    aspect-ratio: 37 / 41;
+}
+.logo-bottom__item.youtube img{
+    width: 5.1em;
+    aspect-ratio: 51 / 36;
+}
+.logo-bottom__item.threads img{
+    width: 3.5em;
+    aspect-ratio: 35 / 40;
+}
+.keppel {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.keppel span {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 3;
+}
+.logo-keppel {
+    width: 12.2em;
+    aspect-ratio: 122 /40;
+}
+.copy-right {
+    padding-top: 5em;
+}
+.copy-right span {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Reponsive - Footer */
+@media (max-width: 575px){
+    .footer {
+        font-size: 0.7em;
+    }
+    .footer__top {
+        flex-direction: column;
+    }
+    .footer__left {
+        font-size: 0.85em;
+        flex-direction: row;
+    }
+    .contact-us__disc {
+        font-size: 0.8em;
+        padding-top: 5em;
+    }
+    .contact-us__item {
+        margin: 3em 0;
+    }
+    .keppel {
+        display: none;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .footer {
+        font-size: 0.7em;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    .footer {
+        font-size: 0.7em;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .footer {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .footer {
+        font-size: 0.7em;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .footer {
+        font-size: 0.8em;
+    }
+}
