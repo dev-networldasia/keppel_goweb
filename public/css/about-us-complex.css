@@ -1,0 +1,177 @@
+.about-us__complex.container {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 8em;
+    background-color: var(--white);
+    padding-left: 0;
+    padding-right: 0;
+}
+.about-us__complex .bg-mode {
+    width: 100%;
+    height: 100%;
+    background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.png') right top no-repeat;
+    background-size: 22.1em, 45.1em, cover;
+    font-size: 0.7em;
+}
+.complex {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;
+    right: 0;
+    left: 25%;
+    font-size: 0.7em;
+}
+.complex__title {
+    display: block;
+    font-family: SVN-Wylie Voigen;
+    font-size: 8em;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 0.5em 0 0 0.5em;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.complex__title::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.5em solid transparent;
+    border-left: 0.5em solid var(--third);
+    border-bottom: 0.5em solid transparent;
+    transform: rotate(225deg);
+    top: 0;
+    left: 0;
+    content: '';
+}
+.complex__description {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.complex__district-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.complex__district-list>span {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: justify;  
+}
+.complex__district-item {
+    display: flex;
+    flex-direction: column;
+}
+.complex__district-name{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+.complex__district-name span {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: justify;  
+}
+.complex__district-detail {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: justify;
+}
+
+/* Reponsive ABOUT-US COMPLEX FACTSHEET */
+@media (max-width: 575px){
+    .about-us__complex .bg-mode {
+        width: 100%;
+        height: 100%;
+        background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.png') right top no-repeat;
+        background-size: 22.1em, 45.1em, 500px;
+        font-size: 0.7em;
+    }
+    .about-us__complex .bg-mode {
+        font-size: 0.4em;
+    }
+    .complex {
+        position: relative;
+        width: fit-content;
+        transform: translate(0%, -120%);
+        top: auto;
+        right: auto;
+        left: auto;
+        font-size: 0.6em;
+        margin: 0 auto;
+        gap: 2em;
+    }
+    .complex__description {
+        padding-left: 2em;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .about-us__complex .bg-mode {
+        width: 100%;
+        height: 100%;
+        background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.png') left top no-repeat;
+        background-size: 22.1em, 45.1em, 720px;
+        font-size: 0.7em;
+    }
+    .about-us__complex .bg-mode {
+        font-size: 0.4em;
+    }
+    .complex {
+        display: flex;
+        width: 100%;
+        transform: translate(0%, -133%);
+        top: auto;
+        right: auto;
+        left: auto;
+        font-size: 0.55em;
+        padding: 0 17em;
+        gap: 3em;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    .about-us__complex .bg-mode {
+        font-size: 0.5em;
+    }
+    .complex {
+        font-size: 0.55em;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .about-us__complex .bg-mode {
+        font-size: 0.5em;
+    }
+    .complex {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        width: 30%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        position: absolute;
+        right: 0;
+        left: 21%;
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .about-us__complex .bg-mode {
+        font-size: 0.6em;
+    }
+}

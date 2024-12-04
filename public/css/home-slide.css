@@ -110,7 +110,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.four-corner-border {
+.home-page .four-corner-border {
     position: relative;
     width: 100vw;
     height: 100vh;
