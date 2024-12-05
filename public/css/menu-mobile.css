@@ -220,6 +220,9 @@
 .change-language span:first-child {
     border-right: 1px solid var(--gray);
 }
+.btn-menu-mobile img{
+    width: 5em;
+}
 
 @media (max-width: 575px){
     .mainbar {

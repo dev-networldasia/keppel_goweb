@@ -173,7 +173,7 @@
 }
 
 @media (max-width: 575px){
-    .four-corner-border {
+    .home-page .four-corner-border {
         clip-path: polygon(56% 0, /* Top-left corner */ 75% 0, /* Top-right corner */ 100% 15%, /* Right-top cut */ 100% 90%, /* Right-bottom cut */ 75% 100%, /* Bottom-right corner */ 42% 100%, /* Bottom-left corner */ 0 89%, /* Left-bottom cut */ 0 21% /* Left-top cut */);
     }
     .text-centre{ 
