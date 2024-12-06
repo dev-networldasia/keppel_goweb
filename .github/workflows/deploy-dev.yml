@@ -1,0 +1,22 @@
+name: Deploy to VPS Dev
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: SSH Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST_DEV }}
+          USERNAME: ${{ secrets.DEPLOY_USERNAME_DEV }}
+          PORT: ${{ secrets.DEPLOY_PORT_DEV }}
+          KEY: ${{ secrets.DEPLOY_KEY_DEV }}
+          script: |            
+            destination_dir="/home/webdev/web_motul"              
+            cd $destination_dir
+            git pull
