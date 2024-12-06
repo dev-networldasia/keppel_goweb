@@ -1,0 +1,10 @@
+[Unit]
+Description=Go Server Service
+[Service]
+ExecStart=/home/webdev/keppel_goweb/webhtml
+WorkingDirectory=/home/webdev/keppel_goweb
+User=root
+Group=root
+Restart=always
+[Install]
+WantedBy=multi-user.target
