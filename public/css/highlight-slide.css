@@ -102,7 +102,7 @@
 
 .highlight-page .four-corner-border {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     /* background: url('../img/highlight-page/bg-home-2.png') no-repeat center/cover;
     background-size: cover; */
@@ -118,7 +118,7 @@
         0 25%      /* Left-top cut */
         );
 }
-.content-homepage {
+.highlight-page .content-homepage {
     position: absolute;
     width: 50%;
     padding: 0 14.5em;
@@ -128,7 +128,7 @@
     justify-content: center;
     align-items: center;
 }
-.content-homepage h2{
+.highlight-page .content-homepage h2{
     font-size: 6.4em;
     line-height: 1.1;
     font-family: 'SVN-WylieVoigen';
@@ -136,13 +136,13 @@
     margin-bottom: 0.4em;
     white-space: nowrap;
 }
-.content-homepage p {
+.highlight-page .content-homepage p {
     font-size: 2em;
     line-height: 1.4em;
     text-align: justify;
     margin-bottom: 1.5em;
 }
-.content-homepage .btn {
+.highlight-page .content-homepage .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -151,14 +151,6 @@
     width: fit-content;
     padding: 2em 3em;
     border-radius: 4.6em;
-}
-.content-homepage .btn span {
-    display: inline-block;
-    font-size: 2.8em;
-}
-.content-homepage .btn img {
-    width: 3.8em;
-    height: 3.8em;
 }
 
 @media (max-width: 575px){
@@ -174,7 +166,7 @@
     .highlight-page .swiper-slide.slide-2 img{
         object-position: left;
     }
-    .content-homepage{
+    .highlight-page .content-homepage{
         width: 100%;
         font-size: 0.7em;
         padding: 0 10.5em;
@@ -205,26 +197,22 @@
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
-    .content-homepage{
-        font-size: 0.65em;
-        padding: 0 10.5em;
-    }
-    .content-homepage h2{
-        font-size: 5.4em;
+    .text-centre h1 {
+        font-size: 11.8em;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
-    .content-homepage{
-        font-size: 0.65em;
+    .text-centre h1 {
+        font-size: 11.8em;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
-    .content-homepage{
-        font-size: 0.7em;
+    .text-centre h1 {
+        font-size: 12.8em;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
-    .content-homepage{
-        font-size: 0.8em;
+    .text-centre h1 {
+        font-size: 12.8em;
     }
 }

@@ -194,3 +194,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   window.addEventListener("load", handleResize);
   window.addEventListener("resize", handleResize);
 });
+
+// Swiper - GALLERY
+  var swiper = new Swiper(".mySwiper-block", {
+    navigation: {
+      nextEl: ".triangle-bottom__icon",
+    },
+  });
