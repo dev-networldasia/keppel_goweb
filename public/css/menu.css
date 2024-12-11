@@ -217,7 +217,7 @@ header{
   height: 100%;
 }
 .header__info .logo img{
-  width: 100%;
+  width: 20em;
 }
 .mainbar__left{
   display: flex;

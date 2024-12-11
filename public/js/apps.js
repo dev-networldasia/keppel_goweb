@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     ).innerHTML = `${current} / ${total}`;
   }
 
-  // Map Section
+  // About-us Section
   let swiperInstance = null;
 
   function initializeSwiper() {
@@ -201,3 +201,132 @@ document.addEventListener("DOMContentLoaded", function (event) {
       nextEl: ".triangle-bottom__icon",
     },
   });
+
+
+// List Card Section
+let listCardSwiper = null;
+
+function initializeListCardSwiper() {
+  if (!listCardSwiper) {
+    const listCardContainer = document.querySelector(".list-card");
+    listCardContainer.classList.add("swiper-container");
+
+    // Move only .list-card__card elements into Swiper wrapper
+    const listCards = Array.from(listCardContainer.querySelectorAll(".list-card__card"));
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("swiper-wrapper");
+
+    listCards.forEach((card) => {
+      const slide = document.createElement("div");
+      slide.classList.add("swiper-slide");
+      slide.appendChild(card);
+      wrapper.appendChild(slide);
+    });
+
+    // Append the wrapper to the container
+    listCardContainer.appendChild(wrapper);
+
+    // Initialize Swiper
+    listCardSwiper = new Swiper(".list-card", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination-list",
+        clickable: true,
+        renderBullet: (index, className) => {
+          return `<span class="${className} custom-bullet"></span>`;
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-list",
+        prevEl: ".swiper-button-prev-list",
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+      on: {
+        init: function () {
+          // Add initial active color to the first bullet
+          const bullets = document.querySelectorAll(".swiper-pagination-list .swiper-pagination-bullet");
+          if (bullets.length > 0) {
+            bullets[0].classList.add("active-color-1");
+          }
+        },
+        slideChange: function () {
+          // Update pagination bullet colors on slide change
+          const bullets = document.querySelectorAll(".swiper-pagination-list .swiper-pagination-bullet");
+          bullets.forEach((bullet, index) => {
+            bullet.classList.remove("active-color-1", "active-color-2", "active-color-3");
+          });
+          const activeIndex = this.realIndex % 3; // Use modulo to cycle through active colors
+          if (bullets[activeIndex]) {
+            bullets[activeIndex].classList.add(`active-color-${activeIndex + 1}`);
+          }
+        },
+      },
+    });
+  }
+}
+
+function destroyListCardSwiper() {
+  if (listCardSwiper) {
+    listCardSwiper.destroy(true, true);
+    listCardSwiper = null;
+
+    // Restore original layout
+    const listCardContainer = document.querySelector(".list-card");
+    listCardContainer.classList.remove("swiper-container");
+    const wrapper = listCardContainer.querySelector(".swiper-wrapper");
+
+    // Move slides back to the container as list-card__card elements
+    const slides = Array.from(wrapper.querySelectorAll(".swiper-slide"));
+    slides.forEach((slide) => {
+      const card = slide.firstChild;
+      listCardContainer.appendChild(card);
+    });
+
+    // Remove the wrapper
+    wrapper.remove();
+  }
+}
+
+// Detect screen size and toggle Swiper
+function handleListCardResize() {
+  if (window.innerWidth <= 575) {
+    initializeListCardSwiper();
+  } else {
+    destroyListCardSwiper();
+  }
+}
+
+// Initialize on page load and listen for resize events
+window.addEventListener("load", handleListCardResize);
+window.addEventListener("resize", handleListCardResize);
+
+
+// What's Hot Swiper
+const newsSwiper = new Swiper(".news-swiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  // autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false,
+  // },
+  navigation: {
+    nextEl: ".news-swiper-button-next",
+    prevEl: ".news-swiper-button-prev",
+  },
+  breakpoints: {
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});

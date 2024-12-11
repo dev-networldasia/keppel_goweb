@@ -141,6 +141,7 @@
     }
 
     .mainbar__left {
+        width: 30% !important;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -200,6 +201,9 @@
 
     .top-wrapper__center {
         display: none;
+    }
+    .mainbar__left {
+        width: 23% !important;
     }
 
     .mainmenu-nav .mainmenu {
