@@ -193,6 +193,16 @@
     .popup-mobile-menu .mainmenu-nav .panel2 li a {
         font-size: 1em;
     }
+    /* Apply styles when search-box is clicked or focused */
+    .search-box:focus-within {
+        right: -2.5em;
+    }
+    
+    .search-box:focus-within .search-box-input {
+        padding-left: 1.5em;
+        padding-right: 0.5em;
+        width: 11em;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
     html {
@@ -281,7 +291,16 @@
     footer {
         height: auto;
     }
-
+    /* Apply styles when search-box is clicked or focused */
+    .search-box:focus-within {
+        right: -2.5em;
+    }
+    
+    .search-box:focus-within .search-box-input {
+        padding-left: 1.5em;
+        padding-right: 0.5em;
+        width: 11em;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -370,6 +389,16 @@
         /* transition: 1s all; */
         animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
     }
+    /* Apply styles when search-box is clicked or focused */
+    .search-box:focus-within {
+        right: -3.5em;
+    }
+    
+    .search-box:focus-within .search-box-input {
+        padding-left: 2em;
+        padding-right: 1em;
+        width: 12em;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -405,6 +434,16 @@
         /* transition: 1s all; */
         animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
     }
+    /* Apply styles when search-box is clicked or focused */
+    .search-box:focus-within {
+        right: -4.5em;
+    }
+    
+    .search-box:focus-within .search-box-input {
+        padding-left: 2em;
+        padding-right: 1em;
+        width: 13em;
+    }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
@@ -431,6 +470,16 @@
 
     .inner-business .description-content {
         font-size: 1.8em;
+    }
+    /* Apply styles when search-box is clicked or focused */
+    .search-box:focus-within {
+        right: -8em;
+    }
+    
+    .search-box:focus-within .search-box-input {
+        padding-left: 2em;
+        padding-right: 1em;
+        width: 16em;
     }
 }
 

@@ -17,7 +17,7 @@
 
 /* Modifier: parallax--variant-1 */
 .parallax--variant-1 {
-    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full-1.png");
+    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full-1.jpg");
 }
 
 /* Modifier: parallax--variant-2 */
@@ -30,7 +30,7 @@
 }
 /* Modifier: parallax--variant-4 */
 .parallax--variant-4 {
-    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full-1.png");
+    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full-4.jpg");
 }
 
 /* Element: parallax__content */
@@ -164,6 +164,9 @@
 }
 .parallax--variant-4 .parallax__triangle{
     background-color: var(--four);
+}
+.parallax--variant-4 .parallax__triangle img{
+    transform: rotate(180deg);
 }
 
 @media (max-width: 575px){

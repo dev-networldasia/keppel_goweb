@@ -1,5 +1,6 @@
 .home-page{
     background: var(--white);
+    position: relative;
 }
 .home-page .swiper {
     position: relative;
@@ -16,6 +17,12 @@
 }
 
 .home-page .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-page .swiper-slide picture {
     display: block;
     width: 100%;
     height: 100%;
@@ -94,6 +101,7 @@
 }   
 
 .contact-us-btn{
+    display: none;
     position: absolute;
     right: 3em;
     bottom: 1.5em;
@@ -102,6 +110,10 @@
     line-height: 1;
     border: 1px solid #FF9D00;
     white-space: nowrap;
+    z-index: 99;
+}
+body.show-contact-us-btn .contact-us-btn {
+    display: block; /* Show when slide-1 is active */
 }
 .contact-us-btn:hover{
     background-color: inherit;
@@ -133,7 +145,7 @@
     position: absolute;
     width: 50%;
     padding: 0 14.5em;
-    top: 20%;
+    top: 18%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,10 +194,10 @@
     .home-page .swiper-slide.slide-2 img{
         object-position: left;
     }
-    .content-homepage{
+    .content-homepage {
         width: 100%;
-        font-size: 0.7em;
-        padding: 0 10.5em;
+        font-size: 0.6em;
+        padding: 0 5.5em;
     }
     .contact-us-btn{
         bottom: 2em;

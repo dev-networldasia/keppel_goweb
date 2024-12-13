@@ -1,30 +1,30 @@
 {{ define "about_us"}}
-<section class="about-us">
+<section class="about-us" id="about-us">
     <!-- <div class="container"> -->
         <div class="about-us__text">
             <h2>About Us</h2>
             <p>Situated at 175 Nguyen Thai Hoc, Ba Dinh, Hanoi, near many famous landmarks, diplomatic centers and bustling business areas.</p>
         </div>
         <div class="container-shape">
-            <div class="group-shape group-shape-1">
-                <div class="triangle">
+            <a class="group-shape group-shape-1" href="#popup1" title="Hanoi Centre">
+                <div data-parallax="{&quot;x&quot;: 0, &quot;y&quot;: 80}" class="triangle">
                     <span>Hanoi<br>Centre</span>
                 </div>
-                <div class="triangle-before"></div>
-            </div>
-            <div class="group-shape group-shape-2">
+                <div data-parallax="{&quot;x&quot;: 0, &quot;y&quot;: 80}" class="triangle-before"></div>
+            </a>
+            <a class="group-shape group-shape-2"  href="#popup1" title="Our Shoppers">
                 <div class="triangle">
                     <span>Our<br>Shoppers</span>
                 </div>
                 <div class="triangle-before"></div>
-            </div>
+            </a>
     
-            <div class="group-shape group-shape-3">
+            <a class="group-shape group-shape-3"  href="#popup1" title="Complex">
                 <div class="triangle">
                     <span>Complex<br>Factsheet</span>
                 </div>
                 <div class="triangle-before"></div>
-            </div>
+            </a>
         </div>
         <div class="container-mini-shape">
             <div class="triangle-right shape-1"></div>
@@ -36,5 +36,139 @@
     <div class="swiper-pagination-au"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+
+    <!-- Popup shape-1 -->
+     <div class="popup-about-us" id="popup1">
+        <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+        <div class="swiper about-us-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="about-us__hanoicentre">
+                    <div class="bg-mode">
+                    </div>
+                    <div class="hanoi-centre">
+                        <h1 class="hanoi-centre__title">Hanoi Centre</h1>
+                        <p class="hanoi-centre__description">
+                            Nested at 175 Nguyen Thai Hoc, Ba Dinh, Hanoi, near many famous landmarks,
+                            diplomatic centers, and bustling business areas.
+                        </p>
+                        <ul class="hanoi-centre__district-list">
+                            <li class="hanoi-centre__district-item">
+                                <div class="hanoi-centre__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>BA DINH DISTRICT</span>
+                                </div>
+                                <span class="hanoi-centre__district-detail">CBD Fringe with diplomatic area, new grade A commercial
+                                    and office buildings.</span>
+                            </li>
+                            <li class="hanoi-centre__district-item">
+                                <div class="hanoi-centre__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>HOAN KIEM DISTRICT</span>
+                                </div>
+                                <span class="hanoi-centre__district-detail">CBD The heart of Hanoi.</span>
+                            </li>
+                            <li class="hanoi-centre__district-item">
+                                <div class="hanoi-centre__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>DONG DA DISTRICT</span>
+                                </div>
+                                <span class="hanoi-centre__district-detail">The most crowded district of Hanoi with the highest
+                                    population density.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about-us__ourshoppers">
+                    <div class="bg-mode">
+                    </div>
+                    <div class="our-shoppers">
+                        <h1 class="our-shoppers__title">Our Shoppers</h1>
+                        <p class="our-shoppers__description">
+                            Hanoi Centre's diverse and innovative retail offerings is set to capitalize on the fast-increasing demand and spending power of Hanoians, the capital's residents of Asia Pacific's most rapidly growing economy. The Shopping Mall's prime location ensures a ready catchment of:
+                        </p>
+                        <ul class="our-shoppers__district-list">
+                            <li class="our-shoppers__district-item">
+                                <div class="our-shoppers__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span><b>Young families, residents and office workers </b>in Ba Dinh, Hoan Kiem and Dong Da districts.</span>
+                                </div>
+                            </li>
+                            <li class="our-shoppers__district-item">
+                                <div class="our-shoppers__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span><b>International and domestic tourists</b> seeking cultural experiences and culinary delights.</span>
+                                </div>
+                            </li>
+                            <li class="our-shoppers__district-item">
+                                <div class="our-shoppers__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span><b>Trend-setters, followers and green lifestyle enthusiasts</b> looking for great deals, social gathering, exploring new venues, experiences and Instagrammable moments.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about-us__complex">
+                    <div class="bg-mode">
+                    </div>
+                    <div class="complex">
+                        <h1 class="complex__title">Complex<br> Factsheet</h1>
+                        <p class="complex__description">
+                            5-floor Shopping Mall including<br> 3 Basements with large floor area.
+                        </p>
+                        <ul class="complex__district-list">
+                            <span>Part of a complex with</span>
+                            <li class="complex__district-item">
+                                <div class="complex__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>Grade-A Office</span>
+                                </div>
+                            </li>
+                            <li class="complex__district-item">
+                                <div class="complex__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>Serviced Apartments</span>
+                                </div>
+                            </li>
+                            <li class="complex__district-item">
+                                <div class="complex__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>Luxury Hotel</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="complex__district-list">
+                            <span>Total area</span>
+                            <li class="complex__district-item">
+                                <div class="complex__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>Project GFA: 118,000sqm</span>
+                                </div>
+                            </li>
+                            <li class="complex__district-item">
+                                <div class="complex__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>Retail GFA: 72,000sqm</span>
+                                </div>
+                            </li>
+                            <li class="complex__district-item">
+                                <div class="complex__district-name">
+                                    <img src="{{site}}/static/img/about-us/hanoicentre/toggle.svg" alt="toggle">
+                                    <span>Retail NLA: 42,000sqm</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          <div class="swiper-button-prev-2"></div>
+          <div class="swiper-button-next-2"></div>
+     </div>
 </section>
 {{end}}

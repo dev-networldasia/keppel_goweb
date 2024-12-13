@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     clip-path: polygon(65% 0, 100% 0, 100% 100%, 0% 100%);
-    background: url(../img/highlight-page/parallax-section/triangle-right-top-2.svg) right top no-repeat, var(--white) left bottom no-repeat;
+    background: url(../img/whats-hot/triangle-right-top.svg) right top no-repeat, var(--white) left bottom no-repeat;
     background-size: 29em, cover;
 }
 .group-news {
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5em;
+    gap: 7em;
 }
 .news__title {
     font-family: SVN-Wylie Voigen;
@@ -104,7 +104,7 @@
     font-size: 2.4em;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     overflow: hidden;
 }
 .news-swiper-container .hot-news__content {
@@ -115,7 +115,7 @@
     text-align: justify;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 5;
     overflow: hidden;
 }
 
@@ -130,6 +130,9 @@
     background: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    width: 4em;
+    height: 4em;
+    border: 2px solid #292D32;;
 }
 
 .news-section .news-swiper-button-prev {
@@ -150,7 +153,6 @@
 .news-section .news-swiper-button-next:after {
     font-size: 10px;
     padding: 8px;
-    border: 2px solid;
     font-weight: 800;
     border-radius: 50%;
     color: #292D32;
@@ -252,7 +254,18 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .news-section{
-        font-size: 0.6em;
+        font-size: 0.55em;
+    }
+    .hot-news {
+        gap: 1em;
+    }
+    .news__title {
+        margin-bottom: 0.2em;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .news-section{
+        font-size: 0.62em;
     }
     .hot-news {
         gap: 2em;

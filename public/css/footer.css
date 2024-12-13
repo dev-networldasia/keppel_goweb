@@ -38,6 +38,7 @@ footer {
 }
 .contact-us__disc{
     padding-top: 3em;
+    font-size: 0.8em;
 }
 .contact-us__disc h2 {
     font-family: 'SVN-WylieVoigen';
@@ -50,6 +51,9 @@ footer {
     align-items: center;
     margin: 1em 0;
 }
+.contact-us__item:last-child {
+    margin: 1em 0 0;
+}
 .contact-us__item img {
     width: 3.7em;
     aspect-ratio: 1;
@@ -58,6 +62,7 @@ footer {
     font-size: 3.2em;
     font-weight: 700;
     margin-left: 0.5em;
+    line-height: 1.2;
 }
 .logo-bottom__item {
     margin: 0 1.5em;
