@@ -210,7 +210,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   window.addEventListener("resize", handleResize);
 
   var groupShapes = document.getElementsByClassName('group-shape');
+  // Add event listeners to buttons
+  const buttons = document.querySelectorAll('.group-shape');
 
+  buttons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default anchor behavior
+      const slideIndex = parseInt(button.getAttribute('data-slide'), 10); // Get slide index from data attribute
+      swiperab.slideTo(slideIndex); // Navigate to the corresponding slide
+    });
+  });
   for (var i = 0; i < groupShapes.length; i++) {
     groupShapes[i].addEventListener('click', function(event) {
         var popupId = this.getAttribute('href').substring(1);
@@ -218,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
-  const abasdf = new Swiper('.about-us-swiper', {
+  const swiperab = new Swiper('.about-us-swiper', {
       loop: true,
       slidesPerView: 1,
       navigation: {

@@ -12,10 +12,15 @@
                 </div>
                 <div class="swiper-slide slide-2">
                     <!-- <img src="{{site}}/static/img/home-page/bg-home-2.png" alt="background home city"> -->
-                    <picture>
+                    <!-- <picture>
                         <source media="(min-width:320px)" srcset="{{site}}/static/img/home-page/mobile-home-slide-2.jpg">
                         <img src="{{site}}/static/img/home-page/bg-home-2.png" alt="background home city" style="width:auto;">
-                      </picture>
+                    </picture> -->
+                    <img src="{{site}}/static/img/home-page/bg-home-2.png" srcset="{{site}}/static/img/home-page/bg-home-2.png 1920w, 
+                                {{site}}/static/img/home-page/mobile-home-slide-2.jpg 300w, 
+                                {{site}}/static/img/home-page/mobile-home-slide-2.jpg 768w, 
+                                {{site}}/static/img/home-page/bg-home-2.png 1536w, 
+                                {{site}}/static/img/home-page/bg-home-2.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px" alt="background home City">
                     <div class="content-homepage">
                         <h2>Welcome to Hanoi Centre</h2>
                         <p>Hanoi Centre shopping mall is located at 175 Nguyen Thai Hoc, Ba Dinh District, Hanoi, a
