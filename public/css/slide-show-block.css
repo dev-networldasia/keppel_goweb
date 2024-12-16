@@ -249,7 +249,7 @@
 }
 
 .block-c .gallery-block__top--content {
-    align-items: center;
+    align-items: baseline;
 }
 
 @-webkit-keyframes animation-arrow-x {
