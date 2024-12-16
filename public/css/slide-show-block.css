@@ -282,7 +282,7 @@
     transform: translateX(-50%);
     z-index: 10;
 }
-.slide-galley-page .swiper-pagination-au, .swiper-button-prev, .swiper-button-next {
+.slide-galley-page .swiper-pagination-au,.slide-galley-page .swiper-button-prev,.slide-galley-page .swiper-button-next {
     display: block;
 }
 .slide-galley-page .swiper-button-prev,
