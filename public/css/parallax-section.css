@@ -58,11 +58,13 @@
 /* Modifier: parallax__border--variant-1 */
 .parallax__border--variant-1 {
     clip-path: polygon(60% 0, 0 0, 0 100%, 40% 100%, 100% 5%, 100% 0, 80% 32%);
+    -webkit-clip-path: polygon(60% 0, 0 0, 0 100%, 40% 100%, 100% 5%, 100% 0, 80% 32%);
 }
 
 /* Modifier: parallax__border--variant-2 */
 .parallax__border--variant-2 {
     clip-path: polygon(20% 31%, 0 0, 0 5%, 60% 100%, 100% 100%, 100% 0, 40% 0);
+    -webkit-clip-path: polygon(20% 31%, 0 0, 0 5%, 60% 100%, 100% 100%, 100% 0, 40% 0);
 }
 .parallax__title {
     display: block;
@@ -116,6 +118,7 @@
     align-items: center;
     justify-content: center;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 .parallax__triangle img {
     width: 6.3em;
@@ -195,9 +198,11 @@
     }
     .parallax__border--variant-1 {
         clip-path: polygon(0 0, 0 100%, 100% 60%, 100% 26%, 70% 10%, 100% 10%, 100% 0);
+        -webkit-clip-path: polygon(0 0, 0 100%, 100% 60%, 100% 26%, 70% 10%, 100% 10%, 100% 0);
     }
     .parallax__border--variant-2 {
         clip-path: polygon(0 26%, 0 60%, 100% 100%, 100% 0, 0 0, 0 10%, 30% 10%);
+        -webkit-clip-path: polygon(0 26%, 0 60%, 100% 100%, 100% 0, 0 0, 0 10%, 30% 10%);
     }
     .parallax__triangle,
     .parallax--variant-3 .parallax__triangle{
