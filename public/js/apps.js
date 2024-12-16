@@ -235,6 +235,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
           prevEl: '.swiper-button-prev-2',
       },
   });
+
+  // Swiper gallery
+  initializeSwiperGallery();
 });
 
 // Function to show the popup
@@ -267,12 +270,65 @@ function initializeSwiperAboutUs() {
 }
 
 // Swiper - GALLERY
+function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
+    pagination: {
+      el: ".swiper-pagination-au",
+      clickable: true,
+      renderBullet: (index, className) => {
+        return `<span class="${className} custom-bullet"></span>`;
+      },
+    },
+    on: {
+      init: function () {
+        // Set the active color for the first bullet on load
+        const bullets = document.querySelectorAll(
+          ".mySwiper-block .swiper-pagination-bullet"
+        );
+        if (bullets.length > 0) {
+          bullets[0].classList.add("active-color-1"); // Add initial color for the first slide
+        }
+
+        // Ensure correct visibility on initialization
+        const bulletBlock = document.querySelector(".group-bullet-block");
+        if (this.realIndex >= 1 && this.realIndex <= 3) {
+          bulletBlock.style.display = "block";
+        } else {
+          bulletBlock.style.display = "none";
+        }
+      },
+      slideChange: function () {
+        const bulletBlock = document.querySelector(".group-bullet-block");
+        // Show bullets only for slides 2, 3, 4 (index 1, 2, 3)
+        if (this.realIndex >= 1 && this.realIndex <= 3) {
+          bulletBlock.style.display = "block";
+        } else {
+          bulletBlock.style.display = "none";
+        }
+
+        // Update pagination bullet colors on slide change
+        const bullets = document.querySelectorAll(
+          ".mySwiper-block .swiper-pagination-bullet"
+        );
+        bullets.forEach((bullet, index) => {
+          bullet.classList.remove(
+            "active-color-1",
+            "active-color-2",
+            "active-color-3",
+            "active-color-4"
+          );
+          if (index === this.realIndex) {
+            bullet.classList.add(`active-color-${this.realIndex + 1}`);
+          }
+        });
+      },
+    },
     navigation: {
-      nextEl: ".triangle-bottom__icon",
+      nextEl: ".swiper-button-next, .triangle-bottom__icon", // Combine both "next" buttons
+      prevEl: ".swiper-button-prev", // Single "previous" button
     },
   });
-
+}
 
 // List Card Section
 let listCardSwiper = null;
@@ -404,171 +460,3 @@ const newsSwiper = new Swiper(".news-swiper-container", {
     },
   },
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Parallax Scroll initialization
-//   ParallaxScroll.init();
-// });
-
-// const ParallaxScroll = {
-//   // PUBLIC VARIABLES
-//   showLogs: false,
-//   round: 1000,
-
-//   // PUBLIC FUNCTIONS
-//   init: function () {
-//       this._log("init");
-//       if (this._inited) {
-//           this._log("Already Inited");
-//           return;
-//       }
-//       this._inited = true;
-
-//       this._requestAnimationFrame = (function () {
-//           return window.requestAnimationFrame ||
-//               window.webkitRequestAnimationFrame ||
-//               window.mozRequestAnimationFrame ||
-//               window.oRequestAnimationFrame ||
-//               window.msRequestAnimationFrame ||
-//               function (callback) {
-//                   window.setTimeout(callback, 1000 / 60);
-//               };
-//       })();
-
-//       this._onScroll(true);
-//   },
-
-//   // PRIVATE VARIABLES
-//   _inited: false,
-//   _properties: ['x', 'y', 'z', 'rotateX', 'rotateY', 'rotateZ', 'scaleX', 'scaleY', 'scaleZ', 'scale'],
-//   _requestAnimationFrame: null,
-
-//   // PRIVATE FUNCTIONS
-//   _log: function (message) {
-//       if (this.showLogs) console.log("Parallax Scroll / " + message);
-//   },
-
-//   _onScroll: function (noSmooth) {
-//       const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-//       const windowHeight = window.innerHeight;
-//       this._log("onScroll " + scroll);
-
-//       const elements = document.querySelectorAll("[data-parallax]");
-//       elements.forEach((el) => {
-//           let properties = [];
-//           let applyProperties = false;
-//           let style = el.getAttribute("style") || "";
-//           if (!el.dataset.style) {
-//               el.dataset.style = style;
-//           }
-
-//           let datas = [el.dataset.parallax];
-//           let iData = 2;
-//           while (el.dataset[`parallax${iData}`]) {
-//               datas.push(el.dataset[`parallax${iData}`]);
-//               iData++;
-//           }
-
-//           datas.forEach((data) => {
-//               let scrollFrom = data["from-scroll"];
-//               if (scrollFrom === undefined) scrollFrom = Math.max(0, el.getBoundingClientRect().top + scroll - windowHeight);
-//               scrollFrom = scrollFrom | 0;
-//               let scrollDistance = data["distance"];
-//               let scrollTo = data["to-scroll"];
-//               if (scrollDistance === undefined && scrollTo === undefined) scrollDistance = windowHeight;
-//               scrollDistance = Math.max(scrollDistance | 0, 1);
-//               let easing = data["easing"];
-//               let easingReturn = data["easing-return"];
-//               if (easing === undefined || !easing) easing = null;
-//               if (easingReturn === undefined || !easingReturn) easingReturn = easing;
-
-//               if (scrollTo === undefined) scrollTo = scrollFrom + scrollDistance;
-//               scrollTo = scrollTo | 0;
-
-//               let smoothness = data["smoothness"];
-//               if (smoothness === undefined) smoothness = 30;
-//               smoothness = smoothness | 0;
-//               if (noSmooth || smoothness === 0) smoothness = 1;
-//               smoothness = smoothness | 0;
-
-//               let scrollCurrent = scroll;
-//               scrollCurrent = Math.max(scrollCurrent, scrollFrom);
-//               scrollCurrent = Math.min(scrollCurrent, scrollTo);
-
-//               this._properties.forEach((prop) => {
-//                   let defaultProp = 0;
-//                   let to = data[prop];
-//                   if (to === undefined) return;
-//                   if (prop === "scale" || prop === "scaleX" || prop === "scaleY" || prop === "scaleZ") {
-//                       defaultProp = 1;
-//                   } else {
-//                       to = to | 0;
-//                   }
-
-//                   let prev = el.dataset[`_${prop}`];
-//                   if (prev === undefined) prev = defaultProp;
-//                   let next = ((to - defaultProp) * ((scrollCurrent - scrollFrom) / (scrollTo - scrollFrom))) + defaultProp;
-//                   let val = prev + (next - prev) / smoothness;
-
-//                   if (easing && currentTime > 0 && currentTime <= totalTime) {
-//                       let from = defaultProp;
-//                       if (el.dataset.sens === "back") {
-//                           from = to;
-//                           to = -to;
-//                           easing = easingReturn;
-//                           totalTime = totalTimeReturn;
-//                       }
-//                       val = easing(currentTime, from, to, totalTime);
-//                   }
-//                   val = Math.ceil(val * this.round) / this.round;
-//                   if (val === prev && next === to) val = to;
-
-//                   if (!properties[prop]) properties[prop] = 0;
-//                   properties[prop] += val;
-
-//                   if (prev !== properties[prop]) {
-//                       el.dataset[`_${prop}`] = properties[prop];
-//                       applyProperties = true;
-//                   }
-//               });
-//           });
-
-//           if (applyProperties) {
-//               if (properties["z"] !== undefined) {
-//                   let perspective = data["perspective"];
-//                   if (perspective === undefined) perspective = 800;
-//                   let parent = el.parentElement;
-//                   parent.style.perspective = `${perspective}px`;
-//               }
-
-//               if (properties["scaleX"] === undefined) properties["scaleX"] = 1;
-//               if (properties["scaleY"] === undefined) properties["scaleY"] = 1;
-//               if (properties["scaleZ"] === undefined) properties["scaleZ"] = 1;
-//               if (properties["scale"] !== undefined) {
-//                   properties["scaleX"] *= properties["scale"];
-//                   properties["scaleY"] *= properties["scale"];
-//                   properties["scaleZ"] *= properties["scale"];
-//               }
-
-//               let translate3d = `translate3d(${properties.x || 0}px, ${properties.y || 0}px, ${properties.z || 0}px)`;
-//               let rotate3d = `rotateX(${properties.rotateX || 0}deg) rotateY(${properties.rotateY || 0}deg) rotateZ(${properties.rotateZ || 0}deg)`;
-//               let scale3d = `scaleX(${properties.scaleX}) scaleY(${properties.scaleY}) scaleZ(${properties.scaleZ})`;
-
-//               let cssTransform = `${translate3d} ${rotate3d} ${scale3d}`;
-//               this._log(cssTransform);
-
-//               el.setAttribute("style", `transform:${cssTransform} -webkit-transform:${cssTransform} ${style}`);
-//           }
-//       });
-
-//       if (window.requestAnimationFrame) {
-//           window.requestAnimationFrame(() => {
-//               this._onScroll(false);
-//           });
-//       } else {
-//           this._requestAnimationFrame(() => {
-//               this._onScroll(false);
-//           });
-//       }
-//   }
-// };

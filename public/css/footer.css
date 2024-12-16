@@ -5,6 +5,7 @@ footer {
     align-items: center;
     position: relative;
     padding: 5em 0 10em;
+    background: var(--gray-2);
 }
 .footer__top {
     width: 100%;
@@ -37,7 +38,7 @@ footer {
     align-items: center;
 }
 .contact-us__disc{
-    padding-top: 3em;
+    padding-top: 8em;
     font-size: 0.8em;
 }
 .contact-us__disc h2 {
@@ -49,10 +50,13 @@ footer {
 .contact-us__item {
     display: flex;
     align-items: center;
-    margin: 1em 0;
+    margin: 4em 0;
+}
+.contact-us__item.phone {
+    margin-top: 3em;
 }
 .contact-us__item:last-child {
-    margin: 1em 0 0;
+    margin-bottom: 0;
 }
 .contact-us__item img {
     width: 3.7em;

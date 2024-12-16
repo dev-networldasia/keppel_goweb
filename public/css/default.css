@@ -29,6 +29,7 @@
     --black-opacity2: rgba(0, 0, 0, 0.8);
     --shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
     --gray: #D9D9D9;
+    --gray-2: #E9E9E9;
     --black-text: #000000;
     --input-border-custom: #ced4da;
 }

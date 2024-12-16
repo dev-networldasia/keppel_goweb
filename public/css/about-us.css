@@ -245,10 +245,10 @@
     font-variant: initial;
     line-height: 1;
 }
-.swiper-button-next-2:after, .swiper-rtl .swiper-button-prev:after {
+.swiper-button-next-2:after, .swiper-rtl .swiper-button-prev-2:after {
     content: 'next';
 }
-.swiper-button-next-2:after, .swiper-button-prev:after {
+.swiper-button-next-2:after, .swiper-button-prev-2:after {
     font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;
@@ -487,13 +487,22 @@
     .about-us {
         font-size: 0.7em;
     }
+    .container-shape {
+        font-size: 0.9em;
+    }
+    .group-shape-2 {
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }   
 }
 @media only screen and (min-width: 1400px) and (max-width: 1699px){
     .about-us {
         font-size: 0.75em;
+        height: 100%;
+        padding: 2em 0 5em;
     }
     .group-shape-2 {
         left: 50%;
-        transform: translate(-50%, 5%);
+        transform: translate(-50%, 0%);
     }    
 }
