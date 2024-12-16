@@ -9,7 +9,7 @@
 .parallax {
     position: relative;
     height: 100vh; /* Full viewport height */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,6 +40,7 @@
     background: var(--white);
     display: flex;
     align-items: center;
+    font-size: 0.79em;
 }
 .parallax__border--variant-1 .parallax__content {
     background: url(../img/highlight-page/parallax-section/triangle-left-top.svg) left top no-repeat, var(--white) left bottom no-repeat;
@@ -104,7 +105,6 @@
     position: relative;
     display: table;
     margin-left: 30em;
-    font-size: 0.75em;
 }
 .parallax__triangle {
     position: absolute;
@@ -248,6 +248,6 @@
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .parallax__content {
-        font-size: 0.66em;
+        font-size: 0.72em;
     }
 }

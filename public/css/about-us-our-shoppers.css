@@ -17,8 +17,8 @@
 }
 .our-shoppers {
     display: block;
-    width: 35%;
-    transform: translate(20%, -40%);
+    width: 40%;
+    transform: translate(0%, -40%);
     top: 50%;
     position: absolute;
     right: 0;
@@ -103,12 +103,12 @@
     .our-shoppers {
         display: block;
         width: 100%;
-        transform: translate(0%, -160%);
+        transform: translate(0%, -130%);
         top: auto;
         right: auto;
         left: auto;
-        font-size: 0.55em;
-        padding: 0 12em;
+        font-size: 0.6em;
+        padding: 0 5em;
     }
     .our-shoppers__description {
         padding-left: 2em;
@@ -123,12 +123,12 @@
         font-size: 0.7em;
     }
     .about-us__ourshoppers .bg-mode {
-        font-size: 0.4em;
+        font-size: 0.7em;
     }
     .our-shoppers {
         display: block;
-        width: 100%;
-        transform: translate(0%, -170%);
+        width: 80%;
+        transform: translate(30%, -150%);
         top: auto;
         right: auto;
         left: auto;
@@ -149,7 +149,7 @@
         font-size: 1.1em;
     }
     .our-shoppers {
-        font-size: 0.8em;
+        font-size: 1em;
         display: block;
         width: 40%;
         transform: translate(6%, -30%);
@@ -162,5 +162,10 @@
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .about-us__ourshoppers .bg-mode {
         font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .about-us__ourshoppers .bg-mode {
+        font-size: 0.7em;
     }
 }

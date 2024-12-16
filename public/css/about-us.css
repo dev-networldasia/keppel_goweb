@@ -8,6 +8,9 @@
     background-position: center;
     /* padding: 2em 0 5em; */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-shape{
     position: relative;
@@ -134,7 +137,7 @@
 }
 .group-shape-2 {
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -10%);
 }
 .group-shape-3 {
     position: absolute;
@@ -204,6 +207,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.8em;
 }
 .about-us__text {
     position: absolute;
@@ -215,6 +219,7 @@
     flex-direction: column;
     align-items: center;
     z-index: 10;
+    font-size: 0.8em;
 }
 .about-us__text h2 {
     font-family: 'SVN-WylieVoigen';
@@ -299,6 +304,7 @@
     .about-us{
         height: 100%;
         padding: 10em 0 5em;
+        display: block;
     }
     .container-shape {
         display: block;
@@ -365,22 +371,23 @@
     .group-shape-2 .triangle-before{
         width: 47.5em;
     }
-    .triangle-before{
-        left: -2em;
+    .triangle-before {
+        left: 0%;
     }
-    .group-shape-3 .triangle-before{
-        left: 5em;
+    .group-shape-3 .triangle-before {
+        left: auto;
+        right: 0;
     }
     .triangle span{
         font-size: 5em;
     }
     .triangle-right.shape-3{
         transform: rotate(-55deg);
-        left: 13%;
+        left: 9%;
         bottom: 5%;
     }
     .triangle-right.shape-2 {
-        top: -4%;
+        top: -15%;
     }
     .triangle-right.shape-1 {
         right: 7%;
@@ -455,16 +462,6 @@
     .about-us {
         font-size: 0.67em;
     }
-    .group-shape-2 {
-        left: 50%;
-        transform: translate(-50%, 75%);
-    }
-    .about-us__text {
-        font-size: 1em;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-    }
     .popup-about-us .swiper-button-next-2 {
         right: 40%;
     }
@@ -489,25 +486,19 @@
         left: 50%;
         transform: translate(-50%, 6%);
     }
+    .about-us__text {
+        transform: translate(-50%, -65%);
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .about-us {
-        font-size: 0.7em;
-        height: 100%;
+        font-size: 0.65em;
         padding: 2em 0 5em;
-    }
-    .container-shape {
-        font-size: 0.9em;
-    }
-    .group-shape-2 {
-        left: 50%;
-        transform: translate(-50%, 0%);
-    }   
+    } 
 }
 @media only screen and (min-width: 1400px) and (max-width: 1699px){
     .about-us {
         font-size: 0.75em;
-        height: 100%;
         padding: 2em 0 5em;
     }
     .group-shape-2 {

@@ -4,8 +4,9 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 5em 0 10em;
+    padding: 5em 0 5em;
     background: var(--gray-2);
+    font-size: 0.9em;
 }
 .footer__top {
     width: 100%;
@@ -36,6 +37,7 @@ footer {
 .logo-bottom {
     display: flex;
     align-items: center;
+    font-size: 0.8em;
 }
 .contact-us__disc{
     padding-top: 8em;
@@ -70,6 +72,7 @@ footer {
 }
 .logo-bottom__item {
     margin: 0 1.5em;
+    cursor: pointer;
 }
 .logo-bottom__item:first-child {
     margin-left: 0;
@@ -148,26 +151,26 @@ footer {
 }
 @media (min-width: 576px) and (max-width: 768px){
     .footer {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .footer {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .footer {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .footer {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .footer {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 }

@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
       el: ".swiper-pagination-bullets",
       clickable: true, // Makes bullets clickable

@@ -485,7 +485,7 @@
 
 @media (min-width: 1600px) {
     .container {
-        max-width: 1200px !important;
+        max-width: 1400px !important;
         width: 100%;
         padding-right: var(--bs-gutter-x, .75rem);
         padding-left: var(--bs-gutter-x, .75rem);
