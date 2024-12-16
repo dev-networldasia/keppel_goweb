@@ -145,11 +145,12 @@ body.show-contact-us-btn .contact-us-btn {
     position: absolute;
     width: 50%;
     padding: 0 14.5em;
-    top: 18%;
+    top: 59%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translateY(-50%);
 }
 .content-homepage h2{
     font-size: 6.4em;
@@ -198,6 +199,7 @@ body.show-contact-us-btn .contact-us-btn {
         width: 100%;
         font-size: 0.6em;
         padding: 0 5.5em;
+        top: 40%;
     }
     .contact-us-btn{
         bottom: 2em;
@@ -222,6 +224,7 @@ body.show-contact-us-btn .contact-us-btn {
     .content-homepage{
         width: 100%;
         font-size: 0.9em;
+        top: 40%;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
@@ -240,11 +243,11 @@ body.show-contact-us-btn .contact-us-btn {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .content-homepage{
-        font-size: 0.7em;
+        font-size: 0.65em;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .content-homepage{
-        font-size: 0.8em;
+        font-size: 0.78em;
     }
 }
