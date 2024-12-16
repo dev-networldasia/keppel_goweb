@@ -101,7 +101,8 @@
     width: 1%;
     position: relative;
     display: table;
-    margin-left: 20em;
+    margin-left: 30em;
+    font-size: 0.75em;
 }
 .parallax__triangle {
     position: absolute;
@@ -131,7 +132,7 @@
 }
 .parallax__border--variant-2 .parallax__disc {
     left: auto;
-    margin-right: 20em;
+    margin-right: 30em;
 }
 .parallax--variant-2 .parallax__title::after {
     border-left-color: var(--primary);

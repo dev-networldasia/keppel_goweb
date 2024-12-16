@@ -486,13 +486,15 @@
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .about-us {
         font-size: 0.7em;
+        height: 100%;
+        padding: 2em 0 5em;
     }
     .container-shape {
         font-size: 0.9em;
     }
     .group-shape-2 {
         left: 50%;
-        transform: translate(-50%, -30%);
+        transform: translate(-50%, 0%);
     }   
 }
 @media only screen and (min-width: 1400px) and (max-width: 1699px){
