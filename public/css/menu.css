@@ -222,7 +222,7 @@ header{
 .mainbar__left{
   display: flex;
   align-items: center;
-  width: 20% !important;
+  /* width: 20% !important; */
   padding: 0 1.2em;
   flex: 0 0 auto;
   margin-right: 2rem;

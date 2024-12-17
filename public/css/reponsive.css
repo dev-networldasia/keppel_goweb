@@ -460,9 +460,9 @@
         margin-left: auto;
     }
 
-    .mainbar__left {
+    /* .mainbar__left {
         width: 25% !important;
-    }
+    } */
 
     .fp-overflow {
         max-height: fit-content;

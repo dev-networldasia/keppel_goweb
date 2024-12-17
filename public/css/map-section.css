@@ -185,5 +185,7 @@
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
-
+    .content-map {
+        gap: 0em;
+    }
 }

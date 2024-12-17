@@ -671,3 +671,7 @@ html {
     transform: translate3d(0, -2px, 0);
     transition: all 0.4s ease-in-out;
 }
+
+.fp-watermark {
+    display: none;
+}

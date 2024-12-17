@@ -148,6 +148,9 @@ footer {
     .keppel {
         display: none;
     }
+    .contact-us__item:last-child {
+        margin-bottom: 3em;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     .footer {

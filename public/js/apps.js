@@ -1,17 +1,55 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-  // Navbar
-  const navbar = document.getElementById("navbar");
-
-  window.addEventListener("scroll", () => {
-    if (
-      document.body.scrollTop > 200 ||
-      document.documentElement.scrollTop > 200
-    ) {
-      navbar.classList.add("fixed");
-    } else {
-      navbar.classList.remove("fixed");
-    }
+  const wow = new WOW({
+    live: false, // Prevents WOW.js from recalculating after DOM changes
   });
+  wow.init();
+
+  let fullPageInstance; // Variable to store the fullPage.js instance
+
+  function initFullPage() {
+      if (window.innerWidth > 575) { // Only enable on screens wider than 768px
+        // Initialize fullPage.js
+        new fullpage('#fullpage', {
+          menu: '#navbar',
+          autoScrolling: true,
+          scrollHorizontally: true,
+          afterLoad: function(origin, destination, direction){
+              // Refresh WOW.js animations after each section change
+              wow.sync();
+              const navbar = document.getElementById("navbar");
+
+              if (destination.index > 0) {
+                navbar.classList.add("fixed");
+            } else {
+                navbar.classList.remove("fixed");
+            }
+          }
+        });
+      } else if (fullPageInstance) {
+          fullPageInstance.destroy('all'); // Destroy fullPage.js on mobile
+          fullPageInstance = null; // Reset instance
+      }
+  }
+
+  // Run on load
+  window.addEventListener('load', initFullPage);
+
+  // Run on resize
+  window.addEventListener('resize', initFullPage);
+  
+  // Navbar
+  // const navbar = document.getElementById("navbar");
+
+  // window.addEventListener("scroll", () => {
+  //   if (
+  //     document.body.scrollTop > 200 ||
+  //     document.documentElement.scrollTop > 200
+  //   ) {
+  //     navbar.classList.add("fixed");
+  //   } else {
+  //     navbar.classList.remove("fixed");
+  //   }
+  // });
 
   // <!-- JS Mobile-Menu -->
   const bgmenu = document.querySelector(".inner-wrapper");
@@ -52,15 +90,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   });
 
+  // All Animation Slide swiper
+  // var swiperall = new Swiper(".mySwiperAll", {
+  //   direction: "vertical",
+  //   slidesPerView: 1,
+  //   spaceBetween: 0,
+  //   mousewheel: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  // });
+
   // Home Slide show
   // <!-- Swiper JS -->
   var swiper = new Swiper(".mySwiper", {
+    // direction: "vertical",
+    // mousewheel: true,
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
+    autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
       clickable: true, // Makes bullets clickable
