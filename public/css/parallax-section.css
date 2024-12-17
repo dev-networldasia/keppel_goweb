@@ -223,6 +223,9 @@
     .parallax__triangle span {
         color: var(--black);
     }
+    .parallax__triangle {
+        font-size: 1.5em;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     .parallax__content {
@@ -234,24 +237,39 @@
     .parallax__disc {
         margin-left: 12em;
     }
+    .parallax__triangle {
+        font-size: 1.4em;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .parallax__content {
         font-size: 0.65em;
+    }
+    .parallax__triangle {
+        font-size: 1.3em;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .parallax__content {
         font-size: 0.65em;
     }
+    .parallax__triangle {
+        font-size: 1.3em;
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .parallax__content {
         font-size: 0.65em;
     }
+    .parallax__triangle {
+        font-size: 1.3em;
+    }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .parallax__content {
         font-size: 0.70em;
+    }
+    .parallax__triangle {
+        font-size: 1.5em;
     }
 }
