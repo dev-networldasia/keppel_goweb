@@ -225,7 +225,7 @@ header{
   /* width: 20% !important; */
   padding: 0 1.2em;
   flex: 0 0 auto;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 .category-menu__wrapper{
   display: none;
