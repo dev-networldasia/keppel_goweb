@@ -1,6 +1,9 @@
 {{ define "home_slide_show"}}
 <section class="swiper-slide home-page">
-    <a href="#footer" class="contact-us-btn btn" title="Contact us">CONTACT US</a>
+    <button class="contact-us-btn btn" onclick="fullpage_api.moveTo(4)" title="Contact us">CONTACT US</button>
+    <button class="scroll-btn" onclick="fullpage_api.moveSectionDown()">
+        <img src="{{site}}/static/img/highlight-page/parallax-section/arrow-down.svg" alt="arrow down">
+    </button>
     <div class="four-corner-border">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -40,7 +43,7 @@
                             to be a highlight of the capital's vibrant retail landscape by connecting modern design with
                             the unique heritage of Hanoi.
                         </p>
-                        <a class="btn" href="#about-us" title="About us">
+                        <a class="btn" onclick="fullpage_api.moveTo(2)" title="About us">
                             <span class="more-about-us-btn">More about us</span>
                             <img src="{{site}}/static/img/home-page/button-arrow.png" alt="arrow">
                         </a>

@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   let fullPageInstance; // Variable to store the fullPage.js instance
 
-  function initFullPage() {
-      if (window.innerWidth > 575) { // Only enable on screens wider than 768px
-        // Initialize fullPage.js
+  // function initFullPage() {
+  //     if (window.innerWidth > 575) { // Only enable on screens wider than 768px
+  //       // Initialize fullPage.js
         new fullpage('#fullpage', {
+          responsiveWidth: 575,
           menu: '#navbar',
           autoScrolling: true,
           scrollHorizontally: true,
@@ -25,17 +26,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
           }
         });
-      } else if (fullPageInstance) {
-          fullPageInstance.destroy('all'); // Destroy fullPage.js on mobile
-          fullPageInstance = null; // Reset instance
-      }
-  }
+  //     } else if (fullPageInstance) {
+  //         fullPageInstance.destroy('all'); // Destroy fullPage.js on mobile
+  //         fullPageInstance = null; // Reset instance
+  //     }
+  // }
 
-  // Run on load
-  window.addEventListener('load', initFullPage);
+  // // Run on load
+  // window.addEventListener('load', initFullPage);
 
-  // Run on resize
-  window.addEventListener('resize', initFullPage);
+  // // Run on resize
+  // window.addEventListener('resize', initFullPage);
   
   // Navbar
   // const navbar = document.getElementById("navbar");
@@ -113,9 +114,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",

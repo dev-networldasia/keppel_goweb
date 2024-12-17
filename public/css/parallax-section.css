@@ -108,7 +108,7 @@
 }
 .parallax__triangle {
     position: absolute;
-    width: 32em;
+    width: 26em;
     aspect-ratio: 320 / 166;
     bottom: 0;
     left: 0;
@@ -123,12 +123,16 @@
 .parallax__triangle img {
     width: 6.3em;
     aspect-ratio: 63 / 84;
+    animation: animation-arrow-y 1s linear 0s infinite alternate;
+    -webkit-animation: animation-arrow-y 2s linear 0s infinite alternate;
 }
 .parallax__triangle span {
     font-size: 1em;
     font-weight: 400;
     text-align: center;
     color: var(--white);
+    animation: animation-arrow-y 1s linear 0s infinite alternate;
+    -webkit-animation: animation-arrow-y 2s linear 0s infinite alternate;
 }
 .parallax__border--variant-2 .parallax__content{
     justify-content: flex-end;

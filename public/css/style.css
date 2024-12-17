@@ -675,3 +675,37 @@ html {
 .fp-watermark {
     display: none;
 }
+
+.scroll-btn {
+    position: absolute;
+    bottom: 3em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 999;
+    animation: animation-arrow-y 1s linear 0s infinite alternate;
+    -webkit-animation: animation-arrow-y 2s linear 0s infinite alternate;
+}
+@-webkit-keyframes animation-arrow-y {
+    0% {
+        -webkit-transform: translate(0px, 5px);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, -10px);
+    }
+}
+
+@-moz-keyframes animation-arrow-y {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 600%;
+    }
+}
