@@ -59,7 +59,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     .addEventListener("click", function () {
       document.querySelector(".popup-mobile-menu").classList.toggle("active");
     });
-  document.querySelector(".close-btn").addEventListener("click", function () {
+  document.querySelector(".close-btn-mobile").addEventListener("click", function () {
+    document.querySelector(".popup-mobile-menu").classList.remove("active");
+  });
+  document.querySelector(".contact-us-mobile").addEventListener("click", function () {
     document.querySelector(".popup-mobile-menu").classList.remove("active");
   });
   document.querySelector(".overlay").addEventListener("click", function () {
@@ -539,3 +542,10 @@ const newsSwiper = new Swiper(".news-swiper-container", {
     },
   },
 });
+
+// Go to last page [Fullpage.js]
+function goToLastPage() {
+  const totalSections = document.querySelectorAll('.section').length;
+
+  fullpage_api.moveTo(totalSections);
+}
