@@ -9,10 +9,10 @@
 
 @media (max-width: 575px){}
 @media (min-width: 576px) and (max-width: 768px){}
-@media (max-width: 768px){}
 @media only screen and (min-width: 769px) and (max-width: 991px){}
 @media only screen and (min-width: 992px) and (max-width: 1199px){}
 @media only screen and (min-width: 1200px) and (max-width: 1399px){}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){}
 
 /* customs */
 

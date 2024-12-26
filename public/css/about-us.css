@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 .container-shape{
     position: relative;
@@ -32,7 +33,7 @@
     left: 0;
     display: none;
 }
-.about-us-swiper {
+.home-about-us-swiper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -243,7 +244,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 45%;
+    border-radius: 50%;
     top: auto;
 }
 .swiper-button-prev-2:after, .swiper-rtl .swiper-button-next-2:after {
@@ -275,6 +276,9 @@
     bottom: 2%;
     cursor: pointer;
     background: var(--white);
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #292D32;
 }
 .popup-about-us .swiper-button-next-2{
     right: 47%;
@@ -283,6 +287,9 @@
     bottom: 2%;
     cursor: pointer;
     background: var(--white);
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #292D32;
 }
 .popup-about-us .swiper-horizontal>.swiper-pagination-bullets, 
 .popup-about-us .swiper-pagination-bullets.swiper-pagination-horizontal, 
@@ -293,10 +300,7 @@
 .popup-about-us .swiper-button-prev-2:after, .swiper-rtl .swiper-button-next:after,
 .popup-about-us .swiper-button-next-2:after, .swiper-rtl .swiper-button-prev-2:after {
     font-size: 10px;
-    padding: 8px;
-    border: 2px solid;
     font-weight: 800;
-    border-radius: 50%;
     color: #292D32;
 }
 
@@ -460,7 +464,7 @@
 }
 @media (min-width: 576px) and (max-width: 768px){
     .about-us {
-        font-size: 0.67em;
+        font-size: 0.67rem;
     }
     .popup-about-us .swiper-button-next-2 {
         right: 40%;
@@ -471,7 +475,7 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .about-us {
-        font-size: 0.6em;
+        font-size: 0.6rem;
     }
     .group-shape-2 {
         left: 50%;
@@ -480,7 +484,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .about-us {
-        font-size: 0.65em;
+        font-size: 0.65rem;
     }
     .group-shape-2 {
         left: 50%;
@@ -492,13 +496,13 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .about-us {
-        font-size: 0.65em;
+        font-size: 0.65rem;
         padding: 2em 0 5em;
     } 
 }
 @media only screen and (min-width: 1400px) and (max-width: 1699px){
     .about-us {
-        font-size: 0.75em;
+        font-size: 0.75rem;
         padding: 2em 0 5em;
     }
     .group-shape-2 {

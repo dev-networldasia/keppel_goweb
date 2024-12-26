@@ -1,5 +1,6 @@
 .highlight-page{
     background: var(--white);
+    font-size: 1rem;
 }
 .highlight-page .swiper {
     position: relative;
@@ -172,7 +173,7 @@
         padding: 0 10.5em;
     }
     .contact-us-btn{
-        bottom: 2em;
+        bottom: 5em;
         left: 50%;
         transform: translateX(-50%);
         right: auto;
@@ -193,7 +194,7 @@
     }
     .content-homepage{
         width: 100%;
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){

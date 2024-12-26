@@ -114,9 +114,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
@@ -270,28 +270,31 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Add event listeners to buttons
   const buttons = document.querySelectorAll('.group-shape');
 
+  const swiperab = new Swiper('.home-about-us-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next-2',
+      prevEl: '.swiper-button-prev-2',
+    },
+  });
+
   buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
       e.preventDefault(); // Prevent default anchor behavior
-      const slideIndex = parseInt(button.getAttribute('data-slide'), 10); // Get slide index from data attribute
-      swiperab.slideTo(slideIndex); // Navigate to the corresponding slide
+      const slideIndex = parseInt(button.getAttribute('data-slide')); // Get slide index from data attribute
+      
+      console.log(slideIndex, button, e.currentTaget);
+      swiperab.slideToLoop(slideIndex); // Navigate to the corresponding slide
     });
   });
+
   for (var i = 0; i < groupShapes.length; i++) {
     groupShapes[i].addEventListener('click', function(event) {
         var popupId = this.getAttribute('href').substring(1);
         showPopup(popupId);
     });
   }
-
-  const swiperab = new Swiper('.about-us-swiper', {
-      loop: true,
-      slidesPerView: 1,
-      navigation: {
-          nextEl: '.swiper-button-next-2',
-          prevEl: '.swiper-button-prev-2',
-      },
-  });
 
   // Swiper gallery
   initializeSwiperGallery();
@@ -300,14 +303,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // Function to show the popup
 function showPopup(popupId) {
   var popup = document.getElementById(popupId);
-  popup.style.display = "block"; // Show the popup
-}
+  if (popup) {
+    popup.style.display = 'block'; // Example: display the popup
+  }}
 
 // Function to close the popup
 function closePopup(popupId) {
   var popup = document.getElementById(popupId);
-  popup.style.display = "none"; // Hide the popup
+  if (popup) {
+    popup.style.display = 'none'; // Example: hide the popup
+  }
 }
+
+// // Function to show the popup (ensure this is implemented correctly)
+// function showPopup(popupId) {
+//   const popup = document.getElementById(popupId);
+//   if (popup) {
+//     popup.style.display = 'block'; // Example: display the popup
+//   }
+// }
+
+// // Function to close the popup (optional, for better UX)
+// function closePopup(popupId) {
+//   const popup = document.getElementById(popupId);
+//   if (popup) {
+//     popup.style.display = 'none'; // Example: hide the popup
+//   }
+// }
 
 // Initialize Swiper when the popup is opened
 function initializeSwiperAboutUs() {

@@ -1,6 +1,7 @@
 .home-page{
     background: var(--white);
     position: relative;
+    font-size: 1rem;
 }
 .home-page .swiper {
     position: relative;
@@ -184,6 +185,7 @@ body.show-contact-us-btn .contact-us-btn {
 .content-homepage .btn img {
     width: 3.8em;
     height: 3.8em;
+    transform: rotate(90deg);
 }
 
 @media (max-width: 575px){
@@ -198,9 +200,9 @@ body.show-contact-us-btn .contact-us-btn {
     }
     .content-homepage {
         width: 100%;
-        font-size: 0.6em;
+        font-size: 0.6rem;
         padding: 0 5.5em;
-        top: 42%;
+        top: 46%;
     }
     .contact-us-btn{
         bottom: 2em;
@@ -213,6 +215,7 @@ body.show-contact-us-btn .contact-us-btn {
     }
     .content-homepage p {
         font-size: 2.2em;
+        line-height: 1.2;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
@@ -224,31 +227,31 @@ body.show-contact-us-btn .contact-us-btn {
     }
     .content-homepage{
         width: 100%;
-        font-size: 0.9em;
+        font-size: 0.9rem;
         top: 40%;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .content-homepage{
-        font-size: 0.65em;
+        font-size: 0.65rem;
         padding: 0 10.5em;
     }
     .content-homepage h2{
-        font-size: 5.4em;
+        font-size: 5.4rem;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .content-homepage{
-        font-size: 0.65em;
+        font-size: 0.65rem;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .content-homepage{
-        font-size: 0.65em;
+        font-size: 0.65rem;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .content-homepage{
-        font-size: 0.78em;
+        font-size: 0.78rem;
     }
 }
