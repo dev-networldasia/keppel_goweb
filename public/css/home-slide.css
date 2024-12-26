@@ -126,7 +126,7 @@ body.show-contact-us-btn .contact-us-btn {
 .home-page .four-corner-border {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     /* background: url('../img/home-page/bg-home-2.png') no-repeat center/cover;
     background-size: cover; */
     border-radius: 10px;
