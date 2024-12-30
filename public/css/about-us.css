@@ -472,7 +472,7 @@
 }
 @media (max-width: 575px){
     .about-us{
-        height: 100%;
+        height: auto;
         padding: 10em 0 5em;
         display: block;
         font-size: 0.9rem;
