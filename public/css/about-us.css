@@ -296,6 +296,178 @@
     color: #292D32;
 }
 
+/* Hang */
+@-webkit-keyframes hang-animation {
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+@keyframes hang-animation {
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+.hang-animation {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hang-sink-animation, hang-animation;
+    animation-name: hang-sink-animation, hang-animation;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+/* Hang Variation 1 */
+@-webkit-keyframes hang-animation-1 {
+    0% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    50% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+@keyframes hang-animation-1 {
+    0% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    50% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+/* Hang Variation 2 */
+@-webkit-keyframes hang-animation-2 {
+    0% {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+
+    100% {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+}
+
+@keyframes hang-animation-2 {
+    0% {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+
+    100% {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+}
+
+.hang-animation-1 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hang-sink-animation, hang-animation-1;
+    animation-name: hang-sink-animation, hang-animation-1;
+    -webkit-animation-duration: 0.5s, 2s;
+    /* Adjusted timing */
+    animation-duration: 0.5s, 2s;
+    -webkit-animation-delay: 0s, 0.5s;
+    animation-delay: 0s, 0.5s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+.hang-animation-2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hang-sink-animation, hang-animation-2;
+    animation-name: hang-sink-animation, hang-animation-2;
+    -webkit-animation-duration: 0.4s, 2.5s;
+    /* Adjusted timing */
+    animation-duration: 0.4s, 2.5s;
+    -webkit-animation-delay: 0s, 0.4s;
+    animation-delay: 0s, 0.4s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
 @media (max-width: 575px){
     .about-us{
         height: 100%;
