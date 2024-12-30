@@ -2,10 +2,11 @@
     background: var(--white);
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 .content-map {
     display: flex;
@@ -101,7 +102,8 @@
 @media (max-width: 575px){
     .map-section{   
         height: 100%;
-        padding: 10em 0;
+        padding: 10em 0 15em;
+        font-size: 1rem;
     }
     .content-map {
         flex-direction: column;
