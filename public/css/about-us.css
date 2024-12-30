@@ -113,7 +113,7 @@
     z-index: 2;
 }
 .triangle-2 img {
-    height: 100%;
+    height: inherit;
     object-fit: cover;
 }
 .triangle-before{
@@ -472,7 +472,7 @@
 }
 @media (max-width: 575px){
     .about-us{
-        height: 100svh;
+        height: 100%;
         padding: 10em 0 5em;
         display: block;
         font-size: 0.9rem;

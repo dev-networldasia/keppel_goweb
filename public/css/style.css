@@ -702,7 +702,7 @@ html {
     font-size: 1rem;
     filter: brightness(0) saturate(100%) invert(12%) sepia(15%) saturate(509%) hue-rotate(173deg) brightness(97%) contrast(87%);
 }
-.scroll-up-button img {
+.scroll-up-button svg {
     width: 6.3em;
     aspect-ratio: 63 / 84;
     animation: animation-arrow-y 1s linear 0s infinite alternate;
