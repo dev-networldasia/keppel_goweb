@@ -21,8 +21,8 @@
 }
 .our-shoppers {
     display: block;
-    width: 40%;
-    transform: translate(0%, -40%);
+    width: 33%;
+    transform: translate(0%, -50%);
     top: 50%;
     position: absolute;
     right: 0;

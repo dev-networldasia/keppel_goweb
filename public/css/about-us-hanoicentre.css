@@ -21,7 +21,7 @@
 }
 .hanoi-centre {
     display: block;
-    width: 40%;
+    width: 33%;
     transform: translate(15%, -50%);
     top: 50%;
     position: absolute;
