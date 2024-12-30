@@ -6,24 +6,37 @@
             <p>Situated at 175 Nguyen Thai Hoc, Ba Dinh, Hanoi, near many famous landmarks, diplomatic centers and bustling business areas.</p>
         </div>
         <div class="container-shape">
-            <a class="group-shape group-shape-1" href="#popup1" data-slide="0" title="Hanoi Centre">
+            <!-- <a class="group-shape group-shape-1" href="#popup1" data-slide="0" title="Hanoi Centre">
                 <div data-parallax="{&quot;x&quot;: 0, &quot;y&quot;: 80}" class="triangle">
                     <span>Hanoi<br>Centre</span>
                 </div>
                 <div data-parallax="{&quot;x&quot;: 0, &quot;y&quot;: 80}" class="triangle-before"></div>
+            </a> -->
+            <a class="group-shape group-shape-1" href="#popup1" data-slide="0" title="Hanoi Centre">
+                <div class="triangle-2">
+                    <picture>
+                        <source srcset="{{site}}/static/img/about-us/shape-hanoicentre-small.png" media="(max-width: 575px)">
+                        <img src="{{site}}/static/img/about-us/shape-hanoicentre.png" alt="Triangle centre">
+                    </picture>
+                    <!-- <img src="{{site}}/static/img/about-us/shape-hanoicentre.png" alt="shape triangle city"> -->
+                    <span>Hanoi<br>Centre</span>
+                </div>
+                <span class="title-triangle">Hanoi Centre</span>
             </a>
             <a class="group-shape group-shape-2"  href="#popup1" data-slide="1" title="Our Shoppers">
-                <div class="triangle">
+                <div class="triangle-2">
+                    <img src="{{site}}/static/img/about-us/shape-ourshoppers.png" alt="shape triangle city">
                     <span>Our<br>Shoppers</span>
                 </div>
-                <div class="triangle-before"></div>
+                <span class="title-triangle">Our Shoppers</span>
             </a>
     
             <a class="group-shape group-shape-3"  href="#popup1" data-slide="2" title="Complex">
-                <div class="triangle">
+                <div class="triangle-2">
+                    <img src="{{site}}/static/img/about-us/span-complex.png" alt="shape triangle city">
                     <span>Complex<br>Factsheet</span>
                 </div>
-                <div class="triangle-before"></div>
+                <span class="title-triangle">Complex Factsheet</span>
             </a>
         </div>
         <div class="container-mini-shape">
@@ -39,7 +52,9 @@
 
     <!-- Popup shape-1 -->
      <div class="popup-about-us" id="popup1">
-        <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+        <span class="close-btn" onclick="closePopup('popup1')">
+            <img src="{{site}}/static/img/about-us/back-btn.png" alt="back button">
+        </span>
         <div class="swiper home-about-us-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">

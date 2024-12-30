@@ -117,9 +117,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
@@ -354,6 +354,10 @@ function initializeSwiperAboutUs() {
 // Swiper - GALLERY
 function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
+    autoplay: {
+        delay: 5000,
+    },
+    loop: true,
     pagination: {
       el: ".swiper-pagination-au",
       clickable: true,

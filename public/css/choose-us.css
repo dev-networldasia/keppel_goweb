@@ -163,6 +163,7 @@
 
 .choose-us__inner .btn img {
     width: 0.7em;
+    transform: rotate(90deg);
 }
 
 @media (max-width: 575px) {

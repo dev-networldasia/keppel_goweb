@@ -8,43 +8,53 @@
 /* Block: parallax */
 .parallax {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    height: 100svh; /* Full viewport height */
     /* background-attachment: fixed; */
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* Modifier: parallax--variant-1 */
 .parallax--variant-1 {
-    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full-1.jpg");
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Modifier: parallax--variant-2 */
 .parallax--variant-2 {
-    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full.jpg");
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 /* Modifier: parallax--variant-3 */
 .parallax--variant-3 {
-    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full-3.jpg");
-}
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;}
 /* Modifier: parallax--variant-4 */
 .parallax--variant-4 {
-    background-image: url("../img/highlight-page/parallax-section/bg-highlight-section-full-4.jpg");
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-4.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Element: parallax__content */
 .parallax__content {
     width: 100%;
     height: 100%;
-    background: var(--white);
     display: flex;
     align-items: center;
     font-size: 0.79em;
 }
 .parallax__border--variant-1 .parallax__content {
-    background: url(../img/highlight-page/parallax-section/triangle-left-top.svg) left top no-repeat, var(--white) left bottom no-repeat;
-    background-size: 29em, cover;
+    background: url(../img/highlight-page/parallax-section/triangle-left-top.svg) left top no-repeat;
+    background-size: 29em;
 }
 
 /* Element: parallax__border */
@@ -54,18 +64,23 @@
     height: 100%;
     /* border-radius: 10px; */
     overflow: hidden;
+    background: none;
 }
 
 /* Modifier: parallax__border--variant-1 */
 .parallax__border--variant-1 {
-    clip-path: polygon(60% 0, 0 0, 0 100%, 40% 100%, 100% 5%, 100% 0, 80% 32%);
+    /* clip-path: polygon(60% 0, 0 0, 0 100%, 40% 100%, 100% 5%, 100% 0, 80% 32%);
     -webkit-clip-path: polygon(60% 0, 0 0, 0 100%, 40% 100%, 100% 5%, 100% 0, 80% 32%);
+    background: url(../img/highlight-page/parallax-section/bg-highlight-1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 /* Modifier: parallax__border--variant-2 */
 .parallax__border--variant-2 {
-    clip-path: polygon(20% 31%, 0 0, 0 5%, 60% 100%, 100% 100%, 100% 0, 40% 0);
-    -webkit-clip-path: polygon(20% 31%, 0 0, 0 5%, 60% 100%, 100% 100%, 100% 0, 40% 0);
+    /* clip-path: polygon(20% 31%, 0 0, 0 5%, 60% 100%, 100% 100%, 100% 0, 40% 0);
+    -webkit-clip-path: polygon(20% 31%, 0 0, 0 5%, 60% 100%, 100% 100%, 100% 0, 40% 0); */
 }
 .parallax__title {
     display: block;
@@ -104,7 +119,7 @@
     width: 1%;
     position: relative;
     display: table;
-    margin-left: 30em;
+    margin-left: 20%;
 }
 .parallax__triangle {
     position: absolute;
@@ -119,6 +134,7 @@
     justify-content: center;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    font-size: 1rem;
 }
 .parallax__triangle img {
     width: 6.3em;
@@ -139,7 +155,7 @@
 }
 .parallax__border--variant-2 .parallax__disc {
     left: auto;
-    margin-right: 30em;
+    margin-right: 20%;
 }
 .parallax--variant-2 .parallax__title::after {
     border-left-color: var(--primary);
@@ -151,16 +167,16 @@
     border-left-color: var(--four);
 }
 .parallax--variant-2 .parallax__content {
-    background: url(../img/highlight-page/parallax-section/triangle-right-top.svg) right top no-repeat, var(--white) left bottom no-repeat;
-    background-size: 29em, cover;
+    background: url(../img/highlight-page/parallax-section/triangle-right-top.svg) right top no-repeat;
+    background-size: 29em;
 }
 .parallax--variant-3 .parallax__content {
-    background: url(../img/highlight-page/parallax-section/triangle-left-top-2.svg) left top no-repeat, var(--white) left bottom no-repeat;
-    background-size: 29em, cover;
+    background: url(../img/highlight-page/parallax-section/triangle-left-top-2.svg) left top no-repeat;
+    background-size: 29em;
 }
 .parallax--variant-4 .parallax__content {
-    background: url(../img/highlight-page/parallax-section/triangle-right-top-2.svg) right top no-repeat, var(--white) left bottom no-repeat;
-    background-size: 29em, cover;
+    background: url(../img/highlight-page/parallax-section/triangle-right-top-2.svg) right top no-repeat;
+    background-size: 29em;
 }
 .parallax__border--variant-2 .parallax__triangle{
     left: auto;
@@ -270,6 +286,6 @@
         font-size: 0.70em;
     }
     .parallax__triangle {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }

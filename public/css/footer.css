@@ -100,6 +100,10 @@ footer {
     width: 3.5em;
     aspect-ratio: 35 / 40;
 }
+.logo-bottom__item.linkedin img {
+    width: 4.3em;
+    aspect-ratio: 35 / 40;
+}
 .keppel {
     display: flex;
     align-items: center;
