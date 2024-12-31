@@ -18,7 +18,9 @@
 
 @media (max-width: 575px) {
     /* fullpage */
-    .fp-responsive .fp-is-overflow.fp-section {
+    body.fp-responsive .fp-section,
+    body.fp-responsive .fp-slide,
+    body.fp-responsive .fp-tableCell{
         height: auto !important;
         min-height: auto !important;
     }
