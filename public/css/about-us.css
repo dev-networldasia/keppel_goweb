@@ -471,6 +471,11 @@
     animation-direction: normal, alternate;
 }
 @media (max-width: 575px){
+    body.fp-responsive .fp-section,
+    body.fp-responsive .fp-slide,
+    body.fp-responsive .fp-tableCell{
+        height: auto !important;
+    }
     .about-us{
         height: 800px;
         padding: 10em 0 5em;
