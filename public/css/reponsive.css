@@ -17,6 +17,12 @@
 /* customs */
 
 @media (max-width: 575px) {
+    /* fullpage */
+    .fp-responsive .fp-is-overflow.fp-section {
+        height: auto !important;
+        min-height: auto !important;
+    }
+    /* End full page */
     .container {
         width: 100%;
         padding: 0 10px;
