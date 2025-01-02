@@ -493,7 +493,7 @@
         width: 7.6em;
     }
     .group-pagination-au {
-        margin-top: 1rem;
+        margin-top: 4rem;
         width: 100%;
         position: relative;
         display: flex;
@@ -533,16 +533,17 @@
         width: 90%;
     }
 
-    .about-us .swiper-wrapper {
+    /* .about-us .swiper-wrapper {
         padding: 2em 0;
-    }
+    } */
     .title-triangle {
         display: block;
         font-family: 'SVN-WylieVoigen';
-        font-size: 3.2em;
+        font-size: 3.2rem;
         font-weight: 400;
         line-height: 1;
         text-align: center;
+        margin-top: 1em;
     }
     .triangle-right.shape-3{
         transform: rotate(-55deg);
@@ -629,6 +630,12 @@
     .group-shape-2 .triangle-2,
     .group-shape-3 .triangle-2 {
         width: 60em;
+    }
+    .about-us .close-btn {
+        top: auto;
+        right: 30px;
+        bottom: 48px;
+        font-size: 0.9em;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

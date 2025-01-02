@@ -287,7 +287,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       e.preventDefault(); // Prevent default anchor behavior
       const slideIndex = parseInt(button.getAttribute('data-slide')); // Get slide index from data attribute
       
-      console.log(slideIndex, button, e.currentTaget);
       swiperab.slideToLoop(slideIndex); // Navigate to the corresponding slide
     });
   });

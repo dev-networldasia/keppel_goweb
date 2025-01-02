@@ -198,15 +198,11 @@
         font-size: 0.5em;
     }
     .parallax__border--variant-2 .parallax__disc {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        left: auto;
+        margin: 0 auto;
+        margin-right: 5%;
     }
-    .parallax__disc,
-    .parallax__border--variant-2 .parallax__disc {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .parallax__border--variant-1 .parallax__disc {
         margin: 0;
     }
     .parallax__content,
@@ -229,6 +225,10 @@
         position: relative;
         background-color: unset;
     }
+    .parallax--variant-4 .parallax__border--variant-2 .parallax__disc {
+        left: auto;
+        margin: 0 auto;
+    }
     .parallax__border--variant-2 .parallax__triangle{
         background-color: none;
         background-color: unset;
@@ -242,6 +242,38 @@
     .parallax__triangle {
         font-size: 1.5em;
     }
+    /* Modifier: parallax--variant-1 */
+.parallax--variant-1 {
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-1-small.png);
+    background-position: right;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Modifier: parallax--variant-2 */
+.parallax--variant-2 {
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-2-small.png);
+    background-position: left;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Modifier: parallax--variant-3 */
+.parallax--variant-3 {
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-3-small.png);
+    background-position: right;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;}
+/* Modifier: parallax--variant-4 */
+.parallax--variant-4 {
+    background-image: url(../img/highlight-page/parallax-section/bg-highlight-4-small.png);
+    background-position: left;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 }
 @media (min-width: 576px) and (max-width: 768px){
     .parallax__content {

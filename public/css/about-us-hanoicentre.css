@@ -91,6 +91,7 @@
     line-height: 1.3;
     letter-spacing: -0.02em;
     text-align: justify;
+    padding-left: 2em;
 }
 
 /* Reponsive ABOUT-US HANOI CENTRE */
@@ -107,16 +108,13 @@
     }
     .hanoi-centre {
         display: block;
-        width: 100%;
-        transform: translate(0%, -128%);
+        width: 70%;
+        transform: translate(-50%, -140%);
         top: auto;
         right: auto;
-        left: auto;
         font-size: 0.55rem;
-        padding: 0 5em;
-    }
-    .hanoi-centre__description {
-        padding-left: 2em;
+        margin: 0 auto;
+        left: 50%;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
@@ -132,18 +130,17 @@
     }
     .hanoi-centre {
         display: block;
-        width: 70%;
-        transform: translate(40%, -125%);
+        width: 40%;
+        transform: translate(-50%, -125%);
         top: auto;
         right: auto;
-        left: auto;
-        font-size: 1rem;
-        padding: 0 17em;
+        left: 72%;
+        font-size: 0.75rem;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .about-us__hanoicentre .bg-mode {
-        font-size: 0.6em;
+        font-size: 0.6rem;
     }
     .hanoi-centre {
         font-size: 0.95rem;
@@ -151,10 +148,10 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .about-us__hanoicentre .bg-mode {
-        font-size: 0.6em;
+        font-size: 0.6rem;
     }
     .hanoi-centre {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){

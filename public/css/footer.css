@@ -7,6 +7,7 @@ footer {
     padding: 5em 0 5em;
     background: var(--gray-2);
     font-size: 0.9em;
+    overflow: hidden;
 }
 .footer__top {
     width: 100%;
@@ -133,26 +134,29 @@ footer {
 /* Reponsive - Footer */
 @media (max-width: 575px){
     .footer {
-        font-size: 0.6em;
+        padding: 5em 2em 5em;
+        font-size: 1rem;
     }
     .footer__top {
         flex-direction: column;
     }
     .footer__left {
         font-size: 0.85em;
-        flex-direction: row;
+        flex-direction: column;
+        gap: 5em;
     }
     .contact-us__disc {
         font-size: 0.8em;
         padding-top: 5em;
     }
     .contact-us__item {
-        margin: 3em 0;
+        margin: 5em 0;
     }
     .keppel {
         display: flex;
         position: relative;
         justify-content: center;
+        font-size: 0.7em;
     }
     .contact-us__item:last-child {
         margin-bottom: 3em;
@@ -163,8 +167,7 @@ footer {
         line-height: 3;
     }
     .logo-keppel {
-        width: 18.2em;
-        aspect-ratio: 122 / 40;
+        width: 26.2em;
     }
     .copy-right span {
         font-size: 1.7em;

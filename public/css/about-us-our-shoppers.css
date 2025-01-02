@@ -98,7 +98,7 @@
         width: 100%;
         height: 100%;
         background: url('../img/about-us/ourshoppers/triangle-top-left.svg') left top no-repeat, url('../img/about-us/ourshoppers/triangle-bottom-left.svg') left bottom no-repeat, url('../img/about-us/ourshoppers/bg-ourshoppers.jpg') left top no-repeat;
-        background-size: 22.1em, 45.1em, 640px;
+        background-size: 22.1em, 45.1em, 820px;
         font-size: 0.7rem;
     }
     .about-us__ourshoppers .bg-mode {
@@ -106,16 +106,12 @@
     }
     .our-shoppers {
         display: block;
-        width: 100%;
-        transform: translate(0%, -130%);
+        width: 64%;
+        transform: translate(-50%, -121%);
         top: auto;
         right: auto;
-        left: auto;
-        font-size: 0.6em;
-        padding: 0 5em;
-    }
-    .our-shoppers__description {
-        padding-left: 2em;
+        left: 50%;
+        font-size: 0.6rem;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
@@ -153,10 +149,10 @@
         font-size: 1.1em;
     }
     .our-shoppers {
-        font-size: 1rem;
+        font-size: 0.75rem;
         display: block;
         width: 40%;
-        transform: translate(6%, -30%);
+        transform: translate(6%, -44%);
         top: 50%;
         position: absolute;
         right: 0;

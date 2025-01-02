@@ -107,8 +107,7 @@
         width: 100%;
         height: 100%;
         background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.png') right top no-repeat;
-        background-size: 22.1em, 45.1em, 350px;
-        font-size: 0.7em;
+        background-size: 22.1em, 45.1em, 480px;
     }
     .about-us__complex .bg-mode {
         font-size: 0.4em;
@@ -141,14 +140,13 @@
     }
     .complex {
         display: flex;
-        width: 100%;
+        width: fit-content;
         transform: translate(0%, -133%);
         top: auto;
         right: auto;
-        left: auto;
-        font-size: 1rem;
-        padding: 0 17em;
+        left: 10%;
         gap: 3em;
+        font-size: 0.65rem;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
