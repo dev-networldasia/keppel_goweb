@@ -25,7 +25,10 @@
             </a>
             <a class="group-shape group-shape-2"  href="#popup1" data-slide="1" title="Our Shoppers">
                 <div class="triangle-2 hang-animation-1">
-                    <img src="{{site}}/static/img/about-us/shape-ourshoppers.png" alt="shape triangle city">
+                    <picture>
+                        <source srcset="{{site}}/static/img/about-us/shape-ourshoppers-small.png" media="(max-width: 575px)">
+                        <img src="{{site}}/static/img/about-us/shape-ourshoppers.png" alt="shape triangle city">
+                    </picture>
                     <span>Our<br>Shoppers</span>
                 </div>
                 <span class="title-triangle">Our Shoppers</span>
@@ -33,7 +36,10 @@
     
             <a class="group-shape group-shape-3"  href="#popup1" data-slide="2" title="Complex">
                 <div class="triangle-2 hang-animation-2">
-                    <img src="{{site}}/static/img/about-us/span-complex.png" alt="shape triangle city">
+                    <picture>
+                        <source srcset="{{site}}/static/img/about-us/shape-complex-small.png" media="(max-width: 575px)">
+                        <img src="{{site}}/static/img/about-us/shape-complex.png" alt="shape triangle city">
+                    </picture>
                     <span>Complex<br>Factsheet</span>
                 </div>
                 <span class="title-triangle">Complex Factsheet</span>
@@ -46,12 +52,14 @@
         </div>
     </div>
     <!-- Swiper navigation and pagination -->
-    <div class="swiper-pagination-au"></div>
-    <div class="swiper-button-prev">
-        <img src="{{site}}/static/img/home-page/button-arrow.png" alt="arrow">
-    </div>
-    <div class="swiper-button-next">
-        <img src="{{site}}/static/img/home-page/button-arrow.png" alt="arrow">
+    <div class="group-pagination-au">
+        <div class="swiper-pagination-au"></div>
+        <div class="swiper-button-prev">
+            <img src="{{site}}/static/img/home-page/button-arrow.png" alt="arrow">
+        </div>
+        <div class="swiper-button-next">
+            <img src="{{site}}/static/img/home-page/button-arrow.png" alt="arrow">
+        </div>
     </div>
 
     <!-- Popup shape-1 -->
