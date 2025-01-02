@@ -137,6 +137,9 @@
     .scroll-btn {
         display: none;
     }
+    .scroll-up-button {
+        font-size: 0.85rem;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {

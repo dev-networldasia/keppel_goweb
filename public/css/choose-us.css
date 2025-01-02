@@ -176,10 +176,15 @@
         align-items: center;
         border-radius: 50%;
         top: auto;
-        background: #f9f9f9;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
         cursor: pointer;
         bottom: 11%;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border-radius: 50%;
+        color: #292D32;
+        border: 2px solid;
     }
 
     .gallery__choose-us .swiper-button-prev-list {
@@ -195,10 +200,7 @@
     .gallery__choose-us .swiper-button-prev-list:after,
     .gallery__choose-us .swiper-button-next-list:after {
         font-size: 10px;
-        padding: 8px;
-        border: 2px solid;
         font-weight: 800;
-        border-radius: 50%;
         color: #292D32;
         content: '';
     }

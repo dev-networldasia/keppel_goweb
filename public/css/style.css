@@ -708,6 +708,12 @@ html {
     animation: animation-arrow-y 1s linear 0s infinite alternate;
     -webkit-animation: animation-arrow-y 2s linear 0s infinite alternate;
 }
+.scroll-up-button img {
+    width: 6.3em;
+    aspect-ratio: 63 / 84;
+    animation: animation-arrow-y 1s linear 0s infinite alternate;
+    -webkit-animation: animation-arrow-y 2s linear 0s infinite alternate;
+}
 .scroll-up-button span {
     animation: animation-arrow-y 1s linear 0s infinite alternate;
     -webkit-animation: animation-arrow-y 2s linear 0s infinite alternate;

@@ -234,6 +234,11 @@
         background-color: none;
         background-color: unset;
     }
+    .parallax--variant-2 .parallax__border--variant-2 .parallax__triangle {
+        left: auto;
+        margin: 0 auto;
+        margin-right: 22%;
+    }
     .parallax__triangle img {
         filter: brightness(0) saturate(100%);
     }
