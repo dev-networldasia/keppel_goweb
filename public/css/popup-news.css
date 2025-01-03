@@ -53,7 +53,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    padding: 0.7em 0 0.5em 0.6em;
+    padding: 0.7em 0.5em 0.5em 0.6em;
     overflow: hidden;
     position: relative;
 }
@@ -120,11 +120,6 @@
 .popup-news .mySwiper-popup-news {
     height: fit-content;
     box-sizing: border-box;
-    padding: 10px 0;
-    width: 40%;
-    margin: unset;
-    left: 25%;
-    transform: translateX(-50%);
 }
 
 .popup-news .mySwiper-popup-news .swiper-slide {
@@ -188,6 +183,55 @@
     width: 7em;
     aspect-ratio: 1;
 }
+.group-thumb {
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 10px 0;
+    width: 40%;
+    margin: unset;
+    left: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    position: relative;
+    list-style: none;
+    z-index: 1;
+}
+
+/* Navigation Buttons */
+.group-thumb .swiper-button-prev-popup-news,
+.group-thumb .swiper-button-next-popup-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: auto;
+    cursor: pointer;
+    width: 4em;
+    height: 4em;
+    filter: brightness(0) saturate(100%) invert(12%) sepia(15%) saturate(509%) hue-rotate(173deg) brightness(97%) contrast(87%);
+}
+.group-thumb .swiper-button-prev-popup-news img {
+    transform: rotate(180deg);
+}
+.group-thumb .swiper-button-prev-popup-news img,
+.group-thumb .swiper-button-next-popup-news img{
+    width: 7.6em;
+}
+
+.group-thumb .swiper-button-prev-popup-news {
+    left: -6em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.group-thumb .swiper-button-next-popup-news {
+    right: -6em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media (max-width: 575px){
     .popup-news {
         font-size: 0.5rem;;
@@ -195,7 +239,7 @@
     .popup-news__disc {
         flex-direction: column;
     }
-    .popup-news .mySwiper-popup-news {
+    .group-thumb {
         padding: 10px 0;
         width: 100%;
         margin: unset;
@@ -218,7 +262,7 @@
     .popup-news__disc {
         flex-direction: column;
     }
-    .popup-news .mySwiper-popup-news {
+    .group-thumb {
         padding: 10px 0;
         width: 100%;
         margin: unset;

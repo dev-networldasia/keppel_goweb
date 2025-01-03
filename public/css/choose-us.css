@@ -176,43 +176,31 @@
         align-items: center;
         border-radius: 50%;
         top: auto;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
         cursor: pointer;
-        bottom: 11%;
-        width: 4rem;
-        height: 4rem;
-        background: transparent;
-        border-radius: 50%;
-        color: #292D32;
-        border: 2px solid;
+        width: 4em;
+        height: 4em;
+        filter: brightness(0) saturate(100%) invert(12%) sepia(15%) saturate(509%) hue-rotate(173deg) brightness(97%) contrast(87%);
+    }
+    .gallery__choose-us .swiper-button-prev-list img {
+        transform: rotate(180deg);
+    }
+    .gallery__choose-us .swiper-button-prev-list img,
+    .gallery__choose-us .swiper-button-next-list img{
+        width: 7.6em;
     }
 
     .gallery__choose-us .swiper-button-prev-list {
-        left: 30%;
+        left: 27%;
         position: absolute;
+        top: 0;
+        transform: translateY(-50%);
     }
 
     .gallery__choose-us .swiper-button-next-list {
-        right: 30%;
+        right: 27%;
         position: absolute;
-    }
-
-    .gallery__choose-us .swiper-button-prev-list:after,
-    .gallery__choose-us .swiper-button-next-list:after {
-        font-size: 10px;
-        font-weight: 800;
-        color: #292D32;
-        content: '';
-    }
-    .gallery__choose-us .swiper-button-prev-list:after{
-        content: 'prev';
-        font-family: swiper-icons;
-        line-height: 1;
-    }
-    .gallery__choose-us .swiper-button-next-list:after{
-        content: 'next';
-        font-family: swiper-icons;
-        line-height: 1;
+        top: 0;
+        transform: translateY(-50%);
     }
 
     /* Pagination Wrapper Position */
