@@ -1,15 +1,28 @@
-.popup-news {
-    width: 100%;
-    height: 100svh;
+.fp-overflow {
     position: relative;
-    display: flex;
+}
+.popup-news {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     font-size: 0.7rem;
+    background: #ffffff;
 }
+.popup-news.active {
+    display: flex;
+  }
 .popup-news .container{
     position: relative;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .popup-news__bg {
     top: 0;
@@ -29,7 +42,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 5em;
 }
 .popup-news__group .title-news{
@@ -44,7 +56,6 @@
     padding: 0.7em 0 0.5em 0.6em;
     overflow: hidden;
     position: relative;
-    white-space: nowrap;
 }
 .title-news::after{
     position: absolute;
@@ -102,20 +113,25 @@
 }
 
 .popup-news .mySwiper2-popup-news {
-    height: 70%;
+    height: fit-content;
     width: 100%;
 }
 
 .popup-news .mySwiper-popup-news {
-    height: 25%;
+    height: fit-content;
     box-sizing: border-box;
     padding: 10px 0;
+    width: 40%;
+    margin: unset;
+    left: 25%;
+    transform: translateX(-50%);
 }
 
 .popup-news .mySwiper-popup-news .swiper-slide {
     width: 25%;
     height: 100%;
     opacity: 0.4;
+    justify-content: flex-start;
 }
 
 .popup-news .mySwiper-popup-news .swiper-slide-thumb-active {
@@ -128,21 +144,109 @@
     height: 100%;
     object-fit: cover;
 }
+.thumb-news {
+    display: flex;
+    flex-direction: column;
+}
+.thumb-news__title {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-top: 0.5em;
+}
+.whatshot-tag {
+    width: fit-content;
+    font-size: 2.8em;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--natural-100);
+    margin: unset;
+    left: 25%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.whatshot-tag::before {
+    content: '';
+    display: block;
+    width: 4em;
+    height: 5px;
+    background-color: #422667;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 0.5em;
+}
+.close-btn-popup-news {
+    position: absolute;
+    top: 95px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+.close-btn-popup-news img {
+    width: 7em;
+    aspect-ratio: 1;
+}
 @media (max-width: 575px){
-
+    .popup-news {
+        font-size: 0.5rem;;
+    }
+    .popup-news__disc {
+        flex-direction: column;
+    }
+    .popup-news .mySwiper-popup-news {
+        padding: 10px 0;
+        width: 100%;
+        margin: unset;
+        left: auto;
+        transform: none;
+    }
+    .whatshot-tag {
+        font-size: 3.8em;
+        left: 50%;
+    }
+    .close-btn-popup-news {
+        top: 125px;
+        right: 20px;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
-
+    .popup-news {
+        font-size: 0.5rem;;
+    }
+    .popup-news__disc {
+        flex-direction: column;
+    }
+    .popup-news .mySwiper-popup-news {
+        padding: 10px 0;
+        width: 100%;
+        margin: unset;
+        left: auto;
+        transform: none;
+    }
+    .whatshot-tag {
+        font-size: 3.8em;
+        left: 50%;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
-
+    .popup-news {
+        font-size: 0.5rem;;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
-
+    .popup-news {
+        font-size: 0.5rem;;
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
-
+    .popup-news {
+        font-size: 0.5rem;;
+    }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
-
+    .popup-news {
+        font-size: 0.6rem;;
+    }
 }

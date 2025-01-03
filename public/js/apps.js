@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   document.querySelector(".close-btn-mobile").addEventListener("click", function () {
     document.querySelector(".popup-mobile-menu").classList.remove("active");
   });
-  document.querySelector(".contact-us-mobile").addEventListener("click", function () {
-    document.querySelector(".popup-mobile-menu").classList.remove("active");
-  });
+  // document.querySelector(".contact-us-mobile").addEventListener("click", function () {
+  //   document.querySelector(".popup-mobile-menu").classList.remove("active");
+  // });
   document.querySelector(".overlay").addEventListener("click", function () {
     document.querySelector(".popup-mobile-menu").classList.remove("active");
   });
@@ -302,14 +302,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   initializeSwiperGallery();
 
   // Swiper News Pop-up
-  var swiper = new Swiper(".mySwiper-popup-news", {
+  var popupswiper = new Swiper(".mySwiper-popup-news", {
     loop: true,
     spaceBetween: 10,
-    slidesPerView: 4,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
-  var swiper2 = new Swiper(".mySwiper2-popup-news", {
+  var popupswiper2 = new Swiper(".mySwiper2-popup-news", {
     loop: true,
     spaceBetween: 10,
     navigation: {
@@ -317,9 +317,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
       prevEl: ".swiper-button-prev-popup-news",
     },
     thumbs: {
-      swiper: swiper,
+      swiper: popupswiper,
     },
   });
+
+  // Add event listener for hot-news elements
+  const hotNewsSlides = document.querySelectorAll(".hot-news");
+  hotNewsSlides.forEach((slide, index) => {
+    slide.addEventListener("click", () => {
+      document.querySelector(".popup-news").classList.add("active");
+      const slideIndex = parseInt(slide.getAttribute("data-slide"));
+      popupswiper2.slideTo(slideIndex);
+    });
+  });
+
+  const closeBtn = document.querySelector(".close-btn-popup-news");
+  if (closeBtn) { 
+    closeBtn.addEventListener("click", function(evt) {
+      const popupNews = document.querySelector(".popup-news");
+      if (popupNews) {
+        popupNews.classList.remove("active");
+      }
+    });
+  }
 });
 
 // Function to show the popup
@@ -373,9 +393,9 @@ function initializeSwiperAboutUs() {
 // Swiper - GALLERY
 function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     // loop: true,
     pagination: {
       el: ".swiper-pagination-au",

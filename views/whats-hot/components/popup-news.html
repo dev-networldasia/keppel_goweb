@@ -1,12 +1,29 @@
 {{ define "popup-news"}}
-<section class="popup-news">
+<div class="popup-news" id="">
     <div class="popup-news__bg"></div>
     <div class="container">
+        <span class="close-btn-popup-news">
+            <img src="https://keppel.brancherx.net/static/img/about-us/back-btn.png" alt="back button">
+        </span>
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2-popup-news">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="popup-news__group">
-                        <h2 class="title-news">Hanoi Centre won “Best Retail<br>Interior Design”</h2>
+                        <h2 class="title-news">Annam Gourmet - high-end supermarket with 
+                            approximately 1.000m<sup>2</sup></h2>
+                        <div class="popup-news__disc">
+                            <div class="popup-news__image">
+                                <img src="{{site}}/static/img/whats-hot/news-2.png" alt="hanoi center">
+                            </div>
+                            <p class="popup-news__content">
+                                Annam Gourmet, the premium grocery store specializing in fine food and beverage products from all over the world, is set to open a 1000 sqm store in Hanoi Centre.  The strategic location, combined with Annam Gourmet's commitment to excellence, promises to make this store a key destination for green, healthy and modern lifestyle in Hanoi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popup-news__group">
+                        <h2 class="title-news">Hanoi Centre won “Best Retail Interior Design”</h2>
                         <div class="popup-news__disc">
                             <div class="popup-news__image">
                                 <img src="{{site}}/static/img/whats-hot/news-3.png" alt="hanoi center">
@@ -18,70 +35,80 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    <div class="popup-news__group">
+                        <h2 class="title-news">Pop Mart's first store in Hanoi</h2>
+                        <div class="popup-news__disc">
+                            <div class="popup-news__image">
+                                <img src="{{site}}/static/img/whats-hot/news-4.png" alt="hanoi center">
+                            </div>
+                            <p class="popup-news__content">
+                                Calling all art toy fans and collectors! POP MART, the global phenomenon in the collectible toy industry, is set to open its official store at Hanoi Centre, the capital's latest shopping destination that beautifully blends modernity and traditions. Known for its vibrant creativity and rich cultural heritage, Hanoi is the perfect backdrop for POP MART's latest venture. Join us in celebrating the opening of POP MART's first Hanoi store and explore the captivating world of designer toys.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                    <div class="popup-news__group">
+                        <h2 class="title-news">Hanoi Centre - A “centre” destination for premium shopping, entertainment, and services</h2>
+                        <div class="popup-news__disc">
+                            <div class="popup-news__image">
+                                <img src="{{site}}/static/img/whats-hot/news-1.png" alt="hanoi center">
+                            </div>
+                            <p class="popup-news__content">
+                                With a combination of modern design, green spaces, and diverse amenities, Hanoi Centre will not only meet the needs of the capital's residents but also attract tourists, enriching the shopping and entertainment experience in Hanoi. The project will maximize the potential of the lucrative real estate market in the area while promoting the city's economic and cultural development.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="swiper-button-next-popup-news"></div>
             <div class="swiper-button-prev-popup-news"></div>
         </div>
+        <div class="whatshot-tag">What's Hot</div>
         <div thumbsSlider="" class="swiper mySwiper-popup-news">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <div class="swiper-slide thumb-news">
+                    <div class="thumb-news__image">
+                        <img src="{{site}}/static/img/whats-hot/news-2.png" alt="hanoi center">
+                    </div>
+                    <div class="thumb-news__disc">
+                        <h4 class="thumb-news__title">
+                            Annam Gourmet - high-end supermarket with approximately 1.000m<sup>2</sup>
+                        </h4>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <div class="swiper-slide thumb-news">
+                    <div class="thumb-news__image">
+                        <img src="{{site}}/static/img/whats-hot/news-3.png" alt="hanoi center">
+                    </div>
+                    <div class="thumb-news__disc">
+                        <h4 class="thumb-news__title">
+                            Hanoi Centre won “Best Retail Interior Design”
+                        </h4>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <div class="swiper-slide thumb-news">
+                    <div class="thumb-news__image">
+                        <img src="{{site}}/static/img/whats-hot/news-4.png" alt="hanoi center">
+                    </div>
+                    <div class="thumb-news__disc">
+                        <h4 class="thumb-news__title">
+                            Pop Mart's first store in Hanoi
+                        </h4>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                <div class="swiper-slide thumb-news">
+                    <div class="thumb-news__image">
+                        <img src="{{site}}/static/img/whats-hot/news-1.png" alt="hanoi center">
+                    </div>
+                    <div class="thumb-news__disc">
+                        <h4 class="thumb-news__title">
+                            Hanoi Centre - A “centre” destination for premium shopping, entertainment, and services
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 {{end}}
