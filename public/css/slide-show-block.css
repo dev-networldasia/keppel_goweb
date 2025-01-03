@@ -501,6 +501,11 @@
         display: flex;
         bottom: 20%;
     }
+    .gallery-block__item1
+    .gallery-block__item2,
+    .gallery-block__item3 {
+        flex: auto;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     .triangle-left{
