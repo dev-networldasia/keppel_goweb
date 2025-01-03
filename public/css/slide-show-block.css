@@ -137,7 +137,7 @@
 
 .block__picture-3,
 .block__picture-2 {
-    height: 100%;
+    height: inherit;
 }
 
 .gallery-block__group {
@@ -418,7 +418,7 @@
         overflow: hidden;
         position: absolute;
         width: 55%;
-        height: 30%;
+        height: 30vh;
         right: 0;
         top: 27%;
     }
@@ -469,7 +469,7 @@
         width: 85%;
     }
     .block-c .gallery-block__item2 {
-        height: 20%;
+        height: 20vh;
         overflow: hidden;
         width: 50%;
         right: 1.5em;
