@@ -108,11 +108,11 @@
     }
     .hanoi-centre {
         display: block;
-        width: 70%;
-        transform: translate(-50%, -140%);
-        top: auto;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        top: 56%;
         right: auto;
-        font-size: 0.55rem;
+        font-size: 0.75rem;
         margin: 0 auto;
         left: 50%;
     }

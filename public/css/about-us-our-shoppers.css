@@ -106,12 +106,13 @@
     }
     .our-shoppers {
         display: block;
-        width: 64%;
-        transform: translate(-50%, -121%);
-        top: auto;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        top: 63%;
         right: auto;
+        font-size: 0.75rem;
+        margin: 0 auto;
         left: 50%;
-        font-size: 0.6rem;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

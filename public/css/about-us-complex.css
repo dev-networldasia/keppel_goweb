@@ -113,15 +113,14 @@
         font-size: 0.4em;
     }
     .complex {
-        position: relative;
+        display: flex;
         width: fit-content;
-        transform: translate(0%, -123%);
-        top: auto;
+        transform: translate(-50%, -50%);
+        top: 63%;
         right: auto;
-        left: auto;
-        font-size: 0.6rem;
+        font-size: 0.75rem;
         margin: 0 auto;
-        gap: 2em;
+        left: 50%;
     }
     .complex__description {
         padding-left: 2em;

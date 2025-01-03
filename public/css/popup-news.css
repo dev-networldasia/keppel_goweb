@@ -1,0 +1,148 @@
+.popup-news {
+    width: 100%;
+    height: 100svh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.popup-news .container{
+    position: relative;
+    height: 100%;
+}
+.popup-news__bg {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/whats-hot/triangle-right-top.svg) right top no-repeat, url(../img/whats-hot/popup-news-bg.png) left top no-repeat;
+    background-size: 20em, cover;
+}
+.popup-news__group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.popup-news__disc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+.popup-news__group .title-news{
+    display: block;
+    font-family: 'SVN-WylieVoigen';
+    font-size: 8em;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 0.7em 0 0.5em 0.6em;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.title-news::after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.5em solid transparent;
+    border-left: 0.5em solid var(--primary);
+    border-bottom: 0.5em solid transparent;
+    transform: rotate(225deg);
+    top: 0;
+    left: 0;
+    content: '';
+}
+.popup-news__image {
+    flex: 1;
+}
+.popup-news__content {
+    flex: 1;
+    font-size: 3.2em;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: -0.02em;
+    text-align: justify;
+}
+
+.popup-news .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.popup-news .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-news .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup-news .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup-news .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.popup-news .mySwiper2-popup-news {
+    height: 70%;
+    width: 100%;
+}
+
+.popup-news .mySwiper-popup-news {
+    height: 25%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.popup-news .mySwiper-popup-news .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.popup-news .mySwiper-popup-news .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.popup-news .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 575px){
+
+}
+@media (min-width: 576px) and (max-width: 768px){
+
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+
+}

@@ -300,6 +300,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Swiper gallery
   initializeSwiperGallery();
+
+  // Swiper News Pop-up
+  var swiper = new Swiper(".mySwiper-popup-news", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2-popup-news", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next-popup-news",
+      prevEl: ".swiper-button-prev-popup-news",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
 });
 
 // Function to show the popup
@@ -353,10 +373,10 @@ function initializeSwiperAboutUs() {
 // Swiper - GALLERY
 function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
-    autoplay: {
-        delay: 5000,
-    },
-    loop: true,
+    // autoplay: {
+    //     delay: 5000,
+    // },
+    // loop: true,
     pagination: {
       el: ".swiper-pagination-au",
       clickable: true,
