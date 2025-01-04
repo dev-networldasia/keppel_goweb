@@ -116,6 +116,7 @@
 .triangle-2 img {
     height: inherit;
     object-fit: cover;
+    transition: 0.3s ease-in-out;
 }
 .triangle-before{
     position: absolute;
@@ -470,6 +471,9 @@
     animation-fill-mode: forwards;
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
+}
+.group-shape:hover img {
+    transform: scale(1.05);
 }
 @media (max-width: 575px){
     .about-us{
