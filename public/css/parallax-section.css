@@ -196,7 +196,7 @@
 
 @media (max-width: 575px){
     .parallax__content {
-        font-size: 0.5em;
+        font-size: 0.59em;
     }
     .parallax__border--variant-2 .parallax__disc {
         left: auto;
