@@ -475,6 +475,8 @@
 .group-shape:hover img {
     transform: scale(1.05);
 }
+
+/* Reponsive */
 @media (max-width: 575px){
     .about-us{
         height: 100svh;

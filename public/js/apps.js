@@ -9,23 +9,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // function initFullPage() {
   //     if (window.innerWidth > 575) { // Only enable on screens wider than 768px
   //       // Initialize fullPage.js
-        new fullpage('#fullpage', {
-          responsiveWidth: 575,
-          menu: '#navbar',
-          autoScrolling: true,
-          scrollHorizontally: true,
-          afterLoad: function(origin, destination, direction){
-              // Refresh WOW.js animations after each section change
-              wow.sync();
-              const navbar = document.getElementById("navbar");
+  new fullpage("#fullpage", {
+    responsiveWidth: 575,
+    menu: "#navbar",
+    autoScrolling: true,
+    scrollHorizontally: true,
+    afterLoad: function (origin, destination, direction) {
+      // Refresh WOW.js animations after each section change
+      wow.sync();
+      const navbar = document.getElementById("navbar");
 
-              if (destination.index > 0) {
-                navbar.classList.add("fixed");
-            } else {
-                navbar.classList.remove("fixed");
-            }
-          }
-        });
+      if (destination.index > 0) {
+        navbar.classList.add("fixed");
+      } else {
+        navbar.classList.remove("fixed");
+      }
+    },
+  });
   //     } else if (fullPageInstance) {
   //         fullPageInstance.destroy('all'); // Destroy fullPage.js on mobile
   //         fullPageInstance = null; // Reset instance
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // // Run on resize
   // window.addEventListener('resize', initFullPage);
-  
+
   // Navbar
   // const navbar = document.getElementById("navbar");
 
@@ -59,9 +59,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     .addEventListener("click", function () {
       document.querySelector(".popup-mobile-menu").classList.toggle("active");
     });
-  document.querySelector(".close-btn-mobile").addEventListener("click", function () {
-    document.querySelector(".popup-mobile-menu").classList.remove("active");
-  });
+  document
+    .querySelector(".close-btn-mobile")
+    .addEventListener("click", function () {
+      document.querySelector(".popup-mobile-menu").classList.remove("active");
+    });
   // document.querySelector(".contact-us-mobile").addEventListener("click", function () {
   //   document.querySelector(".popup-mobile-menu").classList.remove("active");
   // });
@@ -118,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     spaceBetween: 0,
     loop: true,
     autoplay: {
-        delay: 5000,
+      delay: 5000,
     },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
@@ -269,32 +271,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
   window.addEventListener("load", handleResize);
   window.addEventListener("resize", handleResize);
 
-  var groupShapes = document.getElementsByClassName('group-shape');
+  var groupShapes = document.getElementsByClassName("group-shape");
   // Add event listeners to buttons
-  const buttons = document.querySelectorAll('.group-shape');
+  const buttons = document.querySelectorAll(".group-shape");
 
-  const swiperab = new Swiper('.home-about-us-swiper', {
+  const swiperab = new Swiper(".home-about-us-swiper", {
     loop: true,
     slidesPerView: 1,
     navigation: {
-      nextEl: '.swiper-button-next-2',
-      prevEl: '.swiper-button-prev-2',
+      nextEl: ".swiper-button-next-2",
+      prevEl: ".swiper-button-prev-2",
     },
   });
 
   buttons.forEach((button) => {
-    button.addEventListener('click', (e) => {
+    button.addEventListener("click", (e) => {
       e.preventDefault(); // Prevent default anchor behavior
-      const slideIndex = parseInt(button.getAttribute('data-slide')); // Get slide index from data attribute
-      
+      const slideIndex = parseInt(button.getAttribute("data-slide")); // Get slide index from data attribute
+
       swiperab.slideToLoop(slideIndex); // Navigate to the corresponding slide
     });
   });
 
   for (var i = 0; i < groupShapes.length; i++) {
-    groupShapes[i].addEventListener('click', function(event) {
-        var popupId = this.getAttribute('href').substring(1);
-        showPopup(popupId);
+    groupShapes[i].addEventListener("click", function (event) {
+      var popupId = this.getAttribute("href").substring(1);
+      showPopup(popupId);
     });
   }
 
@@ -332,12 +334,36 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
   const closeBtn = document.querySelector(".close-btn-popup-news");
-  if (closeBtn) { 
-    closeBtn.addEventListener("click", function(evt) {
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function (evt) {
       const popupNews = document.querySelector(".popup-news");
       if (popupNews) {
         popupNews.classList.remove("active");
       }
+    });
+  }
+
+  // Function to get query parameters from URL
+  function getQueryParameter(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+  // Automatically open popup if 'slide' parameter exists
+  const slideIndex = getQueryParameter("slide");
+
+  if (slideIndex !== null) {
+    const slideNumber = parseInt(slideIndex);
+
+    // Wait for fullPage.js to initialize, then move to section 2
+    window.addEventListener("load", () => {
+      if (typeof fullpage_api !== "undefined") {
+        fullpage_api.moveTo(2); // Move to section 2 (index starts at 1)
+      }
+
+      setTimeout(() => {
+        document.querySelector(".popup-news").classList.add("active");
+        popupswiper2.slideTo(slideNumber);
+      }, 500);
     });
   }
 });
@@ -346,14 +372,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 function showPopup(popupId) {
   var popup = document.getElementById(popupId);
   if (popup) {
-    popup.style.display = 'block'; // Example: display the popup
-  }}
+    popup.style.display = "block"; // Example: display the popup
+  }
+}
 
 // Function to close the popup
 function closePopup(popupId) {
   var popup = document.getElementById(popupId);
   if (popup) {
-    popup.style.display = 'none'; // Example: hide the popup
+    popup.style.display = "none"; // Example: hide the popup
   }
 }
 
@@ -394,7 +421,7 @@ function initializeSwiperAboutUs() {
 function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
     autoplay: {
-        delay: 5000,
+      delay: 5000,
     },
     // loop: true,
     pagination: {
@@ -464,22 +491,24 @@ function initializeListCardSwiper() {
     if (!listCardSwiper) {
       const listCardContainer = document.querySelector(".list-card");
       listCardContainer.classList.add("swiper-container");
-  
+
       // Move only .list-card__card elements into Swiper wrapper
-      const listCards = Array.from(listCardContainer.querySelectorAll(".list-card__card"));
+      const listCards = Array.from(
+        listCardContainer.querySelectorAll(".list-card__card")
+      );
       const wrapper = document.createElement("div");
       wrapper.classList.add("swiper-wrapper");
-  
+
       listCards.forEach((card) => {
         const slide = document.createElement("div");
         slide.classList.add("swiper-slide");
         slide.appendChild(card);
         wrapper.appendChild(slide);
       });
-  
+
       // Append the wrapper to the container
       listCardContainer.appendChild(wrapper);
-  
+
       // Initialize Swiper
       listCardSwiper = new Swiper(".list-card", {
         loop: true,
@@ -499,20 +528,30 @@ function initializeListCardSwiper() {
         on: {
           init: function () {
             // Add initial active color to the first bullet
-            const bullets = document.querySelectorAll(".swiper-pagination-list .swiper-pagination-bullet");
+            const bullets = document.querySelectorAll(
+              ".swiper-pagination-list .swiper-pagination-bullet"
+            );
             if (bullets.length > 0) {
               bullets[0].classList.add("active-color-1");
             }
           },
           slideChange: function () {
             // Update pagination bullet colors on slide change
-            const bullets = document.querySelectorAll(".swiper-pagination-list .swiper-pagination-bullet");
+            const bullets = document.querySelectorAll(
+              ".swiper-pagination-list .swiper-pagination-bullet"
+            );
             bullets.forEach((bullet, index) => {
-              bullet.classList.remove("active-color-1", "active-color-2", "active-color-3");
+              bullet.classList.remove(
+                "active-color-1",
+                "active-color-2",
+                "active-color-3"
+              );
             });
             const activeIndex = this.realIndex % 3; // Use modulo to cycle through active colors
             if (bullets[activeIndex]) {
-              bullets[activeIndex].classList.add(`active-color-${activeIndex + 1}`);
+              bullets[activeIndex].classList.add(
+                `active-color-${activeIndex + 1}`
+              );
             }
           },
         },
@@ -556,7 +595,6 @@ function handleListCardResize() {
 window.addEventListener("load", handleListCardResize);
 window.addEventListener("resize", handleListCardResize);
 
-
 // What's Hot Swiper
 const newsSwiper = new Swiper(".news-swiper-container", {
   slidesPerView: 1,
@@ -588,7 +626,7 @@ const newsSwiper = new Swiper(".news-swiper-container", {
 
 // Go to last page [Fullpage.js]
 function goToLastPage() {
-  const totalSections = document.querySelectorAll('.section').length;
+  const totalSections = document.querySelectorAll(".section").length;
 
   fullpage_api.moveTo(totalSections);
 }

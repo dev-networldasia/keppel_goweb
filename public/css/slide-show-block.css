@@ -162,6 +162,15 @@
     object-fit: cover;
 }
 
+.block__picture-3 picture,
+.block__picture-2 picture,
+.block__picture-1 picture {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    display: inline-block;
+}
+
 .gallery-block__top--content {
     display: flex;
     height: 100%;

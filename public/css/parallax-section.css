@@ -194,6 +194,38 @@
     transform: rotate(180deg);
 }
 
+/* Reponsive Iphone SE */
+@media (min-width: 320px) and (max-width: 375px) {
+    .parallax .parallax__border--variant-1 .parallax__disc {
+        margin: 0;
+        top: auto;
+        font-size: 0.9em;
+        transform: translateY(-5rem);
+    }
+    .parallax .parallax__triangle {
+        transform: translateY(-5rem);
+    }
+    .parallax .parallax__border--variant-2 .parallax__disc {
+        left: auto;
+        margin: 0 auto;
+        margin-right: 3%;
+        top: auto;
+        font-size: 0.9em;
+        transform: translateY(-5rem);
+    }
+    .parallax--variant-2 .parallax__border--variant-2 .parallax__triangle {
+        margin-right: 18% !important;
+    }
+    .parallax--variant-3 .parallax__content p {
+        line-height: 1.7;
+    }
+    .parallax--variant-4 .parallax__content p {
+        line-height: 1.7;
+    }
+    .parallax--variant-4 .parallax__border--variant-2 .parallax__disc {
+        margin-right: 15% !important;
+    }
+}
 @media (max-width: 575px){
     .parallax__content {
         font-size: 0.59em;

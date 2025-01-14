@@ -102,6 +102,13 @@
 }
 
 /* Reponsive ABOUT-US COMPLEX FACTSHEET */
+@media (min-width: 320px) and (max-width: 375px) {
+    .about-us__complex .complex {
+        top: 65%;
+        font-size: 0.65rem;
+        gap: 1em;
+    }
+}
 @media (max-width: 575px){
     .about-us__complex .bg-mode {
         width: 100%;

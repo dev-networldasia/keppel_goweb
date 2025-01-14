@@ -7,7 +7,11 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="{{site}}/static/img/highlight-page/bg-highlight.webp" alt="background city highlight">
+                    <!-- <img src="{{site}}/static/img/highlight-page/bg-highlight.webp" alt="background city highlight"> -->
+                    <picture>
+                        <source srcset="{{site}}/static/img/highlight-page/mobile-bg-highlight.webp" media="(max-width: 768px)">
+                        <img src="{{site}}/static/img/highlight-page/bg-highlight.webp" alt="background city highlight">
+                    </picture>
                     <!-- <div class="contact-us-btn btn">
                         CONTACT US
                     </div> -->

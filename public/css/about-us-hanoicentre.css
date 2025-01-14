@@ -95,6 +95,14 @@
 }
 
 /* Reponsive ABOUT-US HANOI CENTRE */
+/* Reponsive Iphone SE */
+@media (min-width: 320px) and (max-width: 375px) {
+    .about-us__hanoicentre .hanoi-centre {
+        width: 80%;
+        top: 64%;
+        font-size: 0.65em;
+    }
+}
 @media (max-width: 575px){
     .about-us__hanoicentre .bg-mode {
         width: 100%;
