@@ -185,8 +185,14 @@
     .content-map__left .note{
         font-size: 1.6em;
     }
+    .content-map {
+        gap: 5em;
+    }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .map-section {
+        font-size: 0.8rem;
+    }
     .content-map {
         gap: 0em;
     }

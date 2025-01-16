@@ -417,6 +417,11 @@
         padding-right: 1em;
         width: 12em;
     }
+    .scroll-up-button {
+        bottom: 2%;
+        right: 1%;
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -462,6 +467,17 @@
         padding-right: 1em;
         width: 13em;
     }
+    .scroll-up-button {
+        bottom: 2%;
+        right: 1%;
+        font-size: 0.8rem;
+    }
+    .scroll-btn {
+        bottom: 1%;
+        left: 50%;
+        font-size: 0.8rem;
+        z-index: 999;
+    }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
@@ -498,6 +514,12 @@
         padding-left: 2em;
         padding-right: 1em;
         width: 16em;
+    }
+    .scroll-btn {
+        bottom: 1%;
+        left: 50%;
+        font-size: 0.9rem;
+        z-index: 999;
     }
 }
 

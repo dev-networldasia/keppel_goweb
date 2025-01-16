@@ -57,6 +57,9 @@
     overflow: hidden;
     position: relative;
 }
+.title-news sup{
+    font-family: 'SVN-WylieVoigen';
+}
 .title-news::after{
     position: absolute;
     width: 0;
@@ -320,6 +323,10 @@
     .popup-news {
         font-size: 0.5rem;;
     }
+    .close-btn-popup-news {
+        top: 70px;
+        right: 1%;
+    }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .popup-news {
@@ -337,5 +344,9 @@
     }
     .popup-news__group .title-news {
         font-size: 7em;
+    }
+    .close-btn-popup-news {
+        top: 70px;
+        right: 5%;
     }
 }
