@@ -96,7 +96,7 @@
 
 /* Reponsive ABOUT-US HANOI CENTRE */
 /* Reponsive Iphone SE */
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 376px) {
     .about-us__hanoicentre .hanoi-centre {
         width: 80%;
         top: 64%;

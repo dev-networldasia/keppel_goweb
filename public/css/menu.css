@@ -120,7 +120,7 @@ header{
   background: #ffffff;
   position: absolute;
   display: none;
-  transform: translateY(85%) translateX(-10%);
+  transform: translateY(85%) translateX(-27%);
   flex-direction: column;
   color: var(--color-body);
   box-shadow: var(--shadow-1);
@@ -129,7 +129,7 @@ header{
   opacity: 0;
   transition: 0.3s;
   padding: 1em;
-  min-width: 10em;
+  min-width: 3em;
 }
 .sub-menu-lag .lag{
   padding: 0.4em;

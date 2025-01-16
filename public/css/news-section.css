@@ -126,7 +126,7 @@
     text-align: justify;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     overflow: hidden;
 }
 
@@ -267,7 +267,10 @@
         font-size: 0.55em;
     }
     .hot-news {
-        gap: 1em;
+        gap: 10em;
+    }
+    .group-news {
+        gap: 2em;
     }
     .news__title {
         margin-bottom: 0.2em;
