@@ -119,9 +119,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    autoplay: {
-      delay: 5000,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
