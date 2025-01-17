@@ -248,14 +248,14 @@
 .group-thumb .swiper-button-prev-popup-news {
     left: -6em;
     position: absolute;
-    top: 50%;
+    top: 33%;
     transform: translateY(-50%);
 }
 
 .group-thumb .swiper-button-next-popup-news {
     right: -6em;
     position: absolute;
-    top: 50%;
+    top: 33%;
     transform: translateY(-50%);
 }
 .news-4 .title-news::after {
@@ -277,10 +277,9 @@
     }
     .group-thumb {
         padding: 10px 0;
-        width: 100%;
+        width: 90%;
         margin: unset;
-        left: auto;
-        transform: none;
+        left: 50%;
     }
     .whatshot-tag {
         font-size: 3.8em;
