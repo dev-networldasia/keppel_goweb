@@ -99,6 +99,13 @@
 }
 
 /* Reponsive */
+/* Reponsive Iphone SE */
+@media (min-width: 319px) and (max-width: 376px) {
+    .map-section .content-map__left {
+        font-size: 0.65em;
+        padding-right: 0;
+    }
+}
 @media (max-width: 575px){
     .map-section{   
         height: 100%;

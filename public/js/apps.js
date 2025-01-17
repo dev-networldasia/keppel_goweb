@@ -119,9 +119,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    autoplay: {
-      delay: 5000,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
@@ -310,6 +310,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      768: { // Khi màn hình >= 768px
+        slidesPerView: 3,
+      },
+      0: { // Khi màn hình < 768px
+        slidesPerView: 2,
+      },
+    },
   });
   var popupswiper2 = new Swiper(".mySwiper2-popup-news", {
     loop: true,
@@ -423,7 +431,6 @@ function initializeSwiperGallery() {
     autoplay: {
       delay: 5000,
     },
-    // loop: true,
     pagination: {
       el: ".swiper-pagination-au",
       clickable: true,

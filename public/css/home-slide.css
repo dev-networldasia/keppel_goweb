@@ -189,7 +189,16 @@ body.show-contact-us-btn .contact-us-btn {
     height: 3.8em;
     transform: rotate(90deg);
 }
-
+@media (min-width: 319px) and (max-width: 376px) {
+    .home-page .content-homepage {
+        width: 84%;
+        font-size: 0.52rem;
+        padding: 0 !important;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 @media (max-width: 575px){
     .home-page .four-corner-border {
         clip-path: polygon(56% 0, /* Top-left corner */ 75% 0, /* Top-right corner */ 100% 15%, /* Right-top cut */ 100% 90%, /* Right-bottom cut */ 75% 100%, /* Bottom-right corner */ 42% 100%, /* Bottom-left corner */ 0 89%, /* Left-bottom cut */ 0 21% /* Left-top cut */);
@@ -235,11 +244,13 @@ body.show-contact-us-btn .contact-us-btn {
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .content-homepage{
-        font-size: 0.65rem;
+        font-size: 1rem;
         padding: 0 10.5em;
+        width: 100%;
+        top: 42%;
     }
     .content-homepage h2{
-        font-size: 5.4rem;
+        font-size: 7.4rem;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){

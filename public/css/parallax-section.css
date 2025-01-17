@@ -225,6 +225,13 @@
     .parallax--variant-4 .parallax__border--variant-2 .parallax__disc {
         margin-right: 15% !important;
     }
+    .parallax__content {
+        font-size: 0.5em !important;
+    }
+    .parallax__content .parallax__triangle {
+        font-size: 1.5em;
+        margin-top: -1em !important;
+    }
 }
 @media (max-width: 575px){
     .parallax__content {
@@ -279,8 +286,9 @@
     .parallax__triangle span {
         color: var(--black);
     }
-    .parallax__triangle {
+    .parallax__content .parallax__triangle {
         font-size: 1.5em;
+        margin-top: -7em;
     }
     /* Modifier: parallax--variant-1 */
 .parallax--variant-1 {
@@ -341,21 +349,115 @@
     .parallax__triangle {
         font-size: 1.4em;
     }
+    .parallax--variant-1 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-1.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-2 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-2.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-3 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-3.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-4 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-4.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .parallax__content {
-        font-size: 0.65em;
+        font-size: 0.75em;
     }
     .parallax__triangle {
         font-size: 1.3em;
+    }
+    .parallax--variant-1 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-1.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-2 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-2.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-3 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-3.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-4 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-4.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax__disc {
+        width: 1%;
+        position: relative;
+        display: table;
+        margin-left: 10%;
+        margin-top: -25%;
+    }
+    .parallax__border--variant-2 .parallax__disc {
+        left: auto;
+        margin-right: 5%;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .parallax__content {
-        font-size: 0.65em;
+        font-size: 0.72em;
     }
     .parallax__triangle {
         font-size: 1.3em;
+    }
+    .parallax--variant-1 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-1.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-2 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-2.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-3 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-3.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax--variant-4 {
+        background-image: url(../img/highlight-page/parallax-section/bg-highlight-4.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax__disc {
+        width: 1%;
+        position: relative;
+        display: table;
+        margin-left: 10%;
+        margin-top: -25%;
+    }
+    .parallax__border--variant-2 .parallax__disc {
+        left: auto;
+        margin-right: 5%;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){

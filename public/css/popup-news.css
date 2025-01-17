@@ -169,7 +169,7 @@
     flex-direction: column;
 }
 .thumb-news__title {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
     line-height: 1.65;
     letter-spacing: -0.02em;
@@ -286,8 +286,15 @@
         left: 50%;
     }
     .close-btn-popup-news {
-        top: 125px;
-        right: 20px;
+        top: 7%;
+        right: 5%;
+    }
+    .thumb-news__title {
+        font-size: 2.5em;
+    }
+    .close-btn-popup-news img {
+        width: 10em;
+        aspect-ratio: 1;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

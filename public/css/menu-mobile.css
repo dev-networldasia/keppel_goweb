@@ -26,7 +26,7 @@
     width: 40em;
     background: var(--gray);
     height: 100%;
-    font-size: 1rem;    
+    font-size: 1em;    
     position: relative;
     color: var(--black-text);
     font-weight: 500;
@@ -36,7 +36,6 @@
     left: 0;
     overflow-y: auto;
     position: relative;
-    
 }
 .overlay{
     background-color: rgba(0, 0, 0, 0.8);
@@ -132,7 +131,7 @@
     padding-top: 0.5em;
 }
 .popup-mobile-menu .mainmenu-nav{
-    font-size: 1rem;
+    font-size: 1em;
     color: var(--color-heading);
     display: block;
     padding: 0 1.5em;
@@ -231,5 +230,8 @@
     }
     .header-right{
         display: none;
+    }
+    .popup-mobile-menu{
+        font-size: 0.8rem;
     }
 }

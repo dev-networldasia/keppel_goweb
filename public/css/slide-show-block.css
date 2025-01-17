@@ -376,6 +376,15 @@
     color: var(--black);
 }
 
+/* Reponsive Iphone SE */
+@media (min-width: 320px) and (max-width: 375px) {
+    .gallery-slide {
+        font-size: 0.8em;
+    }
+    .slide-galley-page .group-bullet-block {
+        font-size: 0.9rem;
+    }
+}
 @media (max-width: 575px){
     .triangle-bottom__content span br:first-child{
         display: block;
@@ -390,8 +399,8 @@
         clip-path: polygon(100% 50%, 80% 60%, 80% 50%);
     }
     .triangle-left{
-        font-size: 0.85em;
-        width: 40%;
+        font-size: 0.8em;
+        width: 33%;
     }
     .triangle-bottom__content {
         font-size: 0.62em;
@@ -403,13 +412,13 @@
     .triangle-left {
         top: 50%;
         transform: translateY(-50%);
-        height: 50%;
+        height: 40%;
     }
     .gallery-block {
         padding-right: 0;
     }
     .gallery-block {
-        width: 70%;
+        width: 77%;
         position: absolute;
         right: 0;
         padding: 8% 0;
@@ -417,10 +426,10 @@
     .block-a .gallery-block__group {
         display: flex;
         flex-direction: column;
+        height: 65svh;
     }
     .block__picture-1 {
-        height: 20svh;
-        width: 70%;
+        height: 25svh;
         margin-bottom: 2em;
     }
     .block-a .gallery-block__item2 {
@@ -429,7 +438,7 @@
         width: 55%;
         height: 30%;
         right: 0;
-        top: 27%;
+        top: 32%;
     }
     .block-a .gallery-block__top--content {
         justify-content: flex-start;
@@ -441,21 +450,21 @@
         font-size: 4em;
     }
     .block-b .gallery-block__group {
-        height: 70svh;
+        height: 65svh;
     }
     .block-b .gallery-block__item3 {
-        height: 30svh;
+        height: 35svh;
     }
     .block-b .gallery-block__item1{
-        height: 40svh;
+        height: 60svh;
     }
     .block-b .block__picture-1{
         width: 50%;
-        margin-top: 5em;
+        margin-top: 0em;
     }
     .block-b .gallery-block__item2 {
         flex: unset;
-        margin-top: 5em;
+        margin-top: 0em;
     }
     .block-b .gallery__group-text{
         justify-content: flex-start;
@@ -475,20 +484,24 @@
     }
     .block-c .block__picture-1 {
         height: 20svh;
-        width: 85%;
+        width: 100%;
     }
     .block-c .gallery-block__item2 {
-        height: 20svh;
+        height: 30svh;
         overflow: hidden;
         width: 50%;
-        right: 1.5em;
+        right: 0;
         position: absolute;
         top: 28%;
     }
+    .block-c .gallery-block__item3 {
+        height: 100%;
+        flex: 4;
+    }
     .block-c .block__picture-3 {
-        width: 80%;
+        width: 100%;
         right: 0;
-        position: absolute;
+        position: relative;
     }
     .block-c .gallery__group-text {
         /* left: -6em; */
@@ -514,6 +527,9 @@
     .gallery-block__item2,
     .gallery-block__item3 {
         flex: auto;
+    }
+    .gallery-block__item3 {
+        height: 35svh;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

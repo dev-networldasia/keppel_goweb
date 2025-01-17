@@ -170,7 +170,9 @@
 }
 
 @media (max-width: 575px) {
-
+    .gallery__choose-us {
+        font-size: 0.8rem;
+    }
     /* Navigation Buttons */
     .gallery__choose-us .swiper-button-prev-list,
     .gallery__choose-us .swiper-button-next-list {

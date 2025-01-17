@@ -179,13 +179,13 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        clip-path: polygon(100% 0, 100% 0, 100% 100%, -130% 100%);
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, -200% 100%);
         background: var(--white);
         background-size: 29em, cover;
     }
     .news__title {
         font-family: 'SVN-WylieVoigen';
-        font-size: 7em;
+        font-size: 6em;
         margin-left: 0.7em;
     }
     .hot-news {
@@ -196,7 +196,7 @@
         margin-bottom: 0.2em;
     }
     .group-news {
-        margin: 0 5em;
+        margin: 0 2em;
     }
     .hot-news__disc {
         margin-left: 0;
@@ -205,11 +205,11 @@
         font-size: 2.4em;
     }
     .news-section .news-swiper-button-next {
-        right: -5em;
+        right: -4em;
         top: 30%;
     }
     .news-section .news-swiper-button-prev {
-        left: -5em;
+        left: -4em;
         top: 30%;
     }
 }

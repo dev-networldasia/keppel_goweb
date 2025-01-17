@@ -132,6 +132,12 @@ footer {
 }
 
 /* Reponsive - Footer */
+/* Reponsive Iphone SE */
+@media (min-width: 319px) and (max-width: 376px) {
+    .footer {
+        font-size: 0.8rem !important;
+    }
+}
 @media (max-width: 575px){
     .footer {
         padding: 5em 2em 5em;

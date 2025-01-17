@@ -11,7 +11,7 @@
 .about-us__complex .bg-mode {
     width: 100%;
     height: 100%;
-    /* background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.png') right top no-repeat;
+    /* background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.webp') right top no-repeat;
     background-size: 22.1em, 45.1em, 260em; */
     background-image: url(../img/about-us/complex-factsheet/background.webp);
     background-position: right;
@@ -102,18 +102,52 @@
 }
 
 /* Reponsive ABOUT-US COMPLEX FACTSHEET */
-@media (min-width: 320px) and (max-width: 376px) {
+@media (min-width: 319px) and (max-width: 376px) {
     .about-us__complex .complex {
         top: 65%;
         font-size: 0.65rem;
         gap: 1em;
+    }
+    .about-us__complex .complex__title {
+        margin-bottom: 0.2em;
+    }
+    .about-us__complex .complex {
+        display: block;
+        width: 70%;
+        transform: translate(-50%, -50%);
+        top: 60%;
+        right: auto;
+        font-size: 0.65rem;
+        margin: 0 auto;
+        left: 50%;
+        background: #ffffff96;
+        padding: 2em;
+        border-radius: 0px;
+        text-shadow: 3px 3px 2px white;
+    }
+    .complex .complex__title {
+        margin-bottom: 0.2em;
+    }
+    .complex__district-name img {
+        width: 2em;
+    }
+    .complex__district-list {
+        gap: 1.5em !important;
+    }
+    
+    .swiper-slide .about-us__complex .bg-mode {
+        width: 100%;
+        height: 100%;
+        background: url(../img/about-us/hanoicentre/triangle-top-left.svg) left top no-repeat, url(../img/about-us/hanoicentre/triangle-bottom-left.svg) left bottom no-repeat, url(../img/about-us/hanoicentre/bg-hanoicentre.png) left top no-repeat;
+        background-size: 22.1em, 45.1em, 320px;
+        font-size: 0.4em;
     }
 }
 @media (max-width: 575px){
     .about-us__complex .bg-mode {
         width: 100%;
         height: 100%;
-        background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.png') right top no-repeat;
+        background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.webp') right top no-repeat;
         background-size: 22.1em, 45.1em, 480px;
     }
     .about-us__complex .bg-mode {
@@ -137,8 +171,8 @@
     .about-us__complex .bg-mode {
         width: 100%;
         height: 100%;
-        background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.png') right top no-repeat;
-        background-size: 22.1em, 45.1em, 720px;
+        background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.webp') right top no-repeat;
+        background-size: 22.1em, 45.1em, 550px;
         font-size: 0.7em;
     }
     .about-us__complex .bg-mode {
@@ -147,12 +181,12 @@
     .complex {
         display: flex;
         width: fit-content;
-        transform: translate(0%, -133%);
+        transform: translate(-50%, -133%);
         top: auto;
         right: auto;
-        left: 10%;
+        left: 50%;
         gap: 3em;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
