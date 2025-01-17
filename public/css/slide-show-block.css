@@ -382,7 +382,10 @@
         font-size: 0.75em;
     }
     .slide-galley-page .group-bullet-block {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+    .slide-galley-page .swiper-pagination-au {
+        height: 1em !important;
     }
 }
 @media (max-width: 575px){
@@ -508,9 +511,9 @@
         position: relative;
     }
     .group-bullet-block {
-        bottom: 4em;
+        bottom: 0em;
         width: 33%;
-        left: 15%;
+        left: 50%;
         transform: translateX(-50%);
     }
     .slide-galley-page .swiper-pagination-au .swiper-pagination-bullet {
