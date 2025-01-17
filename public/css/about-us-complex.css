@@ -138,8 +138,8 @@
     .swiper-slide .about-us__complex .bg-mode {
         width: 100%;
         height: 100%;
-        background: url(../img/about-us/hanoicentre/triangle-top-left.svg) left top no-repeat, url(../img/about-us/hanoicentre/triangle-bottom-left.svg) left bottom no-repeat, url(../img/about-us/hanoicentre/bg-hanoicentre.png) left top no-repeat;
-        background-size: 22.1em, 45.1em, 320px;
+        background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.webp') right top no-repeat;
+        background-size: 22.1em, 45.1em, 300px;
         font-size: 0.4em;
     }
 }
