@@ -635,9 +635,14 @@ const newsSwiper = new Swiper(".news-swiper-container", {
 function goToLastPage() {
   const totalSections = document.querySelectorAll(".section").length;
 
+  // Kiểm tra nếu menu mobile đang mở
+  const mobileMenu = document.querySelector(".popup-mobile-menu");
+  if (mobileMenu && mobileMenu.classList.contains("active")) {
+    mobileMenu.classList.remove("active");
+  }
+
   fullpage_api.moveTo(totalSections);
 }
-
 
 // Translate ENG VIE
   /**

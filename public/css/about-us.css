@@ -485,6 +485,12 @@
         z-index: 1;
         font-size: 0.6em;
     }
+    .about-us .close-btn {
+        top: auto;
+        right: 20px !important;
+        bottom: 48px !important;
+        font-size: 0.6em !important;
+    }
 }
 /* Reponsive */
 @media (max-width: 575px){
@@ -649,7 +655,7 @@
     }
     .about-us .close-btn {
         top: auto;
-        right: 30px;
+        right: 20px;
         bottom: 48px;
         font-size: 0.7em;
     }
