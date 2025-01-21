@@ -1,6 +1,6 @@
 {{ define "home_slide_show"}}
 <section class="swiper-slide home-page">
-    <button class="contact-us-btn btn" onclick="fullpage_api.moveTo(4)" title="Contact us">CONTACT US</button>
+    <button class="contact-us-btn btn" onclick="fullpage_api.moveTo(4)" title="Contact us" data-key="contact_us_btn">CONTACT US</button>
     <button class="scroll-btn" onclick="fullpage_api.moveSectionDown()">
         <img src="{{site}}/static/img/highlight-page/parallax-section/arrow-down.svg" alt="arrow down">
     </button>
@@ -27,8 +27,8 @@
                                 {{site}}/static/img/home-page/bg-home-2.png 1536w, 
                                 {{site}}/static/img/home-page/bg-home-2.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px" alt="background home City"> -->
                     <div class="content-homepage">
-                        <h2>Welcome to Hanoi Centre</h2>
-                        <p>Hanoi Centre shopping mall is located at 175 Nguyen Thai Hoc, Ba Dinh District, Hanoi, a
+                        <h2 data-key="content_homepage_title">Welcome to Hanoi Centre</h2>
+                        <p data-key="content_homepage">Hanoi Centre shopping mall is located at 175 Nguyen Thai Hoc, Ba Dinh District, Hanoi, a
                             prime area in the heart of the city. The project's prime location not only places it close
                             to Ba Dinh Square but also near famous tourist spots like the Temple of Literature (Văn Miếu
                             Quốc Tử Giám) and West Lake (Hồ Tây).
@@ -45,7 +45,7 @@
                             the unique heritage of Hanoi.
                         </p>
                         <a class="btn" onclick="fullpage_api.moveTo(2)" title="About us">
-                            <span class="more-about-us-btn">More about us</span>
+                            <span class="more-about-us-btn" data-key="more_about_us_btn">More about us</span>
                             <img src="{{site}}/static/img/home-page/button-arrow.png" alt="arrow">
                         </a>
                     </div>

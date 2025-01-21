@@ -696,7 +696,8 @@ function getLanguage(language) {
       Object.keys(data).forEach(function (key) {
         var elements = document.querySelectorAll("[data-key='" + key + "']");
         Array.from(elements).forEach(function (elem) {
-          elem.textContent = data[key];
+          elem.innerHTML = data[key];
+          // elem.textContent = data[key];
         });
       });
     }
