@@ -130,6 +130,7 @@ header{
   transition: 0.3s;
   padding: 1em;
   min-width: 3em;
+  cursor: pointer;
 }
 .sub-menu-lag .lag{
   padding: 0.4em;

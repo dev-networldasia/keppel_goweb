@@ -670,19 +670,49 @@ function initLanguage() {
   });
 }
 
+// chuyển đổi icon ngôn ngữ
+function updateLanguageControl(lang) {
+  console.log("----------- update -language control");
+
+  const langSelectedEl = document.getElementById("header-lang-img");
+  const origin = window.location.origin;
+
+  const langVNDiv = document.getElementById("lang-vn");
+  const langENDiv = document.getElementById("lang-en");
+
+  if (langSelectedEl) {
+    if (lang == "en") {
+      langSelectedEl.querySelector('img.flag').src = origin + "/static/img/menu/flag-us.png";
+    } else {
+      langSelectedEl.querySelector('img.flag').src = origin + "/static/img/menu/flag-vietnam.png";
+    }
+
+    if (lang == "vn") {
+      langVNDiv.style.display = "none";
+      langENDiv.style.display = "block";
+    } else {
+      langVNDiv.style.display = "block";
+      langENDiv.style.display = "none";
+    }
+  }
+}
+
 function setLanguage(lang) {
 
-  console.log("----------- set -language")
-  if (document.getElementById("header-lang-img")) {
-    if (lang == "en") {
-      document.getElementById("header-lang-img").src = "/static/themes/images/flags/us.svg";
-    } else if (lang == "vi") {
-      document.getElementById("header-lang-img").src = "/static/themes/images/flags/vn.svg";
-    }
-    localStorage.setItem("language", lang);
-    language = localStorage.getItem("language");
-    // getLanguage();
-  }
+updateLanguageControl(lang)
+localStorage.setItem("language", lang);
+language = localStorage.getItem("language");
+
+  // console.log("----------- set -language")
+  // if (document.getElementById("header-lang-img")) {
+  //   // if (lang == "en") {
+  //   //   document.getElementById("header-lang-img").src = "/static/themes/images/flags/us.svg";
+  //   // } else if (lang == "vi") {
+  //   //   document.getElementById("header-lang-img").src = "/static/themes/images/flags/vn.svg";
+  //   // }
+   
+  //   // getLanguage();
+  // }
   getLanguage(lang);
 }
 
