@@ -299,6 +299,7 @@ header{
   align-items: center;
   transition: 0.3s;
   color: var(--main-color);
+  text-transform: uppercase;
 }
 .menu-child-item a:hover{
   color: var(--primary);

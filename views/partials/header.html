@@ -20,7 +20,7 @@
                             <div class="category-icon">
                                 <i class=" ri-function-line"></i>
                             </div>
-                            <span>Category</span>
+                            <span data-key="category">Category</span>
                         </div>
                     </div>
                 </div>
@@ -29,25 +29,25 @@
                 <nav class="mainmenu-nav">
                     <ul class="mainmenu">
                         <li class="menu-child-item">
-                            <a href="/">
+                            <a href="/"  data-key="home">
                                 HOMEPAGE
                                 <i class="ri-arrow-down-s-line"></i>
                             </a>
                         </li>
                         <li class="menu-child-item">
-                            <a href="/highlight">
+                            <a href="/highlight" data-key="highlight">
                                 HIGHLIGHT
                                 <i class="ri-arrow-down-s-line"></i>
                             </a>
                         </li>
                         <li class="menu-child-item">
-                            <a href="/gallery">
+                            <a href="/gallery" data-key="gallery">
                                 GALLERY
                                 <i class="ri-arrow-down-s-line"></i>
                             </a>
                         </li>
                         <li class="menu-child-item">
-                            <a href="/whats-hot">
+                            <a href="/whats-hot" data-key="whats_hot">
                                 WHAT'S HOT
                                 <i class="ri-arrow-down-s-line"></i>
                             </a>
@@ -69,14 +69,20 @@
                     </button>
                 </div>
                 <div class="lag">
-                    <div class="swap-lag">
+                    <div class="swap-lag" id="header-lang-img">
                         <img src="{{site}}/static/img/menu/flag-us.png" alt="world">
                         <!-- <span class="english">ENG</span> -->
                         <img class="arrow-icon" src="{{site}}/static/img/menu/arrow-icon.png" alt="arrow">
                     </div>
                     <ul class="sub-menu-lag">
-                        <li class="lag">
+                        <li class="lag language" data-lang="vn">
                             <img src="{{site}}/static/img/menu/flag-vietnam.png" alt="">
+                            <div class="swap-lag">
+                                <!-- <span>VIE</span> -->
+                            </div>
+                        </li>
+                        <li class="lag language" data-lang="en">
+                            <img   src="{{site}}/static/img/menu/flag-us.png" alt="">
                             <div class="swap-lag">
                                 <!-- <span>VIE</span> -->
                             </div>
