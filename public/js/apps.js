@@ -650,56 +650,69 @@ function goToLastPage() {
 	 */
 // var navbarMenuHTML = document.querySelector(".navbar-menu").innerHTML;
 // var horizontalMenuSplit = 7; // after this number all horizontal menus will be moved in More menu options
-// var default_lang = "en"; // set Default Language
-// var language = localStorage.getItem("language");
+var default_lang = "en"; // set Default Language
+var language = localStorage.getItem("language");
 
-// function initLanguage() {
-//   // Set new language
-//   (language === null) ? setLanguage(default_lang) : setLanguage(language);
-//   var languages = document.getElementsByClassName("language");
-//   languages && Array.from(languages).forEach(function (dropdown) {
-//     dropdown.addEventListener("click", function (event) {
-//       setLanguage(dropdown.getAttribute("data-lang"));
-//     });
-//   });
-// }
+function initLanguage() {
+  console.log("----------- init -language",language );
+  // Set new language
+  (language === null) ? setLanguage(default_lang) : setLanguage(language);
+  var languages = document.getElementsByClassName("language");
 
-// function setLanguage(lang) {
-//   if (document.getElementById("header-lang-img")) {
-//     if (lang == "en") {
-//       document.getElementById("header-lang-img").src = "/static/themes/images/flags/us.svg";
-//     } else if (lang == "vi") {
-//       document.getElementById("header-lang-img").src = "/static/themes/images/flags/vn.svg";
-//     }
-//     localStorage.setItem("language", lang);
-//     language = localStorage.getItem("language");
-//     getLanguage();
-//   }
-// }
+  console.log("-----------language els",languages );
+
+
+  languages && Array.from(languages).forEach(function (dropdown) {
+    dropdown.addEventListener("click", function (event) {
+      console.log("- click event")
+      setLanguage(dropdown.getAttribute("data-lang"));
+    });
+  });
+}
+
+function setLanguage(lang) {
+
+  console.log("----------- set -language")
+  if (document.getElementById("header-lang-img")) {
+    if (lang == "en") {
+      document.getElementById("header-lang-img").src = "/static/themes/images/flags/us.svg";
+    } else if (lang == "vi") {
+      document.getElementById("header-lang-img").src = "/static/themes/images/flags/vn.svg";
+    }
+    localStorage.setItem("language", lang);
+    language = localStorage.getItem("language");
+    // getLanguage();
+  }
+  getLanguage(lang);
+}
 
 // // Multi language setting
-// function getLanguage() {
-//   language == null ? setLanguage(default_lang) : false;
-//   var request = new XMLHttpRequest();
-//   // Instantiating the request object
-//   request.open("GET", "/static/themes/lang/" + language + ".json");
-//   // Defining event listener for readystatechange event
-//   request.onreadystatechange = function () {
-//     // Check if the request is compete and was successful
-//     if (this.readyState === 4 && this.status === 200) {
-//       var data = JSON.parse(this.responseText);
-//       Object.keys(data).forEach(function (key) {
-//         var elements = document.querySelectorAll("[data-key='" + key + "']");
-//         Array.from(elements).forEach(function (elem) {
-//           elem.textContent = data[key];
-//         });
-//       });
-//     }
-//   };
-//   // Sending the request to the server
-//   request.send();
-// }
-// initLanguage();
+function getLanguage(language) {
+  console.log("okla ------------language");
+  // language == null ? setLanguage(default_lang) : false;
+  var request = new XMLHttpRequest();
+  // Instantiating the request object
+  request.open("GET", "/static/lang/" + language + ".json");
+  // Defining event listener for readystatechange event
+  request.onreadystatechange = function () {
+    // Check if the request is compete and was successful
+    if (this.readyState === 4 && this.status === 200) {
+      var data = JSON.parse(this.responseText);
+      Object.keys(data).forEach(function (key) {
+        var elements = document.querySelectorAll("[data-key='" + key + "']");
+        Array.from(elements).forEach(function (elem) {
+          elem.innerHTML = data[key];
+          // elem.textContent = data[key];
+        });
+      });
+    }
+  };
+  // Sending the request to the server
+  request.send();
+}
+
+
+initLanguage();
 // function init() {
 //   setDefaultAttribute();
 //   twoColumnMenuGenerate();
