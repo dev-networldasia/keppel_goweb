@@ -470,6 +470,9 @@
     .block-b .gallery-block__item2 {
         flex: unset;
         margin-top: 0em;
+        top: 0;
+        position: relative;
+        height: 30svh;
     }
     .block-b .gallery__group-text{
         justify-content: flex-start;
