@@ -77,6 +77,9 @@
     align-items: flex-start;
     gap: 2.5em;
 }
+.our-shoppers__district-name img {
+    margin-top: 0.5em;
+}
 .our-shoppers__district-name span {
     font-size: 2em;
     font-weight: 400;

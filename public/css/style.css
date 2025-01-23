@@ -476,7 +476,7 @@ html {
     padding: 0.5em 1em;
     color: var(--bg-highlight);
     background: var(--white2);
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 1em;
     border: 2px solid var(--bg-highlight);
     align-items: center;
@@ -597,7 +597,7 @@ html {
     position: relative;
     display: flex;
     width: max-content;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     gap: 0.5rem;
     align-items: center;

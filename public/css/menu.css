@@ -136,7 +136,7 @@ header{
   padding: 0.4em;
   border: none;
   width: 100%;
-  font-weight: 600;
+  font-weight: 700;
 }
 .header-right .lag:hover .sub-menu-lag{
   display: flex;
@@ -248,7 +248,7 @@ header{
 }
 .category__activation span{
   font-size: 1.6em;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 0.4em;
 }
 .main-navigation{

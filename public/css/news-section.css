@@ -59,7 +59,7 @@
 }
 .hot-news__title {
     font-size: 3.6em;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 0.3em;
@@ -116,7 +116,7 @@
     overflow: hidden;
 }
 .hot-news__title sup {
-    font-family: 'SVN-WylieVoigen';
+    /* font-family: 'SVN-WylieVoigen'; */
 }
 .news-swiper-container .hot-news__content {
     font-size: 2em;
