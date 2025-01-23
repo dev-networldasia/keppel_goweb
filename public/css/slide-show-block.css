@@ -137,7 +137,7 @@
 
 .block__picture-3,
 .block__picture-2 {
-    height: -webkit-fill-available;
+    height: inherit;
 }
 
 .gallery-block__group {
@@ -168,7 +168,7 @@
     width: 100%;
     height: inherit;
     object-fit: cover;
-    display: inline-block;
+    display: block;
 }
 
 .gallery-block__top--content {
@@ -439,7 +439,7 @@
         overflow: hidden;
         position: absolute;
         width: 55%;
-        height: 30svh;
+        height: auto;
         right: 0;
         top: 32%;
     }
@@ -459,7 +459,7 @@
         height: 35svh;
     }
     .block-b .gallery-block__item1{
-        height: 60svh;
+        height: 60%;
     }
     .block-b .block__picture-1{
         width: 50%;
@@ -472,7 +472,7 @@
         margin-top: 0em;
         top: 0;
         position: relative;
-        height: 30svh;
+        height: auto;
     }
     .block-b .gallery__group-text{
         justify-content: flex-start;
