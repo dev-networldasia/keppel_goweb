@@ -119,9 +119,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    // autoplay: {
-    //   delay: 5000,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
@@ -428,9 +428,9 @@ function initializeSwiperAboutUs() {
 // Swiper - GALLERY
 function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
-    // autoplay: {
-    //   delay: 5000,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
     pagination: {
       el: ".swiper-pagination-au",
       clickable: true,
@@ -654,21 +654,41 @@ var default_lang = "en"; // set Default Language
 var language = localStorage.getItem("language");
 
 function initLanguage() {
-  console.log("----------- init -language",language );
+  console.log("----------- init -language", language);
   // Set new language
-  (language === null) ? setLanguage(default_lang) : setLanguage(language);
+  language === null ? setLanguage(default_lang) : setLanguage(language);
+
   var languages = document.getElementsByClassName("language");
 
-  console.log("-----------language els",languages );
+  console.log("-----------language els", languages);
 
-
-  languages && Array.from(languages).forEach(function (dropdown) {
-    dropdown.addEventListener("click", function (event) {
-      console.log("- click event")
-      setLanguage(dropdown.getAttribute("data-lang"));
+  languages &&
+    Array.from(languages).forEach(function (dropdown) {
+      dropdown.addEventListener("click", function (event) {
+        console.log("- click event");
+        setLanguage(dropdown.getAttribute("data-lang"));
+      });
     });
-  });
+
+  // Add event listeners for mobile language buttons
+  const langVNMobile = document.getElementById("lang-vn-mobile");
+  const langENMobile = document.getElementById("lang-en-mobile");
+
+  if (langVNMobile) {
+    langVNMobile.addEventListener("click", function () {
+      console.log("Mobile VN button clicked");
+      setLanguage("vn");
+    });
+  }
+
+  if (langENMobile) {
+    langENMobile.addEventListener("click", function () {
+      console.log("Mobile EN button clicked");
+      setLanguage("en");
+    });
+  }
 }
+
 
 // chuyển đổi icon ngôn ngữ
 function updateLanguageControl(lang) {
@@ -680,19 +700,34 @@ function updateLanguageControl(lang) {
   const langVNDiv = document.getElementById("lang-vn");
   const langENDiv = document.getElementById("lang-en");
 
+  const langVNMobile = document.getElementById("lang-vn-mobile");
+  const langENMobile = document.getElementById("lang-en-mobile");
+
   if (langSelectedEl) {
-    if (lang == "en") {
-      langSelectedEl.querySelector('img.flag').src = origin + "/static/img/menu/flag-us.png";
+    if (lang === "en") {
+      langSelectedEl.querySelector("img.flag").src = origin + "/static/img/menu/flag-us.png";
     } else {
-      langSelectedEl.querySelector('img.flag').src = origin + "/static/img/menu/flag-vietnam.png";
+      langSelectedEl.querySelector("img.flag").src = origin + "/static/img/menu/flag-vietnam.png";
     }
 
-    if (lang == "vn") {
+    // Update visibility for desktop language buttons
+    if (lang === "vn") {
       langVNDiv.style.display = "none";
       langENDiv.style.display = "block";
     } else {
       langVNDiv.style.display = "block";
       langENDiv.style.display = "none";
+    }
+
+    // Update visibility for mobile language buttons
+    if (langVNMobile && langENMobile) {
+      if (lang === "vn") {
+        langVNMobile.style.display = "none";
+        langENMobile.style.display = "block";
+      } else {
+        langVNMobile.style.display = "block";
+        langENMobile.style.display = "none";
+      }
     }
   }
 }
@@ -718,7 +753,7 @@ language = localStorage.getItem("language");
 
 // // Multi language setting
 function getLanguage(language) {
-  console.log("okla ------------language");
+  console.log("ok ------------language");
   // language == null ? setLanguage(default_lang) : false;
   var request = new XMLHttpRequest();
   // Instantiating the request object

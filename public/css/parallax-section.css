@@ -246,10 +246,18 @@
         margin: 0 auto;
         margin-right: 5%;
         top: -10em;
+        background: #ffffff96;
+        padding: 2em;
+        border-radius: 0px;
+        text-shadow: 3px 3px 2px white;
     }
     .parallax__border--variant-1 .parallax__disc {
         margin: 0;
         top: -10em;
+        background: #ffffff96;
+        padding: 2em;
+        border-radius: 0px;
+        text-shadow: 3px 3px 2px white;
     }
     .parallax__content,
     .parallax__border--variant-2 .parallax__content{

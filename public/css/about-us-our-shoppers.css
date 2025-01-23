@@ -154,6 +154,10 @@
         font-size: 0.75rem;
         margin: 0 auto;
         left: 50%;
+        background: #ffffff96;
+        padding: 2em;
+        border-radius: 0px;
+        text-shadow: 3px 3px 2px white;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
@@ -169,21 +173,43 @@
     }
     .our-shoppers {
         display: block;
-        width: 90%;
+        width: 70%;
         transform: translate(24%, -135%);
         top: auto;
         right: auto;
         left: auto;
         font-size: 0.85rem;
         padding: 0 17em;
+        background: #ffffff96;
+        padding: 2em;
+        border-radius: 0px;
+        text-shadow: 3px 3px 2px white;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .about-us__ourshoppers .bg-mode {
-        font-size: 0.5em;
+        width: 100%;
+        height: 100%;
+        background: url('../img/about-us/ourshoppers/triangle-top-left.svg') left top no-repeat, url('../img/about-us/ourshoppers/triangle-bottom-left.svg') left bottom no-repeat, url('../img/about-us/ourshoppers/bg-ourshoppers.webp') left top no-repeat;
+        background-size: 22.1em, 45.1em, 768px;
+        font-size: 0.7em;
+    }
+    .about-us__ourshoppers .bg-mode {
+        font-size: 0.7em;
     }
     .our-shoppers {
-        font-size: 0.55rem;
+        display: block;
+        width: 70%;
+        transform: translate(24%, -135%);
+        top: auto;
+        right: auto;
+        left: auto;
+        font-size: 0.95rem;
+        padding: 0 17em;
+        background: #ffffff96;
+        padding: 2em;
+        border-radius: 0px;
+        text-shadow: 3px 3px 2px white;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
