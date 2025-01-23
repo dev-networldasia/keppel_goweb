@@ -464,6 +464,8 @@
     .block-b .block__picture-1{
         width: 50%;
         margin-top: 0em;
+        height: 35svh;
+        margin-bottom: 0;
     }
     .block-b .gallery-block__item2 {
         flex: unset;
