@@ -1,5 +1,6 @@
 
 {
+    "text-hanoi-centre": "{{site}}/static/img/home-page/centre-text-vn.png",
     "category": "Danh mục",
     "home": "Trang chủ",
     "highlight": "Nổi bật",
@@ -66,7 +67,7 @@
     "back-btn": "Trở về",
 
     "gallery_title": "TRIỂN LÃM",
-    "gallery_title_2": "Trung tâm <br> của <br> Hà Nội",
+    "gallery_title_2": "<br> Trung tâm <br> của Hà Nội",
     "block_a": "Tòa",
     "gallery_text_large": "Sang trọng <br> & Hiện đại",
     "gallery_text_small": "Văn phòng Hạng A",

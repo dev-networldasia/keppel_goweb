@@ -46,7 +46,7 @@
     font-size: 8em;
     color: var(--white);
     font-weight: 400;
-    line-height: 1.1;
+    line-height: var(--line-height-s);
     text-align: right;
 }
 .triangle-bottom__content span br:first-child{
@@ -189,7 +189,7 @@
     font-family: 'SVN-WylieVoigen';
     font-size: 8em;
     font-weight: 400;
-    line-height: 1;
+    line-height: var(--line-height-s);
 }
 
 .gallery__text-small {
@@ -230,7 +230,7 @@
 }
 
 .block-b .gallery__text-large {
-    line-height: 1.1;
+    line-height: var(--line-height-s);
 }
 
 /* Block - C */

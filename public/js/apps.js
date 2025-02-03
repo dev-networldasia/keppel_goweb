@@ -428,9 +428,9 @@ function initializeSwiperAboutUs() {
 // Swiper - GALLERY
 function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
-    // autoplay: {
-    //   delay: 5000,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
     pagination: {
       el: ".swiper-pagination-au",
       clickable: true,
@@ -695,6 +695,7 @@ function updateLanguageControl(lang) {
   console.log("----------- update -language control");
 
   const langSelectedEl = document.getElementById("header-lang-img");
+  const rootEl = document.documentElement; // Get the <html> element (root)
   const origin = window.location.origin;
 
   const langVNDiv = document.getElementById("lang-vn");
@@ -704,6 +705,7 @@ function updateLanguageControl(lang) {
   const langENMobile = document.getElementById("lang-en-mobile");
 
   if (langSelectedEl) {
+    // Update the flag image
     if (lang === "en") {
       langSelectedEl.querySelector("img.flag").src = origin + "/static/img/menu/flag-us.png";
     } else {
@@ -728,6 +730,11 @@ function updateLanguageControl(lang) {
         langVNMobile.style.display = "block";
         langENMobile.style.display = "none";
       }
+    }
+
+    // Update the root <html> element's lang attribute
+    if (rootEl) {
+      rootEl.setAttribute("data-lang", lang); // Updates <html data-lang="en"> or <html data-lang="vn">
     }
   }
 }
@@ -754,25 +761,36 @@ language = localStorage.getItem("language");
 // // Multi language setting
 function getLanguage(language) {
   console.log("ok ------------language");
-  // language == null ? setLanguage(default_lang) : false;
+
+  // Define your site's base URL (could also be dynamically fetched)
+  var siteBaseURL = window.location.origin;
+
   var request = new XMLHttpRequest();
-  // Instantiating the request object
+
+  // Request the translation file
   request.open("GET", "/static/lang/" + language + ".json");
-  // Defining event listener for readystatechange event
+
   request.onreadystatechange = function () {
-    // Check if the request is compete and was successful
     if (this.readyState === 4 && this.status === 200) {
       var data = JSON.parse(this.responseText);
+
+      // Process text translations with data-key
       Object.keys(data).forEach(function (key) {
-        var elements = document.querySelectorAll("[data-key='" + key + "']");
-        Array.from(elements).forEach(function (elem) {
+        var textElements = document.querySelectorAll("[data-key='" + key + "']");
+        Array.from(textElements).forEach(function (elem) {
           elem.innerHTML = data[key];
-          // elem.textContent = data[key];
+        });
+
+        // Process image translations with m-data
+        var imgElements = document.querySelectorAll("[m-data='" + key + "']");
+        Array.from(imgElements).forEach(function (elem) {
+          var imagePath = data[key].replace("{{site}}", siteBaseURL); // Replace {{site}} with base URL
+          elem.src = imagePath;
         });
       });
     }
   };
-  // Sending the request to the server
+
   request.send();
 }
 
