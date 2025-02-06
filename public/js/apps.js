@@ -689,7 +689,6 @@ function initLanguage() {
   }
 }
 
-
 // chuyển đổi icon ngôn ngữ
 function updateLanguageControl(lang) {
   console.log("----------- update -language control");
