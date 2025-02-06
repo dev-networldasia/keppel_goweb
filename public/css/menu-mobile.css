@@ -149,14 +149,17 @@
     padding: 0.5em 0.5em;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;        
+    text-transform: uppercase;
 }
+
 .mobile span{
     display: flex;
     position: relative;
     align-items: center;
     font-weight: 500;
 }
+
 .accordion.active .mobile span{
     color: var(--primary);
 }
