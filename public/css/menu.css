@@ -305,6 +305,9 @@ header{
 .menu-child-item a:hover{
   color: var(--primary);
 }
+.nav-link.active {
+  color: var(--primary) !important;
+}
 .menu-child-item a i{
   transition: 0.3s;
 }

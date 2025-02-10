@@ -145,16 +145,15 @@ body.show-contact-us-btn .contact-us-btn {
         );
 }
 .content-homepage {
-    font-size: 0.85em;
+    font-size: 0.9em;
     position: absolute;
-    width: 50%;
-    padding: 0 14.5em;
-    top: 59%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-50%);
+    /* width: 50%; */
+    /* padding: 0 14.5em; */
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 1%;
+    display: table;
+    left: 33%;
 }
 .content-homepage h2{
     font-size: 6.4em;
@@ -179,6 +178,7 @@ body.show-contact-us-btn .contact-us-btn {
     width: fit-content;
     padding: 2em 3em;
     border-radius: 4.6em;
+    margin: 0 auto;
 }
 .content-homepage .btn span {
     display: inline-block;
@@ -191,8 +191,7 @@ body.show-contact-us-btn .contact-us-btn {
 }
 @media (min-width: 319px) and (max-width: 376px) {
     .home-page .content-homepage {
-        width: 84%;
-        font-size: 0.48rem;
+        font-size: 0.44rem;
         padding: 0 !important;
         top: 45%;
         left: 50%;
@@ -203,17 +202,18 @@ body.show-contact-us-btn .contact-us-btn {
     .home-page .four-corner-border {
         clip-path: polygon(56% 0, /* Top-left corner */ 75% 0, /* Top-right corner */ 100% 15%, /* Right-top cut */ 100% 90%, /* Right-bottom cut */ 75% 100%, /* Bottom-right corner */ 42% 100%, /* Bottom-left corner */ 0 89%, /* Left-bottom cut */ 0 21% /* Left-top cut */);
     }
-    .text-centre{ 
-        width: 75%;
+    .swiper-slide .text-centre{ 
+        top: 30%;
+        width: 80%;
     }
     .home-page .swiper-slide.slide-2 img{
         object-position: left;
     }
     .content-homepage {
-        width: 100%;
-        font-size: 0.6rem;
+        font-size: 0.55rem;
         padding: 0 5.5em;
-        top: 46%;
+        top: 42%;
+        left: 50%;
     }
     .contact-us-btn{
         bottom: 2em;
@@ -236,18 +236,19 @@ body.show-contact-us-btn .contact-us-btn {
     .home-page .swiper-slide.slide-2 img{
         object-position: left;
     }
-    .content-homepage{
-        width: 100%;
+    .four-corner-border .content-homepage{
+        width: 1%;
         font-size: 0.9rem;
-        top: 40%;
+        top: 45%;
+        left: 50%;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
-    .content-homepage{
+    .four-corner-border .content-homepage{
+        width: 1%;
         font-size: 1rem;
-        padding: 0 10.5em;
-        width: 100%;
-        top: 42%;
+        top: 45%;
+        left: 50%;
     }
     .content-homepage h2{
         font-size: 7.4rem;
@@ -265,6 +266,6 @@ body.show-contact-us-btn .contact-us-btn {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .content-homepage{
-        font-size: 0.78rem;
+        font-size: 0.75rem;
     }
 }

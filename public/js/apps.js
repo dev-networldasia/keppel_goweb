@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
   wow.init();
 
+  // Highlight nav-bar
+  const navLinks = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active'); // Add 'active' class to the current link
+    }
+  });
+
   let fullPageInstance; // Variable to store the fullPage.js instance
 
   // function initFullPage() {
@@ -120,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     spaceBetween: 0,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 8000,
     },
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
@@ -429,7 +439,7 @@ function initializeSwiperAboutUs() {
 function initializeSwiperGallery() {
   var swiper = new Swiper(".mySwiper-block", {
     autoplay: {
-      delay: 5000,
+      delay: 8000,
     },
     pagination: {
       el: ".swiper-pagination-au",
