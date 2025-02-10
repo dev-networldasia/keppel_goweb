@@ -520,7 +520,7 @@
         font-size: 4em;
     }
     .block-b .gallery-block__group {
-        height: 67svh;
+        height: 65svh;
         justify-content: space-between;
         gap: 3svh;
     }
@@ -535,7 +535,7 @@
     .block-b .block__picture-1{
         width: 60%;
         margin-top: 0em;
-        height: 38svh;
+        height: 36svh;
         margin-bottom: 0;
     }
     .block-b .gallery-block__item2 {
@@ -560,7 +560,7 @@
     }
     .block-c .gallery-block__group {
         position: relative;
-        height: 63svh;
+        height: 61svh;
     }
     .block-c .block__picture-1 {
         height: 22svh;
@@ -568,7 +568,7 @@
         margin-bottom: 3svh;
     }
     .block-c .gallery-block__item2 {
-        height: 38svh;
+        height: 36svh;
         overflow: hidden;
         width: 60%;
         right: 0;
