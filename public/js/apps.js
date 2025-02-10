@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     menu: "#navbar",
     autoScrolling: true,
     scrollHorizontally: true,
-    scrollingSpeed: 1500,
+    scrollingSpeed: 1300,
     afterLoad: function (origin, destination, direction) {
       // Refresh WOW.js animations after each section change
       wow.sync();
@@ -133,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     autoplay: {
       delay: 8000,
     },
+    speed: 1300,
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
@@ -442,6 +443,7 @@ function initializeSwiperGallery() {
     autoplay: {
       delay: 8000,
     },
+    speed: 1300,
     pagination: {
       el: ".swiper-pagination-au",
       clickable: true,
