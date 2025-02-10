@@ -484,7 +484,7 @@
     }
     .gallery-block {
         width: fit-content;
-        max-width: 85%;
+        max-width: 81%;
         position: absolute;
         right: 0;
         padding: 8% 0;
@@ -533,7 +533,7 @@
         height: 60%;
     }
     .block-b .block__picture-1{
-        width: fit-content;
+        width: auto;
         margin-top: 0em;
         height: 38svh;
         margin-bottom: 0;
@@ -570,7 +570,7 @@
     .block-c .gallery-block__item2 {
         height: 38svh;
         overflow: hidden;
-        width: fit-content;
+        width: auto;
         right: 0;
         position: absolute;
         bottom: 0;
