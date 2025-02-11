@@ -48,7 +48,7 @@
 }
 .home-page .container-swiper-pagination {
     position: absolute;
-    left: 0;
+    left: 3vw;
     top: 0;
     width: fit-content;
     height: 100%;
@@ -145,29 +145,31 @@ body.show-contact-us-btn .contact-us-btn {
         );
 }
 .content-homepage {
-    font-size: 0.9em;
+    font-size: 1em;
     position: absolute;
     /* width: 50%; */
     /* padding: 0 14.5em; */
-    top: 55%;
+    top: 57%;
     transform: translate(-50%, -50%);
     width: 1%;
     display: table;
-    left: 33%;
+    left: 30%;
 }
 .content-homepage h2{
     font-size: 6.4em;
     line-height: 1.1;
     font-family: 'SVN-WylieVoigen';
     font-weight: 400;
-    margin-bottom: 0.4em;
+    /* margin-bottom: 0.4em; */
     white-space: nowrap;
 }
 .content-homepage p {
-    font-size: 2em;
-    line-height: 1.4em;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.3em;
     text-align: justify;
     margin-bottom: 1.5em;
+    letter-spacing: -2%;
 }
 .content-homepage .btn {
     display: flex;
@@ -176,19 +178,27 @@ body.show-contact-us-btn .contact-us-btn {
     align-items: center;
     gap: 1em;
     width: fit-content;
-    padding: 2em 3em;
+    padding: 1.5em 2em;
     border-radius: 4.6em;
     margin: 0 auto;
 }
 .content-homepage .btn span {
     display: inline-block;
-    font-size: 2.8em;
+    font-size: 2.4em;
 }
 .content-homepage .btn img {
     width: 3.8em;
     height: 3.8em;
     transform: rotate(90deg);
 }
+.home-page .text-centre {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+}
+
 @media (min-width: 319px) and (max-width: 376px) {
     .home-page .content-homepage {
         font-size: 0.44rem;
@@ -261,11 +271,19 @@ body.show-contact-us-btn .contact-us-btn {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .content-homepage{
-        font-size: 0.65rem;
+        font-size: 0.75rem;
+    }
+    .home-page .text-centre {
+        top: 22%;
+        width: 40vw;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .content-homepage{
-        font-size: 0.75rem;
+        font-size: 0.9rem;
+    }
+    .home-page .text-centre {
+        top: 22%;
+        width: 45vw;
     }
 }

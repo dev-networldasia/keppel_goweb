@@ -164,7 +164,7 @@
 }
 
 .block-a .block__picture-1 {
-    height: 35svh;
+    height: 38svh;
 }
 
 .block__picture-3,
@@ -241,6 +241,7 @@
     flex-direction: column-reverse;
     width: fit-content;
     justify-content: space-between;
+    gap: 3svh;
 }
 
 .block-b .gallery-block__group {

@@ -4,16 +4,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
   wow.init();
 
-  // Highlight nav-bar
-  const navLinks = document.querySelectorAll('.nav-link');
-  const currentPath = window.location.pathname;
-
-  navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
-      link.classList.add('active'); // Add 'active' class to the current link
-    }
-  });
-
   let fullPageInstance; // Variable to store the fullPage.js instance
 
   // function initFullPage() {
@@ -806,6 +796,15 @@ function getLanguage(language) {
   request.send();
 }
 
+// Highlight nav-bar
+const navLinks = document.querySelectorAll('.nav-link');
+const currentPath = window.location.pathname;
+
+navLinks.forEach(function (navLink) {
+    if (navLink.getAttribute('href') === currentPath) {
+      navLink.classList.add('active-color'); // Add 'active' class to the current link
+    }
+});
 
 initLanguage();
 // function init() {

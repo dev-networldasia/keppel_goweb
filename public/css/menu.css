@@ -305,7 +305,7 @@ header{
 .menu-child-item a:hover{
   color: var(--primary);
 }
-.nav-link.active {
+.nav-link.active-color {
   color: var(--primary) !important;
 }
 .menu-child-item a i{
