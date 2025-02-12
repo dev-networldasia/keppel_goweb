@@ -498,6 +498,7 @@
         display: flex;
         flex-direction: column;
         height: 65svh;
+        gap: 3svh;
     }
     .block-a .block__picture-1 {
         height: 23svh;
@@ -505,14 +506,17 @@
     }
     .block-a .gallery-block__item2 {
         overflow: hidden;
-        position: absolute;
-        width: 60%;
+        position: relative;
+        width: 100%;
         height: 37svh;
         right: 0;
         bottom: 0;
+        display: flex;
+        justify-content: right;
     }
     .block-a .gallery-block__top--content {
         justify-content: flex-start;
+        height: 23svh;
     }
     .triangle-left__content {
         left: 10%;
