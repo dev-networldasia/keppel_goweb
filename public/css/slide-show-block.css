@@ -467,11 +467,11 @@
         width: 33%;
     }
     .triangle-bottom__content {
-        font-size: 0.6em;
+        font-size: 0.8em;
         right: 3%;
     }
     .gallery__group-text {
-        font-size: 0.44em;
+        font-size: 0.52em;
     }
     .triangle-left {
         position: absolute;
@@ -506,8 +506,8 @@
     .block-a .gallery-block__item2 {
         overflow: hidden;
         position: absolute;
-        width: 55%;
-        height: 36svh;
+        width: 60%;
+        height: 37svh;
         right: 0;
         bottom: 0;
     }
@@ -527,16 +527,16 @@
     }
     .block-b .gallery-block__item3 {
         height: 22svh;
-        margin-bottom: 3svh;
+        /* margin-bottom: 3svh; */
         width: 100%;
     }
     .block-b .gallery-block__item1{
-        height: 60%;
+        height: 36svh;
     }
     .block-b .block__picture-1{
         width: 60%;
         margin-top: 0em;
-        height: 36svh;
+        /* height: 36svh; */
         margin-bottom: 0;
     }
     .block-b .gallery-block__item2 {
@@ -555,6 +555,7 @@
     .block-c .gallery-block__top--content{
         align-items: start;
         justify-content: flex-start;
+        height: 25svh;
     }
     .block-c .gallery-block {
         flex-direction: column;
@@ -571,10 +572,17 @@
     .block-c .gallery-block__item2 {
         height: 36svh;
         overflow: hidden;
+        width: 100%;
+        right: 0;
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: right;
+    }
+    .block-c .block__picture-2 {
         width: 60%;
         right: 0;
-        position: absolute;
-        bottom: 0;
+        position: relative;
     }
     .block-c .gallery-block__item3 {
         height: 27svh;
@@ -661,13 +669,16 @@
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .triangle-left {
+        width: 25%;
+    }
     .triangle-bottom__content {
-        font-size: 0.7em;
+        font-size: 0.74em;
     }
     .gallery__group-text {
         font-size: 0.75em;
     }
     .triangle-left__content {
-        left: 13%;
+        left: 11%;
     }
 }
