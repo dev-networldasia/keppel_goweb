@@ -114,19 +114,20 @@
     .about-us__complex .complex {
         display: block;
         width: 70%;
-        transform: translate(-50%, -50%);
-        top: 60%;
+        transform: translate(-50%, 50%);
+        top: auto;
         right: auto;
         font-size: 0.65rem;
         margin: 0 auto;
         left: 50%;
-        background: #ffffff96;
+        /* background: #ffffff96; */
         padding: 2em;
         border-radius: 0px;
         text-shadow: 3px 3px 2px white;
+        bottom: 40%;
     }
     .complex .complex__title {
-        margin-bottom: 0.2em;
+        margin-bottom: 0em;
     }
     .complex__district-name img {
         width: 2em;
@@ -139,7 +140,7 @@
         width: 100%;
         height: 100%;
         background: url('../img/about-us/complex-factsheet/triangle-top-right.svg') right top no-repeat, url('../img/about-us/complex-factsheet/triangle-bottom-right.svg') right bottom no-repeat, url('../img/about-us/complex-factsheet/bg-comlex.webp') right top no-repeat;
-        background-size: 22.1em, 45.1em, 300px;
+        background-size: 22.1em, 45.1em, 200px;
         font-size: 0.4em;
     }
 }
