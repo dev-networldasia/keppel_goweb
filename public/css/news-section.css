@@ -205,12 +205,15 @@
         font-size: 2.4em;
     }
     .news-section .news-swiper-button-next {
-        right: -4em;
+        right: -3.6em;
         top: 30%;
     }
     .news-section .news-swiper-button-prev {
-        left: -4em;
+        left: -3.6em;
         top: 30%;
+    }
+    .news-section .news-swiper-button-prev img, .news-section .news-swiper-button-next img {
+        width: 3.6em;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
