@@ -156,7 +156,7 @@
     .complex {
         display: flex;
         width: fit-content;
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, 50%);
         top: auto;
         right: auto;
         font-size: 0.7rem;
@@ -167,8 +167,8 @@
         padding: 2em;
         border-radius: 0px;
         text-shadow: 3px 3px 2px white;
-        bottom: 7%;
-    }
+        bottom: 35%;
+}
     .complex__title {
         line-height: 1.1;
     }
