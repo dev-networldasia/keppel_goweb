@@ -54,6 +54,7 @@
 }
 
 .triangle-bottom__content {
+    font-size: 0.95em;
     display: flex;
     justify-content: center;
     align-items: center;
