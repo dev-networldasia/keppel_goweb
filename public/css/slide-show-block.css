@@ -630,6 +630,8 @@
     }
     .block-a .gallery-block__item3 {
         height: 27svh;
+        display: flex;
+        align-items: flex-end;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
