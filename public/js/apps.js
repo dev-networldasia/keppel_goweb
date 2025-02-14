@@ -793,7 +793,7 @@ function getLanguage(language) {
     }
   };
 
-  request.send();
+  // request.send(); // Mở translate Ngôn ngữ
 }
 
 // Highlight nav-bar

@@ -156,17 +156,21 @@
     .complex {
         display: flex;
         width: fit-content;
-        transform: translate(-50%, -50%);
-        top: 63%;
+        transform: translate(-50%, 0%);
+        top: auto;
         right: auto;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         margin: 0 auto;
         left: 50%;
         gap: 1em;
-        background: #ffffff96;
+        /* background: #ffffff96; */
         padding: 2em;
         border-radius: 0px;
         text-shadow: 3px 3px 2px white;
+        bottom: 7%;
+    }
+    .complex__title {
+        line-height: 1.1;
     }
     .complex__description {
         padding-left: 2em;
