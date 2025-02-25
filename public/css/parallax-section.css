@@ -89,7 +89,7 @@
     font-family: 'SVN-WylieVoigen';
     font-size: 8em;
     font-weight: 400;
-    line-height: var(--line-height);
+    line-height: 1.2;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;

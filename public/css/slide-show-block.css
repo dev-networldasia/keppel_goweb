@@ -277,7 +277,8 @@
 }
 
 .block-b .gallery__text-large {
-    line-height: var(--line-height-s);
+    line-height: 1.1;
+    padding-bottom: 0.2em;
 }
 
 /* Block - C */

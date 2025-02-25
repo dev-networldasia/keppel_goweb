@@ -31,7 +31,7 @@
     padding: 0.7em 0 0 0.6em;
     overflow: hidden;
     position: relative;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 .title-map::after{
     position: absolute;
