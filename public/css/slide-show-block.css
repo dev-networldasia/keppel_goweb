@@ -469,8 +469,14 @@
         width: 33%;
     }
     .triangle-bottom__content {
-        font-size: 0.8em;
+        font-size: 0.65em;
         right: 3%;
+    }
+    .triangle-bottom__content span br:first-child{
+        display: none;
+    }
+    .gallery-block__top--content {
+        font-size: 0.65em;
     }
     .gallery__group-text {
         font-size: 0.5em;
@@ -641,7 +647,7 @@
         font-size: 0.85em;
     }
     .triangle-bottom__content {
-        font-size: 0.6em;
+        font-size: 1em;
         right: 3%;
     }
     .gallery__group-text {
@@ -653,11 +659,11 @@
         font-size: 0.85em;
     }
     .triangle-bottom__content {
-        font-size: 0.6em;
+        font-size: 1em;
         right: 3%;
     }
     .gallery__group-text {
-        font-size: 0.54em;
+        font-size: 0.94em;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
