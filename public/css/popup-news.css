@@ -348,7 +348,7 @@
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .popup-news {
-        font-size: 0.7rem;;
+        font-size: 0.7rem;
     }
     .popup-news .container {
         max-width: 1350px !important;
@@ -361,7 +361,8 @@
         padding-bottom: 2em;
     }
     .popup-news__group .title-news {
-        font-size: 7em;
+        font-size: 6em;
+        width: 85vw;
     }
     .close-btn-popup-news {
         top: 70px;

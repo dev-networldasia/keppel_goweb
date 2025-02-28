@@ -424,6 +424,7 @@
         display: table;
         margin-left: 10%;
         margin-top: -25%;
+        font-size: 0.9em;
     }
     .parallax__border--variant-2 .parallax__disc {
         left: auto;
@@ -479,6 +480,10 @@
     }
     .parallax__triangle {
         font-size: 1.3em;
+    }
+    .parallax__border--variant-2 .parallax__disc {
+        left: auto;
+        margin-right: 15%;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
