@@ -285,6 +285,12 @@
     .gallery__group-pagination {
         display: block;
     }
+    .choose-us__title h2 {
+        font-size: 8em;
+        line-height: 1.1;
+        padding-bottom: 0.3em;
+        white-space: unset;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     .gallery__choose-us {

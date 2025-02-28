@@ -16,7 +16,7 @@
 .content-map__left {
     flex: 5;
     position: relative;
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding-right: 10em;
 }
 .content-map__left .title-map{

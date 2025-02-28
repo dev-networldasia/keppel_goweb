@@ -44,6 +44,9 @@
     position: relative;
     white-space: nowrap;
 }
+.hanoi-centre__title.title-translate {
+    display: none;
+}
 .hanoi-centre__title::after {
     position: absolute;
     width: 0;
@@ -163,6 +166,12 @@
     }
     .hanoi-centre__district-detail {
         padding-left: 2em;
+    }
+    .hanoi-centre__title {
+        display: none;
+    }
+    .hanoi-centre__title.title-translate {
+        display: block;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

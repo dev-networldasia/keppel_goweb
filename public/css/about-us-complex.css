@@ -178,6 +178,9 @@
         /* padding-left: 2em; */
         padding-bottom: 1em;
     }
+    .white-space{
+        white-space: nowrap;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     .about-us__complex .bg-mode {
