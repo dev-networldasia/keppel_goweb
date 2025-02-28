@@ -789,6 +789,12 @@ function getLanguage(language) {
           var imagePath = data[key].replace("{{site}}", siteBaseURL); // Replace {{site}} with base URL
           elem.src = imagePath;
         });
+        
+        // Process input placeholders with data-placeholder
+        var inputElements = document.querySelectorAll("[data-placeholder='" + key + "']");
+        Array.from(inputElements).forEach(function (elem) {
+            elem.placeholder = data[key];
+        });
       });
     }
   };

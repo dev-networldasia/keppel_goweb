@@ -1,6 +1,7 @@
 
 {
     "text-hanoi-centre": "{{site}}/static/img/home-page/centre-text-vn.png",
+    "search": "Tìm kiếm",
     "category": "Danh mục",
     "home": "Trang chủ",
     "highlight": "Điểm nhấn",
@@ -63,7 +64,7 @@
     "parallax_title_3": "Hiện đại giao thoa với <br> truyền thống Hà Nội",
     "parallax_content_3": "Khám phá một chốn bình yên, nơi hiện đại hòa quyện cùng truyền thống, khi cây đa cổ thụ uy nghi vẽ nên bức tranh của vẻ đẹp vượt thời gian, biến Hanoi Centre thành sự hòa quyện tuyệt mỹ giữa quá khứ và hiện tại. Hãy bước vào không gian nơi cội nguồn di sản giao thoa cùng nét quyến rũ đương đại.",
     "scroll_down_3": "Cuộn xuống",
-    "parallax_title_4": "Quảng trường Trung tâm",
+    "parallax_title_4": "Quảng trường trung tâm",
     "parallax_content_4": "Một không gian kết nối giữa ba tòa nhà, hài hòa giữa các hoạt động trong nhà và ngoài trời. Quảng trường trung tâm được phủ các mảng xanh tươi mát, xen kẽ các cụm cây xanh tạo bóng râm và bầu không khí trong lành, nơi những hoạt động sôi động diễn ra và hương sắc Hà Nội được tái hiện trong không gian đầy cuốn hút.<br> <br>Ngoài ra, Quảng trường trung tâm sẽ kết hợp cùng không gian trong nhà của TTTM, trở thành địa điểm tổ chức độc đáo cho những sự kiện cộng đồng đa dạng như hội chợ, triển lãm, giải trí...",
     "scroll_up": "Về đầu trang",
     "back-btn": "Quay lại",
