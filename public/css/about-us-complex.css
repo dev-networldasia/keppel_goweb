@@ -134,6 +134,7 @@
     }
     .complex__district-list {
         gap: 1.5em !important;
+        margin-top: 0.8em;
     }
     
     .swiper-slide .about-us__complex .bg-mode {
@@ -174,7 +175,8 @@
         line-height: 1.1;
     }
     .complex__description {
-        padding-left: 2em;
+        /* padding-left: 2em; */
+        padding-bottom: 1em;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

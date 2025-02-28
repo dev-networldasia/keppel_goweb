@@ -114,6 +114,7 @@
     }
     .hanoi-centre .hanoi-centre__title {
         margin-bottom: 0.2em;
+        white-space: normal;
     }
     .hanoi-centre__district-name img {
         width: 2em;
@@ -158,6 +159,7 @@
     }
     .hanoi-centre__title {
         margin-bottom: 0.2em;
+        white-space: normal;
     }
     .hanoi-centre__district-detail {
         padding-left: 2em;

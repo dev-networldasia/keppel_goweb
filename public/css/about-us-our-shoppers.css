@@ -100,14 +100,15 @@
 @media (min-width: 319px) and (max-width: 376px) {
     .about-us__ourshoppers .our-shoppers__title {
         margin-bottom: 0.2em;
+        /* white-space: normal; */
     }
     .about-us__ourshoppers .our-shoppers {
         display: block;
-        width: 95%;
+        width: 77%;
         transform: translate(-50%, 50%);
         top: auto;
         right: auto;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         margin: 0 auto;
         left: 50%;
         /* background: #ffffff96; */
@@ -164,6 +165,8 @@
         border-radius: 0px;
         text-shadow: 3px 3px 2px white;
         bottom: 34%;
+        width: 80vw;
+        margin-bottom: 3em;
     }
     .our-shoppers__title {
         margin-bottom: 0;
