@@ -275,16 +275,16 @@ body.show-contact-us-btn .contact-us-btn {
         font-size: 0.75rem;
     }
     .home-page .text-centre {
-        top: 22%;
-        width: 40vw;
+        top: 21%;
+        width: 38vw;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .content-homepage{
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     .home-page .text-centre {
-        top: 22%;
-        width: 45vw;
+        top: 21%;
+        width: 38vw;
     }
 }
