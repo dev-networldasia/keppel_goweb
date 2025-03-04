@@ -221,7 +221,7 @@ body.show-contact-us-btn .contact-us-btn {
         object-position: left;
     }
     .content-homepage {
-        font-size: 0.55rem;
+        font-size: 0.5rem;
         padding: 0 5.5em;
         top: 42%;
         left: 50%;
@@ -238,6 +238,16 @@ body.show-contact-us-btn .contact-us-btn {
     .content-homepage p {
         font-size: 2.2em;
         line-height: 1.2;
+    }
+    .home-page .container-swiper-pagination {
+        left: 0vw;
+        top: 0;
+    }
+    .home-page .swiper-horizontal>.swiper-pagination-bullets, .home-page .swiper-pagination-bullets.swiper-pagination-horizontal {
+        left: 5px;
+    }
+    .home-page .swiper-custom-pagination {
+        left: 13px;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
