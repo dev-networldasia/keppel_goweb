@@ -48,7 +48,7 @@
 }
 .home-page .container-swiper-pagination {
     position: absolute;
-    left: 3vw;
+    left: 1.5vw;
     top: 0;
     width: fit-content;
     height: 100%;
@@ -162,6 +162,7 @@ body.show-contact-us-btn .contact-us-btn {
     font-weight: 400;
     /* margin-bottom: 0.4em; */
     white-space: nowrap;
+    padding-bottom: 0.2em;
 }
 .content-homepage p {
     font-size: 1.8em;
