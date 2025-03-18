@@ -232,6 +232,11 @@
     line-height: 1.1;
 }
 
+.gallery__text-small br{
+    display: none;
+}
+
+
 /* Block - B */
 .block-b .triangle-left {
     background: var(--third);
@@ -640,6 +645,9 @@
         height: 27svh;
         display: flex;
         align-items: flex-end;
+    }
+    .gallery__text-small br{
+        display: block;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){

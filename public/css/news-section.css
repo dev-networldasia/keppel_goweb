@@ -154,14 +154,14 @@
 .news-section .news-swiper-button-prev {
     left: -6em;
     position: absolute;
-    top: 35%;
+    top: 36%;
     transform: translateY(-50%);
 }
 
 .news-section .news-swiper-button-next {
     right: -6em;
     position: absolute;
-    top: 35%;
+    top: 36%;
     transform: translateY(-50%);
 }
 .news-list {

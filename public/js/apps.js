@@ -120,10 +120,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    autoplay: {
-      delay: 8000,
-    },
-    speed: 1300,
+    // autoplay: {
+    //   delay: 8000,
+    // },
+    // speed: 1300,
     autoHeight: false, // Disable autoHeight unless required
     pagination: {
       el: ".swiper-pagination-bullets",
