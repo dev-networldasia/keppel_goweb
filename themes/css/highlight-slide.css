@@ -1,0 +1,240 @@
+.highlight-page{
+    background: var(--white);
+    font-size: 1rem;
+}
+.highlight-page .swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.highlight-page .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.highlight-page .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-page .swiper-slide picture {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-page .swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.highlight-page .swiper-horizontal>.swiper-pagination-bullets,.highlight-page .swiper-pagination-bullets.swiper-pagination-horizontal{
+    left: 10px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.highlight-page .container-swiper-pagination {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vertical Bullet Pagination */
+.highlight-page .swiper-pagination {
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.highlight-page .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 6px;
+}
+
+.highlight-page .swiper-pagination-bullet {
+    width: 2px;
+    height: 50px;
+    background: #aaa;
+    opacity: 0.5;
+    border-radius: 0;
+    transition: opacity 0.3s, background 0.3s;
+}
+
+.highlight-page .swiper-pagination-bullet-active {
+    background: #000;
+    opacity: 1;
+}
+
+/* Custom Pagination */
+.highlight-page .swiper-custom-pagination {
+    position: relative;
+    left: 18px;
+    bottom: 0px; /* Place below the bullets */
+    font-size: 8px;
+    font-weight: bold;
+    color: #000;
+    transform: rotate(90deg);
+    transform-origin: left;
+    z-index: 1;
+}
+.text-centre{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-centre h1{
+    font-family: 'SVN-WylieVoigen';
+    font-size: 14.8em;
+    font-size:  clamp(64px, 7vw, 128px) !important;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+
+.highlight-page .four-corner-border {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    /* background: url('../img/highlight-page/bg-home-2.png') no-repeat center/cover;
+    background-size: cover; */
+    overflow: hidden;
+    clip-path: polygon(
+        31% 0,   /* Top-left corner */
+        79% 0,  /* Top-right corner */
+        100% 30%, /* Right-top cut */
+        100% 100%, /* Right-bottom cut */
+        100% 100%, /* Bottom-right corner */
+        10% 100%,  /* Bottom-left corner */
+        0 100%,    /* Left-bottom cut */
+        0 25%      /* Left-top cut */
+        );
+}
+.highlight-page .content-homepage {
+    position: absolute;
+    width: 50%;
+    padding: 0 14.5em;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.highlight-page .content-homepage h2{
+    font-size: 6.4em;
+    line-height: 1.1;
+    font-family: 'SVN-WylieVoigen';
+    font-weight: 400;
+    margin-bottom: 0.4em;
+    white-space: nowrap;
+}
+.highlight-page .content-homepage p {
+    font-size: 2em;
+    line-height: 1.4em;
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+.highlight-page .content-homepage .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: fit-content;
+    padding: 2em 3em;
+    border-radius: 4.6em;
+}
+
+/* Reponsive Iphone SE */
+@media (min-width: 320px) and (max-width: 375px) {
+    .text-centre h1 {
+        font-size: 5.8em !important;
+    }
+}
+@media (max-width: 575px){
+    .highlight-page .four-corner-border {
+        clip-path: polygon(56% 0, /* Top-left corner */ 75% 0, /* Top-right corner */ 100% 15%, /* Right-top cut */ 100% 90%, /* Right-bottom cut */ 75% 100%, /* Bottom-right corner */ 42% 100%, /* Bottom-left corner */ 0 89%, /* Left-bottom cut */ 0 21% /* Left-top cut */);
+    }
+    .highlight-page .text-centre{
+        width: 100%;
+        top: 26%;
+    }
+    .text-centre h1{
+        font-size: 6.8em;
+    }
+    .highlight-page .swiper-slide.slide-2 img{
+        object-position: left;
+    }
+    .highlight-page .content-homepage{
+        width: 100%;
+        font-size: 0.7em;
+        padding: 0 10.5em;
+    }
+    .contact-us-btn{
+        bottom: 2em;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+    .contact-us-btn:hover {
+        transform: translate3d(-50%, -2px, 0);
+    }
+    .content-homepage p {
+        font-size: 2.2em;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .text-centre h1{
+        font-size: 10.8em;
+    }
+    .highlight-page .swiper-slide.slide-2 img{
+        object-position: left;
+    }
+    .content-homepage{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    .text-centre h1 {
+        font-size: 9.8em;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .text-centre h1 {
+        font-size: 9.8em;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .text-centre h1 {
+        font-size: 10.8em;
+    }
+    .text-centre {
+        top: 25%;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .text-centre h1 {
+        font-size: clamp(58px, 5vw, 128px);
+    }
+    .text-centre {
+        top: 25%;
+    }
+}

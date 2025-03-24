@@ -1,0 +1,240 @@
+.popup-mobile-menu{
+    z-index: 999;
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    font-size: 1rem;
+}
+.popup-mobile-menu.active{
+    visibility: visible;
+    opacity: 1;
+}
+.inner-wrapper{
+    z-index: 9999;
+    position: absolute;
+    opacity: 0;
+    left: -150px;
+    transition: all 0.5s ease-out;
+    width: 40em;
+    background: var(--gray);
+    height: 100%;
+    font-size: 1em;    
+    position: relative;
+    color: var(--black-text);
+    font-weight: 500;
+}
+.popup-mobile-menu.active .inner-wrapper{
+    opacity: 1;
+    left: 0;
+    overflow-y: auto;
+    position: relative;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    backdrop-filter: blur(15px);
+}
+.inner-top{
+    border-bottom: 1px solid var(--primary-opacity);
+    margin-bottom: 2.5em;
+}
+.content-mobile{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF80;
+    backdrop-filter: blur(30px);
+    padding: 2em 1.5em;
+    margin-bottom: 4em;
+}
+.content-mobile .logo img{
+    max-height: 3em;
+}   
+.content-mobile .close-btn-mobile{
+    z-index: 999;
+    font-size: 2.5em;
+    color: var(--black);
+}
+.inner-top p{
+    line-height: 1.45;
+    padding-right: 18%;
+    margin: 1em 0 1em 0;
+    font-size: 1.6em;
+
+}
+.inner-top ul{
+    font-size: 1.3em;
+}
+.popup-mobile-menu .search-mobile{
+    margin: 1em 0;
+    padding: 0 1.5em;
+}
+.form-letter{
+    margin-top: 1.5em;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    background: #ffffff;
+    padding: 1.5em 2em;
+    border-radius: 3.5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form-letter input{
+    position: relative;
+    color: var(--black-text);
+    font-size: 2em;
+    font-weight: 400;
+    border: 0 ;
+    width: 100%;
+    padding-right: 1em;
+    border-radius: 1em;
+}
+.form-letter .search-icon img{
+    width: 3.2em;
+}
+.form-letter input::placeholder{
+    color: var(--color-body);
+}
+.warp-course{
+    display: flex;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    align-items: center;
+    left: -0.5em;
+}
+
+.inner-top .contact{
+    font-size: 1.4em;
+    padding-top: 0.5em;
+}
+.popup-mobile-menu .mainmenu-nav{
+    font-size: 1em;
+    color: var(--color-heading);
+    display: block;
+    padding: 0 1.5em;
+}
+.mainmenu-nav .panel{
+    position: relative;
+    display: none;
+    padding-left: 1.2em;
+}
+.mainmenu-nav .accordion{
+    list-style: none;
+}
+.mainmenu-nav .accordion .mobile{
+    font-size: 3.2em;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;        
+    text-transform: uppercase;
+}
+
+.mobile span{
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 500;
+}
+
+.accordion.active .mobile span{
+    color: var(--primary);
+}
+.accordion:hover .mobile span{
+    color: var(--primary);
+}
+.mainmenu-nav .close-btn{
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.mainmenu-nav .close-btn::before{
+    display: flex;
+    content: '\F0415';
+    width: 1.5em;
+    color: black;
+    font-family: "Material Design Icons";
+    font-size: 1em;
+    justify-items: center;
+}
+.accordion.active .close-btn::before{
+    display: flex;
+    content: '\F0374';
+    width: 2em;
+    color: blue;
+    font-family: "Material Design Icons";
+    font-size: 1em;
+    justify-items: center;
+}
+.mainmenu-nav .panel li a{
+    padding: 0.6em 0.5em;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.panel .sub-menu-courses{
+    flex-direction: column;
+}
+.mainmenu-nav .panel2 li a{
+    font-size: 1.2em;
+}
+.change-language {
+    display: flex;
+}
+.mobile_menu__bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.change-language {
+    padding: 2em 2.5em;
+    background: var(--white);
+}
+.change-language span {
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 0.5em;
+}
+.change-language span:first-child {
+    border-right: 1px solid var(--gray);
+}
+.btn-menu-mobile img{
+    width: 5em;
+}
+
+@media (max-width: 575px){
+    .mainbar {
+        flex-direction: row-reverse;
+    }
+    .header-right{
+        display: none;
+    }
+    .popup-mobile-menu{
+        font-size: 0.8rem;
+    }
+}

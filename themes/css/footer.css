@@ -1,0 +1,206 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5em 0 5em;
+    background: var(--gray-2);
+    font-size: 0.9em;
+    overflow: hidden;
+}
+.footer__top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    border-bottom: 1px solid #323232;
+    padding-bottom: 5em;
+}
+.footer__left {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-top img{
+    width: 38.4em;
+    aspect-ratio: 384 / 59;
+}
+.footer__right {
+    position: relative;
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-bottom {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+.contact-us__disc{
+    padding-top: 8em;
+    font-size: 0.8em;
+}
+.contact-us__disc h2 {
+    font-family: 'SVN-WylieVoigen';
+    font-size: 6.4em;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.contact-us__item {
+    display: flex;
+    align-items: center;
+    margin: 4em 0;
+}
+.contact-us__item.phone {
+    margin-top: 3em;
+}
+.contact-us__item:last-child {
+    margin-bottom: 0;
+}
+.contact-us__item img {
+    width: 3.7em;
+    aspect-ratio: 1;
+}
+.contact-us__item span{
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-left: 0.5em;
+    line-height: 1.2;
+}
+.logo-bottom__item {
+    margin: 0 1.5em;
+    cursor: pointer;
+}
+.logo-bottom__item:first-child {
+    margin-left: 0;
+}
+.logo-bottom__item:last-child {
+    margin-right: 0;
+}
+.logo-bottom__item.facebook img{
+    width: 2em;
+    aspect-ratio: 20 / 39;
+}
+.logo-bottom__item.instagram img{
+    width: 4.2em;
+    aspect-ratio: 42 / 41;
+}
+.logo-bottom__item.tiktok img{
+    width: 3.7em;
+    aspect-ratio: 37 / 41;
+}
+.logo-bottom__item.youtube img{
+    width: 5.1em;
+    aspect-ratio: 51 / 36;
+}
+.logo-bottom__item.threads img{
+    width: 3.5em;
+    aspect-ratio: 35 / 40;
+}
+.logo-bottom__item.linkedin img {
+    width: 4.3em;
+    aspect-ratio: 35 / 40;
+}
+.keppel {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.keppel span {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 3;
+}
+.logo-keppel {
+    width: 12.2em;
+    aspect-ratio: 122 /40;
+}
+.copy-right {
+    padding-top: 5em;
+}
+.copy-right span {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Reponsive - Footer */
+/* Reponsive Iphone SE */
+@media (min-width: 319px) and (max-width: 376px) {
+    .footer {
+        font-size: 0.8rem !important;
+    }
+}
+@media (max-width: 575px){
+    .footer {
+        padding: 5em 2em 5em;
+        font-size: 1rem;
+    }
+    .footer__top {
+        flex-direction: column;
+    }
+    .footer__left {
+        font-size: 0.85em;
+        flex-direction: column;
+        gap: 5em;
+    }
+    .contact-us__disc {
+        font-size: 0.7em;
+        padding-top: 5em;
+    }
+    .contact-us__item {
+        margin: 5em 0;
+    }
+    .keppel {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        font-size: 0.7em;
+    }
+    .contact-us__item:last-child {
+        margin-bottom: 3em;
+    }
+    .keppel span {
+        font-size: 4em;
+        font-weight: 400;
+        line-height: 3;
+    }
+    .logo-keppel {
+        width: 26.2em;
+    }
+    .copy-right span {
+        font-size: 1.7em;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .footer {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    .footer {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .footer {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .footer {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .footer {
+        font-size: 0.7em;
+    }
+}

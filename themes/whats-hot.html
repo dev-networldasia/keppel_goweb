@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HANOI CENTRE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="css/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu-mobile.css" rel="stylesheet" type="text/css" />
+    <link href="css/highlight-slide.css" rel="stylesheet" type="text/css" />
+    <link href="css/news-section.css" rel="stylesheet" type="text/css" />
+    <link href="css/popup-news.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="css/reponsive.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="fullpage">
+        
+<header>
+    
+    <div class="header-bot" id="navbar">
+        <div class="container mainbar">
+            <div class="btn-menu-mobile">
+                <img src="img/menu/list-icon.png" alt="list icon">
+            </div>
+            <div class="mainbar__left">
+                <div class="header__info">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="img/menu/logo-hanoi-centre.png" alt="hanoi centre">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__info">
+                    <div class="category-menu__wrapper">
+                        <div class="category__activation">
+                            <div class="category-icon">
+                                <i class=" ri-function-line"></i>
+                            </div>
+                            <span data-key="category">Category</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-navigation">
+                <nav class="mainmenu-nav">
+                    <ul class="mainmenu">
+                        <li class="menu-child-item">
+                            <a href="/"  data-key="home" class="nav-link">
+                                HOMEPAGE
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="menu-child-item">
+                            <a href="/highlight.html" data-key="highlight" class="nav-link">
+                                HIGHLIGHT
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="menu-child-item">
+                            <a href="/gallery.html" data-key="gallery" class="nav-link">
+                                GALLERY
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="menu-child-item">
+                            <a href="/whats-hot.html" data-key="whats_hot" class="nav-link">
+                                WHAT'S HOT
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" class="search-box-input" placeholder="Search" data-placeholder="search">
+                    <button class="search-box-btn">
+                        <img src="img/menu/search-icon.png" alt="search icon">
+                    </button>
+                </div>
+                <div class="lag">
+                    <div class="swap-lag" id="header-lang-img">
+                        <img class="flag" src="img/menu/flag-us.png" alt="world">
+                        <img class="arrow-icon" src="img/menu/arrow-icon.png" alt="arrow">
+                    </div>
+                    <ul class="sub-menu-lag">
+                        <li class="lag language" data-lang="vn" id="lang-vn">
+                            <img src="img/menu/flag-vietnam.png" alt="vietnam">
+                            <div class="swap-lag">
+                            </div>
+                        </li>
+                        <li class="lag language" data-lang="en" id="lang-en">
+                            <img src="img/menu/flag-us.png" alt="english">
+                            <div class="swap-lag">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+        <div class="section">
+    
+<section class="highlight-page">
+    <div class="four-corner-border">
+        <button class="scroll-btn" onclick="fullpage_api.moveSectionDown()">
+            <img src="img/highlight-page/parallax-section/arrow-down.svg" alt="arrow down">
+        </button>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/highlight-page/mobile-bg-highlight.webp" media="(max-width: 768px)">
+                        <img src="img/highlight-page/bg-highlight.webp" alt="background city highlight">
+                    </picture>
+                    
+                    <div class="text-centre">
+                        
+                         <h1 class="wow fadeInUp" data-wow-duration="2s" data-key="whats_hot_title">WHAT'’S HOT</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container-swiper-pagination">
+                
+                <div class="swiper-pagination swiper-pagination-bullets"></div>
+                
+                <div class="swiper-custom-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+<div class="section">
+    
+<section class="news-section">
+    <div class="news-section__bg"></div>
+    <div class="container">
+        <div class="news__title" data-key="news_title">What's Hot</div>
+        <div class="group-news">
+            <div class="hot-news" data-slide="3">
+                <div class="hot-news__image">
+                    <img src="img/whats-hot/news-1.png" alt="hanoi center">
+                </div>
+                <div class="hot-news__disc">
+                    <h4 class="hot-news__title" data-key="hot_news_title_1">
+                        Hanoi Centre - A “centre” destination for
+                        premium shopping, entertainment, and services</h4>
+                    <p class="hot-news__content" data-key="hot_news_content_1">
+                        With a combination of modern design, green spaces, and diverse amenities, Hanoi Centre will not only meet the needs of the capital's residents but also attract tourists, enriching the shopping and entertainment experience in Hanoi. The project will maximize the potential of the lucrative real estate market in the area while promoting the city's economic and cultural development.
+                    </p>
+                    <a class="hot-news__source" target="_blank" data-key="hot_news_source" href="https://dantri.com.vn/kinh-doanh/cuoc-dua-xay-dung-trung-tam-thuong-mai-quy-mo-lon-tai-ha-noi-20241114162753019.htm" title="Cuộc đua xây dựng trung tâm thương mại quy mô lớn tại Hà Nội">
+                        Source: Dân Trí
+                    </a>
+                </div>
+            </div>
+            <div class="news-list">
+                <div class="news-swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hot-news" data-slide="0">
+                            <div class="hot-news__image">
+                                <img src="img/whats-hot/news-2.png" alt="hanoi center">
+                            </div>
+                            <div class="hot-news__disc">
+                                <h4 class="hot-news__title" data-key="hot_news_title_2">
+                                    Annam Gourmet's new 1000m<sup>2</sup> store</h4>
+                                <p class="hot-news__content" data-key="hot_news_content_2">
+                                    Annam Gourmet, the premium grocery store specializing in fine food and beverage products from all over the world, is set to open a 1000sqm store in Hanoi Centre. The strategic location, combined with Annam
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide hot-news" data-slide="1">
+                            <div class="hot-news__image">
+                                <img src="img/whats-hot/news-3.png" alt="hanoi center">
+                            </div>
+                            <div class="hot-news__disc">
+                                <h4 class="hot-news__title" data-key="hot_news_title_3">
+                                    Hanoi Centre won “Best Retail Interior Design”</h4>
+                                <p class="hot-news__content" data-key="hot_news_content_3">
+                                    Keppel and its projects were honoured with five awards at the PropertyGuru Vietnam Property Awards (VPA) 2024, including the distinguished Developer of the Decade award. This accolade, presented in conjunction with PropertyGuru VPA's 10th anniversary,...
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide hot-news" data-slide="2">
+                            <div class="hot-news__image">
+                                <img src="img/whats-hot/news-4.png" alt="hanoi center">
+                            </div>
+                            <div class="hot-news__disc">
+                                <h4 class="hot-news__title" data-key="hot_news_title_4">
+                                    Pop Mart's first store in Hanoi</h4>
+                                <p class="hot-news__content" data-key="hot_news_content_4">
+                                    Calling all art toy fans and collectors! POP MART, the global phenomenon in the collectible toy industry, is set to open its official store at Hanoi Centre, the capital's latest shopping destination that beautifully blends modernity and traditions. Known for its vibrant creativity and...
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide hot-news" data-slide="0">
+                            <div class="hot-news__image">
+                                <img src="img/whats-hot/news-2.png" alt="hanoi center">
+                            </div>
+                            <div class="hot-news__disc">
+                                <h4 class="hot-news__title" data-key="hot_news_title_2">
+                                    Annam Gourmet's new 1000m<sup>2</sup> store</h4>
+                                <p class="hot-news__content" data-key="hot_news_content_2">
+                                    Annam Gourmet, the premium grocery store specializing in fine food and beverage products from all over the world, is set to open a 1000sqm store in Hanoi Centre. The strategic location, combined with Annam
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide hot-news" data-slide="1">
+                            <div class="hot-news__image">
+                                <img src="img/whats-hot/news-3.png" alt="hanoi center">
+                            </div>
+                            <div class="hot-news__disc">
+                                <h4 class="hot-news__title" data-key="hot_news_title_3">
+                                    Hanoi Centre won “Best Retail Interior Design”</h4>
+                                <p class="hot-news__content" data-key="hot_news_content_3">
+                                    Keppel and its projects were honoured with five awards at the PropertyGuru Vietnam Property Awards (VPA) 2024, including the distinguished Developer of the Decade award. This accolade, presented in conjunction with PropertyGuru VPA's 10th anniversary,...
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide hot-news" data-slide="2">
+                            <div class="hot-news__image">
+                                <img src="img/whats-hot/news-4.png" alt="hanoi center">
+                            </div>
+                            <div class="hot-news__disc">
+                                <h4 class="hot-news__title" data-key="hot_news_title_4">
+                                    Pop Mart's first store in Hanoi</h4>
+                                <p class="hot-news__content" data-key="hot_news_content_4">
+                                    Calling all art toy fans and collectors! POP MART, the global phenomenon in the collectible toy industry, is set to open its official store at Hanoi Centre, the capital's latest shopping destination that beautifully blends modernity and traditions. Known for its vibrant creativity and...
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-swiper-button-next">
+                    <img src="img/home-page/button-arrow.png" alt="arrow">
+                </div>
+                <div class="news-swiper-button-prev">
+                    <img src="img/home-page/button-arrow.png" alt="arrow">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="scroll-up-button" onclick="fullpage_api.moveTo(1)()">
+        <img src="img/highlight-page/parallax-section/arrow-up.svg" alt="arrow up">
+        <span data-key="scroll_up_hotnews">Scroll up</span>
+    </button>
+    
+<div class="popup-news" id="">
+    <div class="popup-news__bg"></div>
+    <div class="container">
+        <span class="close-btn-popup-news">
+            <img src="img/about-us/back-btn.png" alt="back button">
+            <span data-key="back-btn">Back</span>
+        </span>
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2-popup-news">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="popup-news__group news-1">
+                        <h2 class="title-news" data-key="title_news_popup_1">Annam Gourmet's new 1000m<sup>2</sup> store</h2>
+                        <div class="popup-news__disc">
+                            <div class="popup-news__image">
+                                <img src="img/whats-hot/news-2.png" alt="hanoi center">
+                            </div>
+                            <p class="popup-news__content" data-key="popup_news_content_1">
+                                Annam Gourmet, the premium grocery store specializing in fine food and beverage products from all over the world, is set to open a 1000 sqm store in Hanoi Centre.  The strategic location, combined with Annam Gourmet's commitment to excellence, promises to make this store a key destination for green, healthy and modern lifestyle in Hanoi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popup-news__group">
+                        <h2 class="title-news" data-key="title_news_popup_2">Hanoi Centre won “Best Retail Interior Design”</h2>
+                        <div class="popup-news__disc">
+                            <div class="popup-news__image">
+                                <img src="img/whats-hot/news-3.png" alt="hanoi center">
+                            </div>
+                            <p class="popup-news__content" data-key="popup_news_content_2">
+                                Keppel and its projects were honoured with five awards at the PropertyGuru Vietnam Property Awards (VPA) 2024, including the distinguished Developer of the Decade award. This accolade, presented in conjunction with PropertyGuru VPA's 10th anniversary, celebrates visionary companies that have set the benchmark for excellence in Vietnam's real estate sector over the past ten years. Hanoi Centre, Keppel's upcoming retail development in Hanoi, also won the Best Retail Interior Design award.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popup-news__group news-3">
+                        <h2 class="title-news" data-key="title_news_popup_3">Pop Mart's first store in Hanoi</h2>
+                        <div class="popup-news__disc">
+                            <div class="popup-news__image">
+                                <img src="img/whats-hot/news-4.png" alt="hanoi center">
+                            </div>
+                            <p class="popup-news__content" data-key="popup_news_content_3">
+                                Calling all art toy fans and collectors! POP MART, the global phenomenon in the collectible toy industry, is set to open its official store at Hanoi Centre, the capital's latest shopping destination that beautifully blends modernity and traditions. Known for its vibrant creativity and rich cultural heritage, Hanoi is the perfect backdrop for POP MART's latest venture. Join us in celebrating the opening of POP MART's first Hanoi store and explore the captivating world of designer toys.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popup-news__group news-4">
+                        <h2 class="title-news" data-key="title_news_popup_4">Hanoi Centre - A “centre” destination for premium shopping, entertainment, and services</h2>
+                        <div class="popup-news__disc">
+                            <div class="popup-news__image">
+                                <img src="img/whats-hot/news-1.png" alt="hanoi center">
+                            </div>
+                            <p class="popup-news__content" data-key="popup_news_content_4">
+                                With a combination of modern design, green spaces, and diverse amenities, Hanoi Centre will not only meet the needs of the capital's residents but also attract tourists, enriching the shopping and entertainment experience in Hanoi. The project will maximize the potential of the lucrative real estate market in the area while promoting the city's economic and cultural development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whatshot-tag" data-key="whatshot_tag">What's Hot</div>
+        <div class="group-thumb">
+            <div thumbsSlider="" class="swiper mySwiper-popup-news">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide thumb-news">
+                        <div class="thumb-news__image">
+                            <img src="img/whats-hot/news-2.png" alt="hanoi center">
+                        </div>
+                        <div class="thumb-news__disc">
+                            <h4 class="thumb-news__title" data-key="thumb_news_title">
+                                Annam Gourmet's new 1000m<sup>2</sup> store
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide thumb-news">
+                        <div class="thumb-news__image">
+                            <img src="img/whats-hot/news-3.png" alt="hanoi center">
+                        </div>
+                        <div class="thumb-news__disc">
+                            <h4 class="thumb-news__title" data-key="thumb_news_title_2">
+                                Hanoi Centre won “Best Retail Interior Design”
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide thumb-news">
+                        <div class="thumb-news__image">
+                            <img src="img/whats-hot/news-4.png" alt="hanoi center">
+                        </div>
+                        <div class="thumb-news__disc">
+                            <h4 class="thumb-news__title" data-key="thumb_news_title_3">
+                                Pop Mart's first store in Hanoi
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide thumb-news">
+                        <div class="thumb-news__image">
+                            <img src="img/whats-hot/news-1.png" alt="hanoi center">
+                        </div>
+                        <div class="thumb-news__disc">
+                            <h4 class="thumb-news__title" data-key="thumb_news_title_4">
+                                Hanoi Centre - A “centre” destination for premium shopping, entertainment, and services
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="swiper-button-next-popup-news">
+                    <img src="img/home-page/button-arrow.png" alt="arrow">
+                </div>
+                <div class="swiper-button-prev-popup-news">
+                    <img src="img/home-page/button-arrow.png" alt="arrow">
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+</section>
+
+</div>
+        <div class="section">
+            
+    <footer class="footer" id="footer">
+        <div class="footer__top container">
+            <div class="footer__left">
+                <a class="logo-top" href="/">
+                    <img src="img/menu/logo-hanoi-centre.png" alt="hanoi centre">
+                </a>
+                <div class="logo-bottom">
+                    <a class="logo-bottom__item facebook" href="https://www.facebook.com/hanoicentre.vn" target="_blank" title="link facebook">
+                        <img src="img/footer/facebook-logo.svg" alt="facebook">
+                    </a>
+                    <a class="logo-bottom__item instagram" href="https://www.instagram.com/hanoicentre/" target="_blank" title="link instagram">
+                        <img src="img/footer/instagram-logo.svg" alt="instagram">
+                    </a>
+                    <a class="logo-bottom__item tiktok" href="https://www.tiktok.com/@hanoi.centre" target="_blank" title="link tiktok">
+                        <img src="img/footer/tiktok-logo.svg" alt="tiktok">
+                    </a>
+                    <a class="logo-bottom__item youtube" href="https://www.youtube.com/@hanoicentrevn" target="_blank" title="link youtube">
+                        <img src="img/footer/youtube-logo.svg" alt="youtube">
+                    </a>
+                    <a class="logo-bottom__item threads" href="https://www.threads.net/@hanoicentre" target="_blank" title="link threads">
+                        <img src="img/footer/threads-logo.svg" alt="threads">
+                    </a>
+                    <a class="logo-bottom__item linkedin" href="https://www.linkedin.com/company/hanoi-centre-shopping-mall" target="_blank" title="link linkedin">
+                        <img src="img/footer/linkedin-logo.svg" alt="linkedin">
+                    </a>
+                </div>
+           </div> 
+           <div class="footer__right">
+                <div class="contact-us__disc">
+                    <h2 data-key="contact_us">Contact us</h2>
+                    <a class="contact-us__item phone" href="tel: 84 923 000 100">
+                        <img src="img/footer/phone-logo.svg" alt="phone">
+                        <span>0923 000 100</span>
+                    </a>
+                    <a class="contact-us__item mail" href="mailto: leasing.hanoicentre@keppel.com">
+                        <img src="img/footer/mail-logo.svg" alt="mail">
+                        <span>leasing.hanoicentre@keppel.com</span>
+                    </a>
+                    <div class="contact-us__item address">
+                        <img src="img/footer/address-logo.svg" alt="address">
+                        <span data-key="address">175 Nguyen Thai Hoc street, Ba Dinh district, Hanoi</span>
+                    </div>
+                </div>
+                <div class="keppel">
+                    <span data-key="managed_by">Managed by</span>
+                    <img class="logo-keppel" src="img/footer/keppel-logo.svg" alt="logo keppel">
+                </div>
+           </div>
+        </div>
+        
+    </footer>
+
+        </div>
+    </div>
+    
+<div class="popup-mobile-menu">
+    <div class="inner-wrapper">
+        <div class="inner-top">
+            <div class="content-mobile">
+                <div class="logo">
+                    <img src="img/menu/logo-hanoi-centre.png" alt="hanoi centre">
+                </div>
+                <div class="close-btn-mobile">
+                   <img src="img/menu/close-btn.svg" alt="close button">
+                </div>
+            </div>
+            <div class="search-mobile">
+                <form class="form-letter" action="#">
+                    <input type="email" placeholder="Search" data-placeholder="search">
+                    <div class="search-icon">
+                        <img src="img/menu/search-icon.png" alt="search">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="mainmenu-nav">
+            <li class="accordion">
+                <a href="/" class="mobile mobile-menu1 nav-link">
+                    <span data-key="home">HOMEPAGE</span>
+                    
+                </a>
+            <li class="accordion">
+                <a href="/highlight.html" class="mobile mobile-menu1 nav-link">
+                    <span data-key="highlight">HIGHLIGHT</span>
+                    
+                </a>
+            </li>
+            <li class="accordion">
+                <div class="mobile mobile-menu1">
+                    <a href="/gallery.html" class="title-menu nav-link"><span data-key="gallery">GALLERY</span></a>
+                    
+                </div>
+                
+            </li>
+            <li class="accordion">
+                <a href="/whats-hot.html" class="mobile mobile-menu1 nav-link">
+                    <span data-key="whats_hot">WHAT'S HOT</span>
+                    
+                </a>
+            </li>
+            <li class="accordion contact-us-mobile" onclick="goToLastPage()">
+                <button class="mobile mobile-menu1" >
+                    <span data-key="contact_us">CONTACT US</span>
+                </button>
+            </li>
+        </div>
+        <div class="mobile_menu__bottom">
+            
+            <div class="change-language">
+                <div class="lag language" data-lang="vn" id="lang-vn-mobile">
+                    <img src="img/menu/flag-us.png" alt="english">
+                    <div class="swap-lag">
+                    </div>
+                </div>
+                <div class="lag language" data-lang="en" id="lang-en-mobile">
+                    <img src="img/menu/flag-vietnam.png" alt="vietnam">
+                    <div class="swap-lag">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.js" integrity="sha512-x5JY7KTULoGmcgxguKf5p4i3wfx7qXlY3OMjqez4Pj8BPoMn4krRQmwDtOwF81F+/9Be+jvhBsKOIaPPZmRelQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/apps.js"></script>
+    
+</body>
+</html>
