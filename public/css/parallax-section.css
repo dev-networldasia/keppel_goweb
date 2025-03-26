@@ -122,6 +122,7 @@
     position: relative;
     display: table;
     margin-left: 20%;
+    min-width: 0;
 }
 .parallax__triangle {
     position: absolute;
@@ -421,7 +422,6 @@
     }
     .parallax__disc {
         width: 1%;
-        min-width: 0;
         position: relative;
         display: table;
         margin-left: 10%;
