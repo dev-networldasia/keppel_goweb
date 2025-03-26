@@ -653,7 +653,19 @@
 }
 @media (min-width: 576px) and (max-width: 768px){
     .triangle-left{
-        font-size: 0.85em;
+        font-size: 0.7em;
+    }
+    .triangle-bottom__content {
+        font-size: 1em;
+        right: 3%;
+    }
+    .gallery__group-text {
+        font-size: 0.74em;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    .triangle-left{
+        font-size: 0.75em;
     }
     .triangle-bottom__content {
         font-size: 1em;
@@ -662,22 +674,13 @@
     .gallery__group-text {
         font-size: 0.84em;
     }
-}
-@media only screen and (min-width: 769px) and (max-width: 991px){
-    .triangle-left{
-        font-size: 0.85em;
-    }
-    .triangle-bottom__content {
-        font-size: 1em;
-        right: 3%;
-    }
-    .gallery__group-text {
-        font-size: 0.94em;
+    .gallery-inner {
+        gap: 1em;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .triangle-left{
-        font-size: 0.95em;
+        font-size: 0.8em;
     }
     .triangle-bottom__content {
         font-size: 0.65em;
@@ -692,13 +695,16 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .triangle-left{
-        font-size: 0.95em;
+        font-size: 0.85em;
     }
     .triangle-bottom__content {
         font-size: 0.65em;
     }
     .gallery__group-text {
         font-size: 0.6em;
+    }
+    .gallery-inner {
+        gap: 1em;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
