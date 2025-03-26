@@ -421,6 +421,7 @@
     }
     .parallax__disc {
         width: 1%;
+        min-width: 0;
         position: relative;
         display: table;
         margin-left: 10%;
@@ -434,7 +435,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .parallax__content {
-        font-size: 0.72em;
+        font-size: 0.66em;
     }
     .parallax__triangle {
         font-size: 1.3em;
@@ -468,11 +469,11 @@
         position: relative;
         display: table;
         margin-left: 10%;
-        margin-top: -25%;
     }
     .parallax__border--variant-2 .parallax__disc {
         left: auto;
         margin-right: 5%;
+        right: 0;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){

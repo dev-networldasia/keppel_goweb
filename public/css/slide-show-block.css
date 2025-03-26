@@ -1,6 +1,7 @@
 .gallery-slide {
     position: relative;
     height: 100svh;
+    width: 100vw;
     z-index: 5;
 }
 
@@ -684,6 +685,9 @@
     }
     .gallery__group-text {
         font-size: 0.6em;
+    }
+    .gallery-inner {
+        gap: 1em;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
