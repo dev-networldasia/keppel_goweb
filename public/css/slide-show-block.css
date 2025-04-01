@@ -666,13 +666,17 @@
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .triangle-left{
         font-size: 0.75em;
+        width: 30vw
+    }
+    .gallery-slide .gallery-inner .gallery-block {
+        width: 70vw;
     }
     .triangle-bottom__content {
         font-size: 1em;
         right: 3%;
     }
     .gallery__group-text {
-        font-size: 0.84em;
+        font-size: 0.74em;
     }
     .gallery-inner {
         gap: 1em;
@@ -681,6 +685,10 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .triangle-left{
         font-size: 0.8em;
+        width: 30vw
+    }
+    .gallery-slide .gallery-inner .gallery-block {
+        width: 70vw;
     }
     .triangle-bottom__content {
         font-size: 0.65em;
