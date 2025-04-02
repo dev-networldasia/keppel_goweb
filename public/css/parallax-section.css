@@ -391,34 +391,34 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .parallax__content {
-        font-size: 0.75em;
+        font-size: 0.6em;
     }
     .parallax__triangle {
         font-size: 1.3em;
     }
     .parallax--variant-1 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-1.png);
-        background-position: top left;
+        background-position: top right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax--variant-2 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-2.png);
-        background-position: top right;
+        background-position: top left;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax--variant-3 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-3.png);
-        background-position: top left;
+        background-position: top right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax--variant-4 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-4.png);
-        background-position: top right;
+        background-position: top left;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax__disc {
         width: 1%;
@@ -432,6 +432,12 @@
         left: auto;
         margin-right: 5%;
     }
+    .parallax--variant-4 .parallax__border--variant-2 .parallax__disc {
+        left: auto;
+        margin-top: -25%;
+        margin-right: 5%;
+        right: 0;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .parallax__content {
@@ -442,27 +448,27 @@
     }
     .parallax--variant-1 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-1.png);
-        background-position: top left;
+        background-position: top right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax--variant-2 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-2.png);
-        background-position: top right;
+        background-position: top left;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax--variant-3 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-3.png);
-        background-position: top left;
+        background-position: top right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax--variant-4 {
         background-image: url(../img/highlight-page/parallax-section/bg-highlight-4.png);
-        background-position: top right;
+        background-position: top left;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .parallax__disc {
         width: 1%;
@@ -473,6 +479,12 @@
     .parallax__border--variant-2 .parallax__disc {
         left: auto;
         margin-right: 5%;
+        right: 0;
+    }
+    .parallax--variant-4 .parallax__border--variant-2 .parallax__disc {
+        left: auto;
+        margin-top: -8%;
+        margin-right: 10%;
         right: 0;
     }
 }

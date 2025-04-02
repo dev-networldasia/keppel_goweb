@@ -213,25 +213,21 @@
         width: 100%;
         height: 100%;
         background: url('../img/about-us/ourshoppers/triangle-top-left.svg') left top no-repeat, url('../img/about-us/ourshoppers/triangle-bottom-left.svg') left bottom no-repeat, url('../img/about-us/ourshoppers/bg-ourshoppers.webp') left top no-repeat;
-        background-size: 22.1em, 45.1em, 768px;
+        background-size: 22.1em, 45.1em, 80vw;
         font-size: 0.7em;
     }
     .about-us__ourshoppers .bg-mode {
         font-size: 0.7em;
     }
     .our-shoppers {
+        font-size: 0.7rem;
         display: block;
-        width: 70%;
-        transform: translate(24%, -135%);
-        top: auto;
-        right: auto;
-        left: auto;
-        font-size: 0.85rem;
-        padding: 0 17em;
-        background: #ffffff96;
-        padding: 2em;
-        border-radius: 0px;
-        text-shadow: 3px 3px 2px white;
+        width: 40%;
+        transform: translate(6%, -44%);
+        top: 50%;
+        position: absolute;
+        right: 0;
+        left: 50%;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
@@ -239,25 +235,21 @@
         width: 100%;
         height: 100%;
         background: url('../img/about-us/ourshoppers/triangle-top-left.svg') left top no-repeat, url('../img/about-us/ourshoppers/triangle-bottom-left.svg') left bottom no-repeat, url('../img/about-us/ourshoppers/bg-ourshoppers.webp') left top no-repeat;
-        background-size: 22.1em, 45.1em, 768px;
+        background-size: 22.1em, 45.1em, 65vw;
         font-size: 0.7em;
     }
     .about-us__ourshoppers .bg-mode {
         font-size: 0.7em;
     }
     .our-shoppers {
+        font-size: 0.75rem;
         display: block;
-        width: 70%;
-        transform: translate(24%, -135%);
-        top: auto;
-        right: auto;
-        left: auto;
-        font-size: 0.95rem;
-        padding: 0 17em;
-        background: #ffffff96;
-        padding: 2em;
-        border-radius: 0px;
-        text-shadow: 3px 3px 2px white;
+        width: 40%;
+        transform: translate(6%, -44%);
+        top: 50%;
+        position: absolute;
+        right: 0;
+        left: 50%;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
