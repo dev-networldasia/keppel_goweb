@@ -706,6 +706,10 @@
     .about-us__text {
         transform: translate(-50%, -65%);
     }
+    .triangle-right.shape-3 {
+        left: 30%;
+        bottom: 30%;
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .about-us {
