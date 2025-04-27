@@ -106,8 +106,14 @@
     letter-spacing: -0.02em;
     text-align: justify;
     padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+.popup-news__source {
+    width: 100%;
+    text-align: end;
+}
 .popup-news .swiper {
     width: 100%;
     height: 100%;
@@ -354,7 +360,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .popup-news {
-        font-size: 0.5rem;;
+        font-size: 0.45rem;;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
@@ -382,10 +388,13 @@
     }
     .popup-news__group .title-news {
         font-size: 6em;
-        width: 85vw;
+        width: 80vw;
     }
     .close-btn-popup-news {
         top: 70px;
         right: 5%;
+    }
+    .popup-news__content {
+        font-size: 2em;
     }
 }
