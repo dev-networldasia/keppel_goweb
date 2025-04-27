@@ -105,11 +105,20 @@ footer {
     width: 4.3em;
     aspect-ratio: 35 / 40;
 }
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 .keppel {
     display: flex;
     align-items: center;
     gap: 1em;
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
 }
@@ -121,6 +130,27 @@ footer {
 .logo-keppel {
     width: 12.2em;
     aspect-ratio: 122 /40;
+}
+.footer-logo__bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo__bottom img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+.logo-saigoncentre {
+    position: relative;
+    aspect-ratio: 600 / 424;
+    width: 17em;
+}
+.logo-estella {
+    position: relative;
+    aspect-ratio: 600 / 389;
+    width: 17em;
 }
 .copy-right {
     padding-top: 5em;
@@ -158,11 +188,16 @@ footer {
     .contact-us__item {
         margin: 5em 0;
     }
-    .keppel {
+    .footer-logo{
         display: flex;
         position: relative;
         justify-content: center;
         font-size: 0.7em;
+    }
+    .keppel {
+        display: flex;
+        position: relative;
+        justify-content: center;
     }
     .contact-us__item:last-child {
         margin-bottom: 3em;
@@ -178,29 +213,35 @@ footer {
     .copy-right span {
         font-size: 1.7em;
     }
+    .footer-logo__bottom {
+        font-size: 1.5em;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px){
     .footer {
-        font-size: 0.6em;
+        font-size: 0.6rem;
+    }
+    .footer-logo__bottom {
+        font-size: 0.9em;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
     .footer {
-        font-size: 0.6em;
+        font-size: 0.6rem;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .footer {
-        font-size: 0.5em;
+        font-size: 0.5rem;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .footer {
-        font-size: 0.6em;
+        font-size: 0.6rem;
     }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .footer {
-        font-size: 0.7em;
+        font-size: 0.7rem;
     }
 }
