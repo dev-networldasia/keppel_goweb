@@ -205,6 +205,8 @@
 .group-shape-3 span{
     top: 60%;
     left: 35%;
+    line-height: 1.2;
+    font-size: 6em;
 }
 
 .container-mini-shape {

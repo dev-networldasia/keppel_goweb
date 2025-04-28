@@ -289,4 +289,29 @@
     .about-us__complex .bg-mode {
         font-size: 0.6rem;
     }
+    .complex {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        width: 30%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        position: absolute;
+        right: 0;
+        left: 25%;
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .complex {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        width: 32%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        position: absolute;
+        right: 0;
+        left: 25%;
+    }
 }
