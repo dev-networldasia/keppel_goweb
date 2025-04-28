@@ -276,7 +276,7 @@
         display: flex;
         flex-direction: column;
         gap: 3em;
-        width: 30%;
+        width: 28%;
         transform: translate(-50%, -50%);
         top: 50%;
         position: absolute;
@@ -293,7 +293,7 @@
         display: flex;
         flex-direction: column;
         gap: 3em;
-        width: 30%;
+        width: 29%;
         transform: translate(-50%, -50%);
         top: 50%;
         position: absolute;
@@ -307,7 +307,7 @@
         display: flex;
         flex-direction: column;
         gap: 3em;
-        width: 32%;
+        width: 28%;
         transform: translate(-50%, -50%);
         top: 50%;
         position: absolute;
