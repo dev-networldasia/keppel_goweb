@@ -36,6 +36,19 @@
     position: relative;
     white-space: nowrap;
 }
+.content-map__right .title-map{
+    display: block;
+    font-family: 'SVN-WylieVoigen';
+    font-size: 6.5em;
+    font-weight: 400;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 0.7em 0.5em 0em 0em;
+    overflow: hidden;
+    position: relative;
+    /* white-space: nowrap; */
+}
 .title-map::after{
     position: absolute;
     width: 0;
@@ -45,8 +58,10 @@
     border-bottom: 0.5em solid transparent;
     transform: rotate(225deg);
     top: 0;
-    left: 0;
+    left: auto;
     content: '';
+    right: 0;
+    transform: rotate(-45deg);
 }
 .map {
     position: relative;
@@ -64,7 +79,8 @@
     overflow: hidden;
     /* aspect-ratio: 1; */
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 4svh 0 2svh;
 }
 .content-map__right .discription {
@@ -72,7 +88,7 @@
     font-size: 1.8em;
     line-height: 1.4;
     text-align: justify;
-    margin-top: 10svh;
+    /* margin-top: 10svh; */
 }
 .price-disc {
     background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
@@ -118,124 +134,184 @@
     letter-spacing: -0.02em;
     text-align: justify; 
 }
-.content-map__left .discription {
-    display: none;
-}
 
 /* Reponsive */
 /* Reponsive Iphone SE */
 @media (min-width: 319px) and (max-width: 376px) {
-    .map-section .content-map__left {
+    .map-section .content-map__right {
         font-size: 0.65em;
         padding-right: 0;
     }
 }
 @media (max-width: 575px){
-    .map-section{   
+    .content-map {
         height: 100%;
-        padding: 10em 0 15em;
-        font-size: 1rem;
-    }
-    .content-map {
-        flex-direction: column;
-        gap: 3em;
-    }
-    .content-map__left{
-        font-size: 0.75em;
-        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        flex-direction: column-reverse;
+        padding-bottom: 5svh;
     }
     .content-map__right{
-        margin-top: 3em;
-        aspect-ratio: 1;
+        flex: unset;
+        font-size: 0.74rem;
+        padding: 0;
     }
-    .content-map__left .note{
-        font-size: 1.6em;
+    .content-map__right .title-map{
+        padding: 0.7em 0 0.2em 0.6em;
     }
-    .title-map br{
+    .title-map::after{
+        transform: rotate(225deg);
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+    .content-map__right .title-map br{
         display: none;
-    }
-    .content-map__left .title-map{
-        font-size: 5.5em;
-    }
-    .map {
-        margin-top: 3svh;
-        height: 55svh;
-    }
-    .content-map__right {
-        display: none;
-    }
-    .content-map__left .discription {
-        display: block;
-    }
-}
-@media (min-width: 576px) and (max-width: 768px){
-    .map-section{   
-        height: 100svh;
-        /* padding: 10em 0; */
-    }
-    .content-map {
-        flex-direction: column;
     }
     .content-map__left{
-        font-size: 0.85em;
-        padding-right: 0;
-    }
-    .map {
-        margin-top: 3svh;
-        aspect-ratio: 879 / 477;
-        height: 55svh;
-    }
-    .content-map__right {
-        display: none;
-    }
-    .content-map__left .discription {
-        display: block;
-    }
-    .content-map__left .note{
-        font-size: 1.6em;
-    }
-    .title-map br{
-        display: none;
-    }
-}
-@media only screen and (min-width: 769px) and (max-width: 991px){
-    .content-map__left{
-        font-size: 0.9em;
-        padding-right: 20px;
-    }
-    .content-map__right{
         aspect-ratio: unset;
+        flex: unset;
     }
-    .content-map__left .note{
+    .content-map__right .note{
         font-size: 1.6em;
     }
     .map {
         margin-top: 3svh;
         height: 60svh;
     }
+    .content-map__right .discription {
+        display: block;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .content-map {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        flex-direction: column-reverse;
+        padding-bottom: 5svh;
+    }
     .content-map__right{
+        flex: unset;
+        font-size: 0.74rem;
+        padding: 0;
+    }
+    .content-map__right .title-map{
+        padding: 0.7em 0 0.2em 0.6em;
+    }
+    .title-map::after{
+        transform: rotate(225deg);
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+    .content-map__right .title-map br{
         display: none;
     }
-    .content-map__left .discription {
+    .content-map__left{
+        aspect-ratio: unset;
+        flex: unset;
+    }
+    .content-map__right .note{
+        font-size: 1.6em;
+    }
+    .map {
+        margin-top: 3svh;
+        height: 60svh;
+    }
+    .content-map__right .discription {
+        display: block;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    .content-map {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        flex-direction: column-reverse;
+        padding-bottom: 5svh;
+    }
+    .content-map__right{
+        flex: unset;
+        font-size: 0.8rem;
+        padding: 0;
+    }
+    .content-map__right .title-map{
+        padding: 0.7em 0 0.2em 0.6em;
+    }
+    .title-map::after{
+        transform: rotate(225deg);
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+    .content-map__right .title-map br{
+        display: none;
+    }
+    .content-map__left{
+        aspect-ratio: unset;
+        flex: unset;
+    }
+    .content-map__right .note{
+        font-size: 1.6em;
+    }
+    .map {
+        margin-top: 3svh;
+        height: 60svh;
+    }
+    .content-map__right .discription {
         display: block;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
-    .content-map__left{
-        font-size: 0.6em;
-        padding-right: 40px;
+    .content-map {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        flex-direction: column-reverse;
     }
     .content-map__right{
-        aspect-ratio: unset;
+        flex: unset;
+        font-size: 0.9rem;
+        padding: 0;
     }
-    .content-map__left .note{
+    .content-map__right .title-map{
+        padding: 0.7em 0 0.2em 0.6em;
+    }
+    .title-map::after{
+        transform: rotate(225deg);
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+    .content-map__right .title-map br{
+        display: none;
+    }
+    .content-map__left{
+        aspect-ratio: unset;
+        flex: unset;
+    }
+    .content-map__right .note{
         font-size: 1.6em;
+    }
+    .map {
+        margin-top: 3svh;
+        height: 60svh;
+    }
+    .content-map__right .discription {
+        display: block;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .map-section {
+        font-size: 0.85rem;
+    }
     .content-map__left{
-        font-size: 0.6em;
-        padding-right: 40px;
+        padding-right: 4em;
     }
     .content-map__right{
         aspect-ratio: unset;
@@ -249,7 +325,7 @@
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px){
     .map-section {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .content-map {
         gap: 2vw;

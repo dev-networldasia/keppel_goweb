@@ -205,6 +205,8 @@
 .group-shape-3 span{
     top: 60%;
     left: 35%;
+    line-height: 1.2;
+    font-size: 6em;
 }
 
 .container-mini-shape {
@@ -561,7 +563,7 @@
         top: auto;
         left: auto;
         transform: none;
-        font-size: 0.68em;
+        font-size: 0.62em;
     }
     .about-us__text p{
         width: 90%;
@@ -705,6 +707,10 @@
     }
     .about-us__text {
         transform: translate(-50%, -65%);
+    }
+    .triangle-right.shape-3 {
+        left: 30%;
+        bottom: 30%;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){

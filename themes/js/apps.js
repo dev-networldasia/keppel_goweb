@@ -27,31 +27,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     },
   });
-  //     } else if (fullPageInstance) {
-  //         fullPageInstance.destroy('all'); // Destroy fullPage.js on mobile
-  //         fullPageInstance = null; // Reset instance
-  //     }
-  // }
-
-  // // Run on load
-  // window.addEventListener('load', initFullPage);
-
-  // // Run on resize
-  // window.addEventListener('resize', initFullPage);
-
-  // Navbar
-  // const navbar = document.getElementById("navbar");
-
-  // window.addEventListener("scroll", () => {
-  //   if (
-  //     document.body.scrollTop > 200 ||
-  //     document.documentElement.scrollTop > 200
-  //   ) {
-  //     navbar.classList.add("fixed");
-  //   } else {
-  //     navbar.classList.remove("fixed");
-  //   }
-  // });
 
   // <!-- JS Mobile-Menu -->
   const bgmenu = document.querySelector(".inner-wrapper");
@@ -71,46 +46,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   document.querySelector(".overlay").addEventListener("click", function () {
     document.querySelector(".popup-mobile-menu").classList.remove("active");
   });
-
-  // <!-- Mobile - openTab-->
-  // var list = document.querySelectorAll(".mobile");
-  // list.forEach(function (item) {
-  //   item.addEventListener("click", function (evt2) {
-  //     var flag = evt2.currentTarget.parentElement.classList.contains("active");
-  //     if (flag) {
-  //       console.log(
-  //         evt2.currentTarget.parentElement.querySelector(".child-menu")
-  //       );
-  //       evt2.currentTarget.parentElement.classList.remove("active");
-  //       $(
-  //         evt2.currentTarget.parentElement.querySelector(".child-menu")
-  //       ).slideUp(300);
-  //     } else {
-  //       document.querySelectorAll(".accordion").forEach(function (re) {
-  //         re.classList.remove("active");
-  //       });
-  //       evt2.currentTarget.parentElement.classList.add("active");
-  //       $(
-  //         evt2.currentTarget.parentElement.querySelector(".child-menu")
-  //       ).slideDown(300);
-  //     }
-  //   });
-  // });
-
-  // All Animation Slide swiper
-  // var swiperall = new Swiper(".mySwiperAll", {
-  //   direction: "vertical",
-  //   slidesPerView: 1,
-  //   spaceBetween: 0,
-  //   mousewheel: true,
-  //   autoplay: {
-  //     delay: 5000,
-  //   },
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  // });
 
   // Home Slide show
   // <!-- Swiper JS -->
@@ -393,22 +328,6 @@ function closePopup(popupId) {
     popup.style.display = "none"; // Example: hide the popup
   }
 }
-
-// // Function to show the popup (ensure this is implemented correctly)
-// function showPopup(popupId) {
-//   const popup = document.getElementById(popupId);
-//   if (popup) {
-//     popup.style.display = 'block'; // Example: display the popup
-//   }
-// }
-
-// // Function to close the popup (optional, for better UX)
-// function closePopup(popupId) {
-//   const popup = document.getElementById(popupId);
-//   if (popup) {
-//     popup.style.display = 'none'; // Example: hide the popup
-//   }
-// }
 
 // Initialize Swiper when the popup is opened
 function initializeSwiperAboutUs() {
@@ -747,16 +666,6 @@ updateLanguageControl(lang)
 localStorage.setItem("language", lang);
 language = localStorage.getItem("language");
 
-  // console.log("----------- set -language")
-  // if (document.getElementById("header-lang-img")) {
-  //   // if (lang == "en") {
-  //   //   document.getElementById("header-lang-img").src = "/static/themes/images/flags/us.svg";
-  //   // } else if (lang == "vi") {
-  //   //   document.getElementById("header-lang-img").src = "/static/themes/images/flags/vn.svg";
-  //   // }
-   
-  //   // getLanguage();
-  // }
   getLanguage(lang);
 }
 
@@ -813,22 +722,3 @@ navLinks.forEach(function (navLink) {
 });
 
 initLanguage();
-// function init() {
-//   setDefaultAttribute();
-//   twoColumnMenuGenerate();
-//   isCustomDropdown();
-//   isCustomDropdownResponsive();
-//   initFullScreen();
-//   initModeSetting();
-//   windowLoadContent();
-//   counter();
-//   initLeftMenuCollapse();
-//   initTopbarComponents();
-//   initComponents();
-//   resetLayout();
-//   pluginData();
-//   initLanguage();
-//   isCollapseMenu();
-//   initMenuItemScroll();
-// }
-// init();
