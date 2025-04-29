@@ -1,6 +1,6 @@
 
 {
-    "text-hanoi-centre": "{{site}}/static/img/home-page/centre-text-vn.png",
+    "text-hanoi-centre": "/img/home-page/centre-text-vn.png",
     "search": "Tìm kiếm",
     "category": "Danh mục",
     "home": "Trang chủ",
