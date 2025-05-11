@@ -25,20 +25,15 @@
     <link href="{{site}}/static/css/news-section.css" rel="stylesheet" type="text/css" />
     <link href="{{site}}/static/css/popup-news.css" rel="stylesheet" type="text/css" />
     <link href="{{site}}/static/css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="{{site}}/static/css/reponsive.css" rel="stylesheet" type="text/css" />
-    <script>
-        (function (w, d, s, l, i) {
-            var t = new Date().getTime();
-            w[l] = w[l] || [];
-            w[l].push({ brxstart: t, event: "brxtag.js", brx: i });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = false;
-            j.src = "Keppel.brancherx.net?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "brx_5srfrhch");
-    </script>
+    <link href="{{site}}/static/css/reponsive.css" rel="stylesheet" type="text/css" />   
+    <!-- brx tracking-->
+        <script>(function(w,d,s,l,i){
+        var t = new Date().getTime();
+        w[l]=w[l]||[];w[l].push({'brxstart':t,event:'brxtag.js','brx':i});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=false;j.src=
+        'https://optimize.brancherx.net/static/js/brxtag.js?id='+i+dl;f.parentNode.insertBefore(j,f);		
+        })(window,document,'script','dataLayer','brx_5srfrhch');</script>
+    <!--end brx tracking-->	
 </head>
 
 <body>
